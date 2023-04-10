@@ -1565,9 +1565,6 @@ button {
   width: 100%;
 }
 .partners .swiper-slide {
-  padding: 20px;
-  border: 1px solid #191b1d;
-  border-radius: 4px;
   height: 120px;
   display: flex;
   align-items: center;
