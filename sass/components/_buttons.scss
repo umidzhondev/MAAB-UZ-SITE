@@ -1,0 +1,31 @@
+.button {
+  box-sizing: border-box;
+  border-radius: 37px;
+  &__contact {
+    font-weight: 700;
+    font-size: 16px;
+    background-color: $main-red-color;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #fff;
+    transition: 0.4s ease;
+    padding: 15px 46px;
+
+    &:hover {
+     opacity: .8;
+    }
+  }
+
+  &__footer {
+    padding: 22px 40px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.3;
+    text-align: center;
+    letter-spacing: 0.2px;
+    background-color: $main-red-color;
+    color: #fff;
+    transition: all 0.4s ease-in-out;
+  }
+}

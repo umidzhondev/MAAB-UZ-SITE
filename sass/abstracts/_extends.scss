@@ -1,0 +1,100 @@
+.section--title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  margin-bottom: 10px;
+  color: $primary-color;
+
+  @include responsive(sm) {
+    font-size: 35px;
+    line-height: 50px;
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  @include responsive(xs) {
+    width: 90%;
+    font-weight: 700;
+    font-style: 30px;
+    font-size: 28px;
+    line-height: 42px;
+  }
+  @include responsive(xxs) {
+    width: 90%;
+  }
+}
+
+.section--subtitle {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: $secondary-color;
+}
+
+.section--header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-start;
+  padding-bottom: 60px;
+  h3 {
+    @extend .element-title;
+    margin-bottom: 60px;
+  }
+  p {
+    @extend .element-description;
+    max-width: 725px;
+  }
+}
+
+.box--title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: $primary-color;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section--cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  grid-gap: 38px;
+}
+
+.section--card {
+  width: 100%;
+  background-color: #fff;
+}
+
+.main-text {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+}
+.element-title {
+  font-family: "Sora", Sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 46px;
+}
+.element-description {
+  color: #2e2e2e;
+  font-family: "Karla", Sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+}
+

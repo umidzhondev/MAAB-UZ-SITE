@@ -1,0 +1,2 @@
+// * AOS JS
+AOS.init();

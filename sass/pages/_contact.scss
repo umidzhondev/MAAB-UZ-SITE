@@ -1,0 +1,52 @@
+.map {
+  padding:40px  0;
+  .section--header{
+    h3{
+      margin-bottom: 30px;
+    }
+  }
+  &__mapbox {
+    width: 100% !important;
+
+    & :where(iframe) {
+      width: 100% !important;
+      height: 600px;
+      width: 100%;
+      overflow: hidden;
+      iframe {
+        height: inherit !important;
+        width: inherit;
+      }
+      @include responsive(sm) {
+        height: 45vh;
+      }
+      @include responsive(xs) {
+        height: 40vh;
+      }
+      @include responsive(xxs) {
+        height: 35vh;
+      }
+    }
+  }
+}
+
+.contact {
+  background-color: $white-color;
+  padding: 150px 0 170px 0;
+  @include responsive(md) {
+    padding: 100px 0;
+  }
+  &__content {
+    @include flex(center, center, column);
+    width: 100%;
+    .section--header{
+      h3{
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+.main--other--pages {
+  padding-top: 60px;
+}

@@ -1,0 +1,150 @@
+.header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: $white-color;
+  z-index: 9999;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #ededef;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  background-color: #fbfbfd;
+  .navbar {
+    width: 100%;
+    background-color: #fbfbfd;
+    @include flex(space-between, center, row);
+    @include responsive(md) {
+      padding: 10px 0;
+    }
+    &__main {
+      @include flex(space-between, center, row);
+      @include responsive(md) {
+        display: none;
+      }
+    }
+    &__logo {
+      margin-right: 117px;
+      display: flex;
+      @include responsive(md) {
+        margin-right: 70px;
+      }
+      @include responsive(sm) {
+        margin-right: 20px;
+      }
+      @include responsive(xs) {
+        padding: 15px 0;
+      }
+      @include responsive(xxs) {
+        padding: 12px 0;
+      }
+      img {
+        max-height: 50px;
+        @include responsive(xs) {
+          max-height: 38px;
+        }
+        @include responsive(xxs) {
+          max-height: 30px;
+        }
+      }
+    }
+    &__language {
+      @include flex(space-between, center, row);
+      position: relative;
+      gap: 7px;
+      cursor: pointer;
+      padding: 0 14px;
+      color: $primary-color;
+      border-radius: 6px;
+      @include responsive(md) {
+        display: none;
+      }
+      @include responsive(sm) {
+        margin: 0 20px;
+        background-color: $main-blue-color;
+        color: $white-color;
+      }
+      @include responsive(xs) {
+        margin: 0 15px;
+      }
+      @include responsive(xxs) {
+        margin: 0;
+        margin-right: 10px;
+      }
+
+      &-select {
+        font-size: 16px;
+        outline: none;
+        padding: 5px;
+        color: $primary-color;
+        border: none;
+        background-color: transparent;
+        letter-spacing: 1px;
+        border-radius: 5px;
+        border: none;
+        option {
+          background-color: $white-color;
+          color: #000;
+        }
+        @include responsive(xxs) {
+          padding-inline: 0;
+          font-size: 14px;
+        }
+      }
+    }
+    &__menu-icon {
+      display: none;
+      @include responsive(md) {
+        display: flex;
+        align-items: center;
+      }
+    }
+    &__burger {
+      height: 30px;
+      width: 30px;
+      position: relative;
+      &.active-burger {
+        .navbar__burger-item {
+          &.f-t {
+            transform: rotate(45deg);
+            transition: all 0.3s;
+            top: 14px;
+          }
+          &.s-d {
+            transform: rotate(45deg);
+            transition: all 0.3s;
+            height: 2px;
+          }
+          &.t-d {
+            transform: rotate(135deg);
+            transition: all 0.3s;
+            top: 14px;
+          }
+        }
+      }
+      &-item {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: #2e2e2e;
+        content: "";
+        border-radius: 3px;
+        position: absolute;
+        transition: all 0.3s;
+        @include responsive(xxs) {
+          width: 28px;
+          height: 2px;
+        }
+        &.f-t {
+          top: 6px;
+        }
+        &.s-d {
+          top: 14px;
+        }
+        &.t-d {
+          top: 22px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,228 @@
+.footer {
+ 
+  &__content {
+    @include flex(center, center, column);
+    width: 100%;
+  }
+
+  &__logo {
+    img {
+      max-height: 50px;
+      @include responsive(xs) {
+        max-height: 38px;
+      }
+    }
+  }
+
+  &__top {
+    width: 100%;
+    padding: 40px 0;
+
+    &-content {
+      width: 100%;
+      @include flex(space-between, center, row);
+
+      @include responsive(xs) {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    &-text {
+      @include flex(space-between, flex-start, column);
+      gap: 10px;
+
+      @include responsive(sm) {
+        flex: 1;
+      }
+
+      @include responsive(xs) {
+        margin-bottom: 20px;
+      }
+
+      h3 {
+        @extend .element-title;
+        font-size: 38px;
+        margin-bottom: 20px;
+        sup {
+          font-size: 22px;
+          color: $main-red-color;
+        }
+      }
+
+      span {
+        @extend .element-description;
+      }
+    }
+  }
+
+  &__create{
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    color: #fff;
+    font-family: "Sora",sans-serif !important;
+  }
+
+  &__main {
+
+    .container {
+      max-width: 1400px;
+      margin-inline: auto;
+    }
+    width: 100%;
+    background-color: rgb(46, 46, 46);
+
+    padding: 50px 0;
+  }
+
+  &__social-icons {
+    width: 100%;
+    padding: 30px 0 100px 0;
+    @include flex(space-around, center, row);
+    @include responsive(sm) {
+      padding: 20px 0 80px 0;
+      justify-content: space-between;
+    }
+    @include responsive(xs) {
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      place-items: center;
+      grid-gap: 30px 20px;
+    }
+    @include responsive(xxs) {
+      padding: 10px 0 50px 0;
+    }
+  }
+  &__social-icon {
+    width: 81px;
+    height: 81px;
+    transition: all 0.4s ease;
+    &:hover {
+      transform: scale(1.12);
+    }
+    @include responsive(sm) {
+      width: 70px;
+      height: 70px;
+      svg {
+        width: inherit;
+        height: inherit;
+      }
+    }
+    @include responsive(xs) {
+      width: 65px;
+      height: 65px;
+    }
+    @include responsive(xxs) {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  &__items {
+    width: 100%;
+    @include flex(space-between, flex-start, row);
+    flex-wrap: wrap;
+    gap: 30px;
+    @include responsive(md) {
+      gap: 30px 0;
+    }
+
+    @include responsive(sm) {
+      gap: 30px;
+      flex-direction: column;
+    }
+    @include responsive(xs) {
+      flex-direction: column-reverse;
+    }
+  }
+  &__col {
+    @include flex(space-between, flex-start, row);
+    &:first-child {
+      flex: 1.5;
+    }
+    &:last-child {
+      flex: 1;
+      gap: 10px;
+    }
+    @include responsive(sm) {
+      flex: 1 0 100% !important;
+      width: 100%;
+      gap: 20px;
+    }
+    @include responsive(xs) {
+      flex-direction: column-reverse;
+      gap: 30px !important;
+    }
+  }
+  &__logo {
+    margin-bottom: 15px;
+    @include responsive(lg) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__item {
+    @include flex(space-between, flex-start, column);
+    flex: 1;
+    span {
+      color: $white-color;
+      font-size: 12px;
+      @include responsive(md) {
+        line-height: 1.4;
+      }
+    }
+    &-title {
+      @extend .element-description;
+      color: #fff;
+      font-size: 22px;
+      margin-bottom: 15px;
+      font-family: "Sora", sans-serif;
+    }
+
+    &-link {
+      font-size: 18px;
+      color: #fff;
+      font-weight: 400;
+      line-height: 2;
+      text-decoration: underline solid $white-color;
+      @include flex(flex-start, center, row);
+      gap: 10px;
+      &:hover{
+        color: $main-red-color;
+        text-decoration-color: $main-red-color;
+      }
+
+      span {
+        font-size: inherit;
+        line-height: inherit;
+        color: inherit;
+        font-weight: inherit;
+      }
+
+      img {
+        width: 23px;
+        height: 23px;
+      }
+    }
+  }
+
+  &__bottom {
+    width: 100%;
+    padding: 25px 0;
+    &-content {
+      width: 100%;
+      text-align: center;
+      span {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        color: $secondary-color;
+        text-align: center;
+      }
+    }
+  }
+}

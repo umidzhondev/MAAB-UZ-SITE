@@ -1,0 +1,129 @@
+.mobile__menu {
+  display: none;
+  transition: 0.5s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: #fbfbfd;
+  height: 100%;
+  &.open {
+    display: block;
+    .mobile__menu-content{
+      top: 0;
+    }
+  }
+  &-content {
+    @include responsive(md) {
+      display: block;
+      width: 100vw;
+      height: 100%;
+      left: 0;
+      top: -100%;
+      background-color: #fbfbfd;
+      z-index: 9999;
+      position: relative;
+      padding: 0 30px;
+      padding-top: 100px;
+    }
+    @include responsive(xs) {
+      padding-top: 80px;
+    }
+  }
+  &-nav {
+    display: flex;
+    flex-direction: column;
+  }
+  &-item {
+    padding: 20px 0;
+    display: inline-block;
+    width: max-content;
+    &.contact--us {
+      padding: 14px 0;
+      margin-top: 16px;
+      margin-bottom: 20px;
+      &:hover {
+        background-color: $main-red-color;
+        border-color: $main-red-color;
+        a {
+          color: $white-color;
+        }
+      }
+      a {
+        padding: 14px 26px;
+      }
+      border: 1px solid $main-red-color;
+    }
+  }
+  &-link {
+    font-size: 18px;
+    color: $link-color;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  &-language {
+    @include flex(space-between, center, row);
+    position: relative;
+    gap: 7px;
+    cursor: pointer;
+    color: $primary-color;
+    border-radius: 6px;
+    &__select {
+      font-size: 16px;
+      outline: none !important;
+      padding: 5px;
+      color: $primary-color;
+      border: none;
+      background-color: transparent;
+      letter-spacing: 1px;
+      border-radius: 5px;
+      border: none !important;
+      option {
+        background-color: $white-color;
+        color: #000;
+        border: none !important;
+        outline: none;
+      }
+      @include responsive(xxs) {
+        padding-inline: 0;
+        font-size: 14px;
+      }
+    }
+  }
+}
+.nav {
+  @include flex(space-between, center, row);
+  @include responsive(md) {
+    display: none;
+  }
+  &__item {
+    margin: 0 32px;
+    padding: 30px 0;
+    height: 100%;
+    &.contact--us {
+      background-color: $main-red-color;
+      color: #fff;
+      padding: 20px;
+      margin-inline: 0;
+      a {
+        color: #fff;
+      }
+      &:hover {
+        opacity: 0.956;
+      }
+    }
+  }
+
+  &__link {
+    @extend .main-text;
+    transition: 0.3s ease;
+    color: $link-color;
+    font-size: 18px;
+    @include responsive(lg) {
+      font-size: 15px;
+    }
+    &:hover {
+      color: $main-red-color;
+    }
+  }
+}
