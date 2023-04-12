@@ -1,0 +1,40 @@
+
+.why {
+  background-color: #fbfbfd;
+  padding: 100px 0;
+  &__title {
+    @extend .element-title;
+    margin-bottom: 80px;
+  }
+  &__items {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 30px;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    &-imgbox {
+      height: 52px;
+      width: auto;
+      img {
+        height: auto;
+      }
+      margin-bottom: 20px;
+    }
+    &-title {
+      color: #2e2e2e;
+      font-family: "Sora", Sans-serif;
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 28px;
+    }
+    &-description {
+      font-family: "Karla", Sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 27px;
+    }
+  }
+}

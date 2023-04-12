@@ -1,19 +1,51 @@
 .hero {
-  padding-top: 320px;
+  padding-top: 270px;
   padding-bottom: 180px;
   flex-wrap: wrap;
-  background: radial-gradient(ellipse at center,rgba(255,2,2,.1) 0%,rgba(0,0,0,0) 70%),radial-gradient(ellipse at center,rgba(255,0,0,.05) 0%,rgba(0,0,0,0) 70%),radial-gradient(ellipse at center,rgba(255,0,24,.1) 0%,rgba(0,0,0,0) 70%) #fbfbfd;
-  background-repeat: no-repeat,no-repeat,no-repeat;
-  background-size: 1200px 1200px,1200px 1200px,1200px 1200px;
+  background: radial-gradient(
+      ellipse at center,
+      rgba(255, 2, 2, 0.1) 0%,
+      rgba(0, 0, 0, 0) 70%
+    ),
+    radial-gradient(
+      ellipse at center,
+      rgba(255, 0, 0, 0.05) 0%,
+      rgba(0, 0, 0, 0) 70%
+    ),
+    radial-gradient(
+        ellipse at center,
+        rgba(255, 0, 24, 0.1) 0%,
+        rgba(0, 0, 0, 0) 70%
+      )
+      #fbfbfd;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 1200px 1200px, 1200px 1200px, 1200px 1200px;
   background-attachment: fixed;
   animation: bganimation 15s infinite;
-  @keyframes bganimation{
-
-    50%{
+  @keyframes bganimation {
+    50% {
       background-position-x: 1200px;
     }
-    
   }
+  &.about--hero {
+    background: none !important;
+    background-color: #141414 !important;
+    color: #fff;
+    padding-top: 250px;
+    padding-bottom: 160px;
+    .hero {
+      &__title {
+        color: #fff !important;
+      }
+      &__description {
+        color: #fff;
+      }
+    }
+  }
+  &.services--hero {
+      height: 100vh;
+  }
+
   &__content {
     @include flex(space-between, center, row);
   }
@@ -56,6 +88,21 @@
   background-image: url(../../image/contact/contact-bg.jpg);
   background-size: cover;
   padding: 120px 0;
+  &.data--analytics {
+    background-image: url(../../image/contact/data-analytics.png);
+    background-color: #14141490;
+    background-blend-mode: color;
+  }
+  &.data--visualization {
+    background-image: url(../../image/contact/Visualization-bg.jpg);
+    background-color: #14141490;
+    background-blend-mode: color;
+  }
+  &.data--engineering {
+    background-image: url(../../image/contact/data-engineering.png);
+    background-color: #14141490;
+    background-blend-mode: color;
+  }
   &-content {
     @include flex(center, center, column);
     text-align: center;
@@ -149,46 +196,6 @@
       font-size: 14px;
       font-weight: 400;
       line-height: 1.5;
-    }
-  }
-}
-
-.why {
-  background-color: #fbfbfd;
-  padding: 100px 0;
-  &__title {
-    @extend .element-title;
-    margin-bottom: 80px;
-  }
-  &__items {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    grid-gap: 30px;
-  }
-  &__item {
-    display: flex;
-    flex-direction: column;
-    &-imgbox {
-      height: 52px;
-      width: auto;
-      img {
-        height: auto;
-      }
-      margin-bottom: 20px;
-    }
-    &-title {
-      color: #2e2e2e;
-      font-family: "Sora", Sans-serif;
-      font-size: 24px;
-      font-weight: 600;
-      margin-bottom: 28px;
-    }
-    &-description {
-      font-family: "Karla", Sans-serif;
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 27px;
     }
   }
 }
@@ -287,7 +294,7 @@
   &__swiper {
     width: 100%;
   }
-  .swiper-slide{
+  .swiper-slide {
     height: 120px;
     display: flex;
     align-items: center;
@@ -340,12 +347,12 @@
       }
     }
     p {
-    font-family: "Karla", Sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 28px;
-    color: #fff;
-    line-height: 1.7;
+      font-family: "Karla", Sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 28px;
+      color: #fff;
+      line-height: 1.7;
     }
   }
 }
@@ -401,11 +408,11 @@
 
 .business {
   padding: 120px 0;
-  background: #2e2e2e;
-  color: #fff;
+  background: #ffffff;
+  color: $primary-color;
   .section--header {
     p {
-      color: #fff;
+      color: $primary-color;
     }
   }
   &__items {
@@ -422,11 +429,11 @@
       font-style: normal;
       font-weight: 600;
       font-size: 24px;
-      color: #fff;
+      color: $primary-color;
       line-height: 130%;
       margin-top: 0.5rem;
       &::before {
-        content: "\2021";
+        content: "\2022";
         color: $main-red-color;
         font-weight: bold;
         display: inline-block;

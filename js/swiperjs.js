@@ -30,7 +30,7 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-var swiper = new Swiper(".services--swiper", {
+var swiper2 = new Swiper(".services--swiper", {
   slidesPerView: 3,
   spaceBetween: 30,
 });
