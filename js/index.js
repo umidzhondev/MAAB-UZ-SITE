@@ -17,7 +17,6 @@ navLinks.forEach((link) => {
 });
 
 window.addEventListener("resize", () => {
-  console.log(window.innerWidth);
   if (window.innerWidth > 992) {
     nav.classList.remove("open");
     navBtn.children[0].classList.remove("active-burger");
