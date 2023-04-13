@@ -1177,6 +1177,7 @@ button {
   color: #2e2e2e;
   font-weight: 400;
   line-height: 150%;
+  text-transform: capitalize;
 }
 .mobile__menu-language {
   display: flex;
@@ -1276,6 +1277,7 @@ button {
   color: #fff;
   padding-top: 250px;
   padding-bottom: 160px;
+  height: 100vh;
 }
 .hero.about--hero .hero__title {
   color: #fff !important;

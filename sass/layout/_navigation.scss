@@ -60,6 +60,7 @@
     color: $link-color;
     font-weight: 400;
     line-height: 150%;
+    text-transform: capitalize;
   }
   &-language {
     @include flex(space-between, center, row);
