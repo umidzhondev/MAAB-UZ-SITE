@@ -1,28 +1,70 @@
 .engineering {
   &__header {
-    background-color: #fbfbfd;
+    background-color: $white-color-4;
     padding: 100px 0 0px 0;
+    @include responsive(md) {
+      padding-top: 60px;
+    }
+    @include responsive(xs) {
+      padding-top: 40px;
+    }
+    @include responsive(xxs) {
+      padding-top: 30px;
+    }
   }
   &__main {
-    padding: 110px  0;
+    padding: 110px 0;
+    @include responsive(lg) {
+      padding: 70px 0;
+      padding-top: 50px;
+    }
+    @include responsive(xxs) {
+      padding-top: 30px;
+      padding-bottom: 50px;
+    }
+    .section--header{
+      @include responsive(sm) {
+        padding-bottom: 40px;
+      }
+      @include responsive(xs) {
+        padding-bottom: 20px;
+      }
+      @include responsive(xxs) {
+        padding-bottom: 15px;
+      }
+      h3{
+        @include responsive(sm) {
+          margin-bottom: 35px;
+        }
+        @include responsive(xs) {
+          margin-bottom: 20px;
+        }
+      }
+    }
   }
   &__items {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
     grid-gap: 100px 60px;
+    @include responsive(md) {
+      grid-gap: 60px;
+    }
+    @include responsive(sm) {
+      grid-gap: 50px;
+    }
+    @include responsive(xs) {
+      grid-gap: 40px;
+    }
   }
   &__item {
     display: flex;
     flex-direction: column;
     &-title {
-      font-family: "Sora", sans-serif;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 24px;
-      line-height: 130%;
+      @extend .card-title;
       margin-top: 0.5rem;
       margin-bottom: 1rem;
+      margin-left: 25px;
       &::before {
         content: "\2022";
         color: $main-red-color;
@@ -33,10 +75,8 @@
       }
     }
     &-description {
-        font-weight: 400;
       margin-top: 25px;
-      font-size: 16px;
-      line-height: 24px;
+      @extend .card-description-2;
     }
   }
 }

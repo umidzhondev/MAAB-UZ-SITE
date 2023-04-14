@@ -43,10 +43,24 @@
   h3 {
     @extend .element-title;
     margin-bottom: 60px;
+    @include responsive(xs) {
+      font-size: 30px !important;
+      line-height: 42px !important;
+      margin-bottom: 30px;
+    }
+    
+    @include responsive(xxs) {
+     font-size: 26px !important; 
+     line-height: 1.3;
+    }
   }
   p {
     @extend .element-description;
     max-width: 725px;
+    @include responsive(xs) {
+      font-size: 16px !important;
+      line-height: 20px !important;
+    }
   }
 }
 
@@ -65,18 +79,6 @@
   object-fit: cover;
 }
 
-.section--cards {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
-  grid-gap: 38px;
-}
-
-.section--card {
-  width: 100%;
-  background-color: #fff;
-}
-
 .main-text {
   font-family: "Karla";
   font-style: normal;
@@ -89,6 +91,12 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 46px;
+  @include responsive(sm) {
+    font-size: 30px;
+  }
+  @include responsive(xxs) {
+    font-size: 25px;
+  }
 }
 .element-description {
   color: #2e2e2e;
@@ -98,3 +106,68 @@
   line-height: 28px;
 }
 
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-family: $second-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 70px;
+  @include responsive(sm) {
+    padding-top: 42px;
+    margin-top: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 52px;
+  }
+}
+.hero-description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  margin-bottom: 0;
+  color: $link-color;
+  @include responsive(sm) {
+    font-style: normal;
+    margin-bottom: 0;
+    padding-bottom: 42px;
+  }
+  @include responsive(xs) {
+    font-size: 20px;
+  }
+}
+
+.card-title {
+  font-family: $second-font;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 130%;
+  color: $link-color;
+  @include responsive(xs) {
+    font-size: 20px!important;
+    line-height: 24px!important;
+  }
+}
+
+.card-description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  @include responsive(xs) {
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+.card-description-2 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  @include responsive(xs) {
+    font-size: 14px !important;
+    line-height: 20px !important;
+  }
+}

@@ -1,22 +1,55 @@
 .cloud {
   padding: 100px 0;
-
+  @include responsive(lg) {
+    padding: 70px 0;
+    padding-top: 50px;
+  }
+  @include responsive(xxs) {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  .section--header {
+    @include responsive(sm) {
+      padding-bottom: 40px;
+    }
+    @include responsive(xs) {
+      padding-bottom: 30px;
+    }
+    p {
+      color: $primary-color;
+    }
+    h3 {
+      margin-bottom: 40px;
+    }
+  }
   &__items {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
     grid-template-rows: repeat(1, 2fr);
     grid-gap: 50px;
+    @include responsive(md) {
+      grid-gap: 30px;
+    }
+    @include responsive(xs) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
   &__item {
     @include flex(flex-start, stretch, column);
     height: 100%;
     gap: 30px;
+    @include responsive(xs) {
+      margin-bottom: 30px;
+    }
     &-header {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
       min-height: 300px;
+      @include responsive(xs) {
+        min-height: 200px;
+      }
     }
     &-icon {
       height: 55px;
@@ -24,32 +57,34 @@
       svg {
         height: 100%;
       }
+      @include responsive(xs) {
+        margin-bottom: 17px;
+      }
     }
     &-title {
-      font-family: "Sora", Sans-serif;
-      font-size: 24px;
-      font-weight: 600;
+      @extend .card-title;
       line-height: 31px;
       margin-bottom: 40px;
+      @include responsive(xs) {
+        margin-bottom: 30px;
+      }
     }
     &-description {
       color: #2e2e2e;
-      font-family: "Karla", Sans-serif;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 24px;
+      @extend .card-description-2;
     }
     &-main {
       width: 100%;
       display: block;
       background-color: #f5f5f7;
       padding: 20px;
+      @include responsive(xxs) {
+        padding: 20px 10px;
+      }
       &__title {
         font-family: "Sora", sans-serif;
         font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 24px;
+        @extend .card-description-2;
         margin-top: 0.5rem;
         margin-bottom: 1rem;
         padding-right: 10px;
@@ -61,9 +96,7 @@
       &__item {
         font-family: "Karla", sans-serif;
         font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 28px;
+        @extend .card-description-2;
         color: #2e2e2e;
         &::before {
           content: "\2022";
@@ -79,7 +112,29 @@
 }
 
 .use-cases {
-  padding: 80px 0;
+  padding: 100px 0;
+  @include responsive(lg) {
+    padding: 70px 0;
+    padding-top: 50px;
+  }
+  @include responsive(xxs) {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  .section--header {
+    @include responsive(sm) {
+      padding-bottom: 40px;
+    }
+    @include responsive(xs) {
+      padding-bottom: 30px;
+    }
+    p {
+      color: $primary-color;
+    }
+    h3 {
+      margin-bottom: 40px;
+    }
+  }
   &--wrapper {
     align-items: stretch;
     display: flex;
@@ -133,12 +188,46 @@
 }
 
 .benefits {
-  padding: 80px 0;
+  padding: 100px 0;
+  @include responsive(lg) {
+    padding: 70px 0;
+    padding-top: 50px;
+  }
+  @include responsive(xxs) {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  .section--header {
+    @include responsive(sm) {
+      padding-bottom: 40px;
+    }
+    @include responsive(xs) {
+      padding-bottom: 30px;
+    }
+    p {
+      color: $primary-color;
+    }
+    h3 {
+      margin-bottom: 40px;
+    }
+  }
   &__items {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-gap: 100px 30px;
     width: 100%;
+    @include responsive(xl) {
+      grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    }
+    @include responsive(lg) {
+      grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    }
+    @include responsive(md) {
+      grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    }
+    @include responsive(sm) {
+      grid-gap: 60px 30px;
+    }
   }
   &__item {
     display: flex;
@@ -148,17 +237,11 @@
       height: 48px;
     }
     &-title {
-      font-family: "Sora", Sans-serif;
-      font-size: 24px;
-      font-weight: 600;
-      line-height: 31px;
+      @extend .card-title;
       margin-bottom: 40px;
     }
     &-description {
-      font-family: "Karla", Sans-serif;
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 27px;
+      @extend .card-description;
     }
   }
 }

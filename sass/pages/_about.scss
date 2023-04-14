@@ -1,16 +1,35 @@
-
 .why {
-  background-color: #fbfbfd;
+  background-color: $white-color-4;
   padding: 100px 0;
+  @include responsive(lg) {
+    padding: 70px 0;
+    padding-top: 50px;
+  }
+  @include responsive(xxs) {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
   &__title {
     @extend .element-title;
     margin-bottom: 80px;
+    @include responsive(xxs) {
+      margin-bottom: 50px;
+    }
+    @include responsive(ss) {
+      margin-bottom: 40px;
+    }
   }
   &__items {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    grid-gap: 50px 30px;
+    @include responsive(sm) {
+      grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    }
+    @include responsive(xs) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
   &__item {
     display: flex;
@@ -24,17 +43,11 @@
       margin-bottom: 20px;
     }
     &-title {
-      color: #2e2e2e;
-      font-family: "Sora", Sans-serif;
-      font-size: 24px;
-      font-weight: 600;
+      @extend .card-title;
       margin-bottom: 28px;
     }
     &-description {
-      font-family: "Karla", Sans-serif;
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 27px;
+      @extend .card-description;
     }
   }
 }

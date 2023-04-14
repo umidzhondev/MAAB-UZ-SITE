@@ -7,4 +7,8 @@
     @include responsive(lg){
         max-width:100vw;
     }
+    @include responsive(xs) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
 }

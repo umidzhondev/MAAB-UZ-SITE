@@ -8,14 +8,17 @@
   border-style: solid;
   border-width: 2px;
   border-color: #ededef;
-  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-  background-color: #fbfbfd;
+  transition: border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  background-color: $white-color-4;
   .navbar {
     width: 100%;
-    background-color: #fbfbfd;
+    background-color:$white-color-4;
     @include flex(space-between, center, row);
     @include responsive(md) {
-      padding: 10px 0;
+      padding: 20px 0;
+    }
+    @include responsive(xs) {
+      padding: 5px 0;
     }
     &__main {
       @include flex(space-between, center, row);
@@ -26,6 +29,9 @@
     &__logo {
       margin-right: 117px;
       display: flex;
+      @include responsive(lg) {
+        margin-right: 80px;
+      }
       @include responsive(md) {
         margin-right: 70px;
       }
@@ -84,7 +90,7 @@
         border: none;
         option {
           background-color: $white-color;
-          color: #000;
+          color: $black-color;
         }
         @include responsive(xxs) {
           padding-inline: 0;
@@ -126,7 +132,7 @@
         display: block;
         width: 30px;
         height: 3px;
-        background: #2e2e2e;
+        background: $link-color;
         content: "";
         border-radius: 3px;
         position: absolute;

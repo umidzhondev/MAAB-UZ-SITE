@@ -19,6 +19,9 @@
     &-imgbox {
       width: 100%;
       height: 290px;
+      @include responsive(xs) {
+        height: 205px;
+      }
       img {
         height: 100%;
         width: 100%;
@@ -27,22 +30,23 @@
     }
     &-info {
       padding: 40px;
+      @include responsive(md) {
+        padding: 30px;
+      }
     }
     &-title {
       margin-bottom: 40px;
       font-family: "Sora";
       font-style: normal;
-      font-weight: 600;
-      font-size: 24px;
-      line-height: 130%;
-      color: #2e2e2e;
+      @extend .card-title;
+      @include responsive(md) {
+        margin-bottom: 30px;
+      }
     }
     &-description {
       font-family: "Karla";
       font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 24px;
+      @extend .card-description-2;
       color: #2e2e2e;
       padding-bottom: 18px;
     }
@@ -53,8 +57,11 @@
   &__cards {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+    grid-gap: 50px 30px;
+    @include responsive(xs) {
+      grid-gap: 50px;
+    }
   }
   &__card {
     flex: 1;
@@ -72,22 +79,33 @@
       height: 66px;
       width: auto;
       margin-bottom: 20px;
+      @include responsive(xs) {
+        height: 42px;
+      }
     }
 
     &-title {
       color: $primary-color;
       font-family: "Sora", Sans-serif;
-      font-size: 24px;
-      font-weight: 600;
-      margin-bottom: 40px;
+      @extend .card-title;
       line-height: 1.5;
+      @include responsive(xs) {
+        margin-bottom: 25px;
+        max-width: 70%;
+        font-size: 18px !important;
+        line-height: 1.7;
+      }
+      @include responsive(xxs) {
+        max-width: 90%;
+      }
     }
     &-description {
       font-family: "Karla", Sans-serif;
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 27px;
+      @extend .card-description-2;
       color: $primary-color;
+      @include responsive(xxs) {
+        max-width: 90%;
+      }
     }
   }
 }
@@ -254,9 +272,12 @@
     margin-top: 60px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    grid-gap: 20px;
-    @include responsive(xxs) {
-      grid-template-columns: repeat(1, 1fr);
+    grid-gap: 50px 20px;
+    @include responsive(lg) {
+      grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    }
+    @include responsive(md) {
+      grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
     }
   }
 
@@ -269,7 +290,7 @@
 
     img {
       height: 72px;
-      margin-bottom: 15px;
+      margin-bottom: 30px;
       @include responsive(xs) {
         height: 60px;
       }
@@ -282,7 +303,7 @@
       span {
         font-size: 22px;
         font-weight: 700;
-        font-family: "Sora",sans-serif;
+        font-family: "Sora", sans-serif;
         line-height: 1.3;
       }
     }
@@ -301,15 +322,25 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
+    @include responsive(md) {
+      grid-gap: 15px;
+    }
+    @include responsive(sm) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
   &__card {
     display: flex;
     flex-direction: column;
     padding: 40px 20px;
 
+    @include responsive(sm) {
+      padding: 40px 0px;
+      padding-top: 30px;
+      margin-bottom: 0;
+    }
     @include responsive(xs) {
-      padding-right: 5px;
-      border-radius: 10px;
+      padding-top: 10px;
     }
 
     &-list {
@@ -317,27 +348,31 @@
       list-style-type: none;
       display: flex;
       flex-direction: column;
-     
-
       gap: 15px;
+      @include responsive(sm) {
+        padding-left: 30px;
+      }
+
       @include responsive(xxs) {
-        padding-left: 10px;
-        gap: 10px;
+        padding-left: 20px;
       }
       li {
         font-size: 20px;
         font-weight: 400;
         line-height: 1.4;
-        @include responsive(xxs) {
-          font-size: 14px;
+        @include responsive(sm) {
+          font-size: 18px;
+        }
+        @include responsive(xs) {
+          font-size: 16px;
         }
         &::before {
-          content: "\2022"; 
+          content: "\2022";
           color: $main-red-color;
-          font-weight: bold; 
-          display: inline-block; 
-          width: 1em; 
-          margin-left: -1em; 
+          font-weight: bold;
+          display: inline-block;
+          width: 1em;
+          margin-left: -1em;
         }
       }
     }
