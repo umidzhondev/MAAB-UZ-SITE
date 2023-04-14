@@ -27,5 +27,13 @@
     background-color: $main-red-color;
     color: #fff;
     transition: all 0.4s ease-in-out;
+    min-width: max-content ;
+    @include responsive(xs) {
+      padding: 18px 40px;
+    }
+    @include responsive(xxs) {
+      padding: 16px 40px;
+      font-size: 20px;
+    }
   }
 }

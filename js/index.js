@@ -22,3 +22,6 @@ window.addEventListener("resize", () => {
     navBtn.children[0].classList.remove("active-burger");
   }
 });
+
+
+document.querySelector("#nowYear").textContent = new Date().getFullYear();

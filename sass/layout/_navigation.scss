@@ -5,7 +5,7 @@
   top: 0;
   left: 0;
   z-index: 9999;
-  background-color: #fbfbfd;
+  background-color: $white-color-4;
   height: 100%;
   &.open {
     display: block;
@@ -20,7 +20,7 @@
       height: 100%;
       left: 0;
       top: -100%;
-      background-color: #fbfbfd;
+      background-color: $white-color-4;
       z-index: 9999;
       position: relative;
       padding: 0 30px;
@@ -101,13 +101,16 @@
     margin: 0 32px;
     padding: 30px 0;
     height: 100%;
+    @include responsive(lg) {
+      margin: 0 20px;
+    }
     &.contact--us {
       background-color: $main-red-color;
-      color: #fff;
+      color: $white-color;
       padding: 20px;
       margin-inline: 0;
       a {
-        color: #fff;
+        color: $white-color;
       }
       &:hover {
         opacity: 0.956;
