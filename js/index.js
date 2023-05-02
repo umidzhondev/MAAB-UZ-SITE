@@ -1,7 +1,7 @@
 // * Navbar Menu
-const nav = document.querySelector(".mobile__menu");
+const nav = document.querySelector("#mobile__menu");
 const navBtn = document.querySelector(".navbar--open--icon");
-const navLinks = document.querySelectorAll(".mobile__nav-link");
+const navLinks = document.querySelectorAll(".nav__link");
 
 // * Navbar Menu Toggle Event
 navBtn.addEventListener("click", () => {

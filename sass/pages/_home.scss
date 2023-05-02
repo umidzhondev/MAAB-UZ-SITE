@@ -20,11 +20,61 @@
         rgba(255, 191, 0, 0.1) 0%,
         rgba(200, 77, 6, 0) 70%
       )
-      #fbfbfd;
+      #ffffff;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: 1200px 1200px, 1200px 1200px, 1200px 1200px;
   background-attachment: fixed;
   animation: bganimation 15s infinite;
+
+  &-main {
+    width: 100%;
+    background: $white-color;
+    padding: 100px 0 !important;
+    min-height: auto !important;
+    margin: 0;
+    @include responsive(md) {
+      padding: 80px 0 !important;
+    }
+    @include responsive(xs) {
+      padding: 60px 0 !important;
+    }
+    @include responsive(xxs) {
+      padding: 40px 0 !important;
+    }
+    &__title {
+      max-width:1190px;
+      font-family: $second-font;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 52px;
+      line-height: 140%;
+      color: #000;
+      word-wrap: normal;
+      word-break: normal;
+      @include responsive(lg) {
+        font-size: 46px;
+        max-width: 90%;
+      }
+      @include responsive(md) {
+        font-size: 42px;
+      }
+      @include responsive(sm) {
+        font-size: 38px;
+        max-width: 100%;
+      }
+      @include responsive(xs) {
+        font-size: 28px;
+      }
+      @include responsive(xxs) {
+        font-size: 24px;
+      }
+      div{
+        all: unset;
+        color: $main-red-color;
+      }
+    }
+  }
+
   @keyframes bganimation {
     50% {
       background-position-x: 1200px;
@@ -96,7 +146,7 @@
 }
 
 .contact__us {
-  background-image: url(../../image/contact/contact-bg.jpg);
+  background-image: url(../../image/contact/contact-bg-new.jpg);
   background-size: cover;
   padding: 120px 0;
   @include responsive(sm) {
@@ -106,17 +156,17 @@
     padding: 50px 0;
   }
   &.data--analytics {
-    background-image: url(../../image/contact/data-analytics.png);
+    background-image: url(../../image/contact/data-analytics-new.webp);
     background-color: #14141490;
     background-blend-mode: color;
   }
   &.data--visualization {
-    background-image: url(../../image/contact/Visualization-bg.jpg);
+    background-image: url(../../image/contact/data-visualization-new.webp);
     background-color: #14141490;
     background-blend-mode: color;
   }
   &.data--engineering {
-    background-image: url(../../image/contact/data-engineering.png);
+    background-image: url(../../image/contact/contact-bg-new.jpg);
     background-color: #14141490;
     background-blend-mode: color;
   }
@@ -132,7 +182,7 @@
     max-width: 1100px;
     margin-inline: auto;
     @include responsive(sm) {
-      font-size: 40px;
+      font-size: 36px;
     }
     @include responsive(xs) {
       font-size: 32px;
@@ -343,7 +393,7 @@
   &__items {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
     grid-gap: 60px 30px;
   }
   &__item {
@@ -597,7 +647,7 @@
     p {
       color: $primary-color;
     }
-    h3{
+    h3 {
       margin-bottom: 40px;
     }
   }

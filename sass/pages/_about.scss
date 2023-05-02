@@ -22,14 +22,8 @@
   &__items {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-    grid-gap: 50px 30px;
-    @include responsive(sm) {
-      grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-    }
-    @include responsive(xs) {
-      grid-template-columns: repeat(1, 1fr);
-    }
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+    grid-gap: 60px 30px;
   }
   &__item {
     display: flex;
@@ -48,6 +42,195 @@
     }
     &-description {
       @extend .card-description;
+    }
+  }
+}
+.about {
+  background-color: $white-color-3;
+  padding: 100px 0;
+  @include responsive(lg) {
+    padding: 70px 0;
+    padding-top: 50px;
+  }
+  @include responsive(xxs) {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+
+  .section--header {
+    flex: 1;
+    & > p {
+      max-width: 90%;
+      @extend .card-description;
+      @include responsive(lg) {
+        max-width: 98%;
+        text-align: justify;
+      }
+      @include responsive(sm) {
+        font-size: 16px;
+      }
+    }
+    &:last-child {
+      margin: 0;
+      padding: 0;
+    }
+    h3 {
+      @include responsive(sm) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+  &__accordion {
+    max-width: 800px;
+    width: 100%;
+    &-items {
+      width: 100%;
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      @include responsive(md) {
+        width: 95%;
+      }
+    }
+    &-item {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      &.active--accordion--item {
+        .about__accordion-body {
+          height: 100%;
+          visibility: visible;
+        }
+      }
+    }
+    &-header {
+      display: flex;
+      align-items: center;
+      background: #fff;
+      padding: 20px 20px;
+      gap: 15px;
+      img {
+        height: 18px;
+        @include responsive(xs) {
+          height: 14px;
+        }
+      }
+      h4 {
+        font-weight: 700;
+        font-size: 20px;
+        @include responsive(xs) {
+          font-size: 18px;
+        }
+      }
+    }
+    &-body {
+      border-top: 1px solid $secondary-color;
+      background-color: #fff;
+      padding: 20px 20px;
+      height: 0;
+      visibility: hidden;
+    }
+  }
+}
+
+.tools {
+  padding: 100px 0;
+  background-color: $link-color;
+  color: #fff;
+  @include responsive(lg) {
+    padding: 70px 0;
+    padding-top: 50px;
+  }
+  @include responsive(xxs) {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+
+  .section--header {
+    max-width: 800px;
+    margin-bottom: 60px;
+    @include responsive(sm) {
+      margin-bottom: 15px;
+    }
+    p {
+      color: #fff;
+    }
+  }
+
+  &__items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+  }
+  &__item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    &-title {
+      font-size: 32px;
+      margin-bottom: 60px;
+      @include responsive(xs) {
+        font-size: 28px;
+        margin-bottom: 40px;
+        line-height: 1.2;
+      }
+      @include responsive(xxs) {
+        font-size: 22px;
+      }
+    }
+    &-technologyies {
+      width: 100%;
+      display: flex;
+      align-items: stretch;
+      justify-content: flex-start;
+      gap: 30px 20px;
+      flex-wrap: wrap;
+      @include responsive(xs) {
+        gap: 15px;
+      }
+    }
+    &-technology {
+      display: flex;
+      flex-direction: column;
+      background-color: #fff;
+      border-radius: 10px;
+      width: 150px;
+      padding: 12px 5px;
+      color: $primary-color;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      @include responsive(xs) {
+        padding: 8px 5px;
+        width: 130px;
+      }
+      @include responsive(xxs) {
+        max-width:45%;
+        width: 100%;
+      }
+      img {
+        height: 60px;
+        object-fit: contain;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        max-width: 80%;
+        @include responsive(xs) {
+          height: 52px;
+        }
+      }
+      h5 {
+        font-weight: 700;
+        font-size: 16px;
+        width: 90%;
+        margin: 0 auto;
+        font-family: $second-font;
+        @include responsive(xs) {
+          font-size: 14px;
+        }
+      }
     }
   }
 }
