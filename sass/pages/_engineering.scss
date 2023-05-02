@@ -64,7 +64,9 @@
       @extend .card-title;
       margin-top: 0.5rem;
       margin-bottom: 1rem;
-      margin-left: 25px;
+      @include responsive(sm) {
+        margin-left: 25px;
+      }
       &::before {
         content: "\2022";
         color: $main-red-color;
