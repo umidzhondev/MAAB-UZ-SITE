@@ -1,79 +1,153 @@
-(function(){
-    const selectBox = document.getElementById("change-language");
-    const nav = document.getElementById("nav");
-    const mapHeader = document.querySelector("#map-header");
-    const footerTopHeader = document.querySelector("#footer-top-header");
-    const footerTopButton = document.querySelector("#footer-top-button");
-    const footerAddress = document.querySelector("#footer-address");
-    const footerPhone = document.querySelector("#footer-phone");
-    const footerCreate = document.querySelector("#footer-create");
-    const footerEmail = document.querySelector("#footer-email");
+(function () {
+  const selectBox = document.getElementById("change-language");
+  const nav = document.getElementById("nav");
+  const footerAddress = document.querySelector("#footer-address");
+  const footerPhone = document.querySelector("#footer-phone");
+  const footerEmail = document.querySelector("#footer-email");
+  const footerCreate = document.querySelector("#footer-create");
+  const footerTopText = document.querySelector("#footer-top-text");
+  const footerTopButton = document.querySelector("#footer-top-button");
 
-    translateContent()
-    selectBox.addEventListener("change", translateContent)
+  const contactHeader = document.querySelector("#contact--header");
+  const contactAddress  = document.querySelector("#contact--address");
+  const contactSupport1 = document.querySelector("#contact-support-1")
+  const contactSupport2 = document.querySelector("#contact-support-2")
+  const contactSupport3 = document.querySelector("#contact-support-3")
+  const contactEmail = document.querySelector("#contact--email")
+  const contactLocation = document.querySelector("#contact--location")
+  const contactPhone = document.querySelector("#contact--phone")
+
+  const mapHeader=  document.querySelector("#map--header");
+
+  translateContent();
+  selectBox.addEventListener("change", translateContent);
+
+  function translateContent() {
+    const languageValue = selectBox.options[selectBox.selectedIndex].value;
+
+    if (languageValue == "ru") {
+      // * Nav
+      nav.children[0].firstElementChild.textContent = "Главная";
+      nav.children[1].firstElementChild.textContent = "О нас";
+      nav.children[2].firstElementChild.textContent = "Анализ данных";
+      nav.children[3].firstElementChild.textContent = "Визуализация данных";
+      nav.children[4].firstElementChild.textContent = "Разработка данных";
+      nav.children[5].firstElementChild.textContent = "Контакты";
+
+
+      // * Footer
+      footerAddress.children[0].textContent = "Наш офис";
+      footerAddress.children[1].textContent =
+        "Узбекистан, г.Ташкент, Мирабадский район Нукус, 83А";
+      footerPhone.children[0].textContent = "Номер телефона";
+      footerPhone.children[1].textContent = "+998 99 8957706";
+      footerEmail.children[0].textContent = "Электронная почта";
+      footerEmail.children[1].textContent = "info@maab.uz";
+      footerCreate.textContent = "Все права защищены.";
+      footerTopText.textContent =
+        "Давайте вместе разрабатывать решения бизнес-аналитики для Вашей компании!";
+      footerTopButton.textContent = "Связаться с нами";
+
+          // * Contact
+          contactHeader.children[0].textContent = "Мы всегда готовы связаться с вами"
+          contactHeader.children[1].textContent = "Оставаться на связи"
     
-    function translateContent(){
-        const languageValue = selectBox.options[selectBox.selectedIndex].value;
- 
-        if(languageValue == "ru"){
-            nav.children[0].firstElementChild.textContent = "Главная";
-            nav.children[1].firstElementChild.textContent = "О нас";
-            nav.children[2].firstElementChild.textContent = "Адрес";
-            nav.children[3].firstElementChild.textContent = "Контакты";
-
-            mapHeader.children[0].textContent = "Наш адрес"
-            mapHeader.children[1].textContent = "Вы можете найти наш офис по этому адресу"
-
-            footerTopHeader.children[0].textContent = "Консалтинговое Агентство Для Вашего Бизнеса"
-            footerTopHeader.children[1].textContent = "быстрая лиса перепрыгивает через ленивую собаку"
-            footerTopButton.textContent = "Связаться с нами"
-            footerCreate.textContent = "© 2023. Все сервисы защищены"
-            footerAddress.children[0].textContent = "Наш офис"
-            footerAddress.children[1].textContent = "Узбекистан, г.Ташкент, Мирабадский район Нукус, 83А"
-            footerPhone.children[0].textContent = "Номер телефона"
-            footerPhone.children[1].textContent = "+998 99 8957706"
-            footerEmail.children[0].textContent = "Электронная почта"
-            footerEmail.children[1].textContent = "info@maab.uz"
-        }
-        if(languageValue == "uz"){
-            nav.children[0].firstElementChild.textContent = "Asosiy";
-            nav.children[1].firstElementChild.textContent = "Biz haqimizda";
-            nav.children[2].firstElementChild.textContent = "Manzil";
-            nav.children[3].firstElementChild.textContent = "Kontakt";
-
-            mapHeader.children[0].textContent = "Bizning manzil"
-            mapHeader.children[1].textContent = "Siz bizning ofisimizni ushbu manzilda topishingiz mumkin"
-
-            footerTopHeader.children[0].textContent = "Sizning Biznesingiz Uchun Konsalting Agentligi"
-            footerTopHeader.children[1].textContent = "tez tulki dangasa it ustidan sakrab o'tadi"
-            footerTopButton.textContent = "Biz bilan bog'laning"
-            footerCreate.textContent = "© 2023. Barcha xizmatlar himoyalangan"
-            footerAddress.children[0].textContent = "Bizning ofisimiz"
-            footerAddress.children[1].textContent = "O'zbekiston, Toshkent shahri, Nukus Mirobod tumani, 83a"
-            footerPhone.children[0].textContent = "Telefon raqami"
-            footerPhone.children[1].textContent = "+998 99 8957706"
-            footerEmail.children[0].textContent = "Elektron pochta"
-            footerEmail.children[1].textContent = "info@maab.uz"
-        }
-        if(languageValue == "en"){
-            nav.children[0].firstElementChild.textContent = "Home";
-            nav.children[1].firstElementChild.textContent = "About";
-            nav.children[2].firstElementChild.textContent = "Address";
-            nav.children[3].firstElementChild.textContent = "Contact";
-
-            mapHeader.children[0].textContent = "Our address"
-            mapHeader.children[1].textContent = "You can find our office at this address"
-
-            footerTopHeader.children[0].textContent = "Consulting Agency For Your Business"
-            footerTopHeader.children[1].textContent = "a fast fox jumps over a lazy dog"
-            footerTopButton.textContent = "Contact us"
-            footerCreate.textContent = "© 2023. All services are protected"
-            footerAddress.children[0].textContent = "Our office"
-            footerAddress.children[1].textContent = "Uzbekistan, Tashkent, Mirabad district Nukus, 83A"
-            footerPhone.children[0].textContent = "Phone number"
-            footerPhone.children[1].textContent = "+998 99 8957706"
-            footerEmail.children[0].textContent = "Email"
-            footerEmail.children[1].textContent = "info@maab.uz"
-        }
+          contactAddress.textContent =`Узбекистан, г.Ташкент, Мирабадский район Нукус, 83А`
+          contactEmail.textContent = `Электронная почта`
+          contactLocation.textContent = "Локация"
+          contactPhone.textContent  = "Телефон"
+          contactSupport1.textContent = "Получить поддержку"
+          contactSupport2.textContent = "Получить поддержку"
+          contactSupport3.textContent = "Получить поддержку"
+    
+          // * Map
+          mapHeader.children[0].textContent = "Our address"
+          mapHeader.children[1].textContent = "Вы можете найти наш офис по этому адресу"
+    
     }
-})()
+
+    if (languageValue == "uz") {
+      // * Nav
+      nav.children[0].firstElementChild.textContent = "Asosiy";
+      nav.children[1].firstElementChild.textContent = "Biz haqimizda";
+      nav.children[2].firstElementChild.textContent = "Ma'lumotlar Tahlili";
+      nav.children[3].firstElementChild.textContent =
+        "Ma'lumotlar vizualizatsiyasi";
+      nav.children[4].firstElementChild.textContent =
+        "Ma'lumotlar Muhandisligi";
+      nav.children[5].firstElementChild.textContent = "Kontaktlar";
+
+  
+
+      //   * Footer
+      footerAddress.children[0].textContent = "Bizning ofisimiz";
+      footerAddress.children[1].textContent =
+        "O'zbekiston, Toshkent shahri, Nukus Mirobod tumani, 83a";
+      footerPhone.children[0].textContent = "Telefon raqami";
+      footerPhone.children[1].textContent = "+998 99 8957706";
+      footerEmail.children[0].textContent = "Elektron pochta";
+      footerEmail.children[1].textContent = "info@maab.uz";
+      footerCreate.textContent = "Barcha huquqlar himoyalangan.";
+      footerTopText.textContent =
+        "Keling, Sizning kompaniyangiz uchun biznes tahlili yechimlarini birgalikda ishlab chiqamiz!";
+      footerTopButton.textContent = "Bog'lanish";
+
+         // * Contact
+         contactHeader.children[0].textContent = "Biz har doim siz bilan bog'lanishga tayyormiz"
+         contactHeader.children[1].textContent = "Aloqada Qoling"
+   
+         contactAddress.textContent =`O'zbekiston, Toshkent, Mirobod tumani Nukus, 83a`
+         contactEmail.textContent = `Elektron pochta`
+         contactLocation.textContent = "Lokatsiya"
+         contactPhone.textContent  = "Telefon"
+         contactSupport1.textContent = "Yordam olish"
+         contactSupport2.textContent = "Yordam olish"
+         contactSupport3.textContent = "Yordam olish"
+   
+         // * Map
+         mapHeader.children[0].textContent = "Bizning manzil"
+         mapHeader.children[1].textContent = "Bizning ofisimizni ushbu manzilda topishingiz mumkin"
+
+    }
+
+    if (languageValue == "en") {
+      // * Nav
+      nav.children[0].firstElementChild.textContent = "Home";
+      nav.children[1].firstElementChild.textContent = "About Us";
+      nav.children[2].firstElementChild.textContent = "Data Analytics";
+      nav.children[3].firstElementChild.textContent = "Data Visualization";
+      nav.children[4].firstElementChild.textContent = "Data Engineering";
+      nav.children[5].firstElementChild.textContent = "Contact Us";
+
+      //  * Footer
+      footerAddress.children[0].textContent = "Our office";
+      footerAddress.children[1].textContent =
+        "Uzbekistan, Tashkent, Mirabad district Nukus, 83A";
+      footerPhone.children[0].textContent = "Phone number";
+      footerPhone.children[1].textContent = "+998 99 8957706";
+      footerEmail.children[0].textContent = "Email";
+      footerEmail.children[1].textContent = "info@maab.uz";
+      footerCreate.textContent = "All rights reserved.";
+      footerTopText.textContent =
+        "Let's work together to develop business intelligence solutions for your company!";
+      footerTopButton.textContent = "Contact us";
+
+      // * Contact
+      contactHeader.children[0].textContent = "We are always ready to contact you"
+      contactHeader.children[1].textContent = "Stay In Touch"
+
+      contactAddress.textContent =`Uzbekistan, Tashkent, Mirabad district Nukus, 83A`
+      contactEmail.textContent = `Email`
+      contactLocation.textContent = "Location"
+      contactPhone.textContent  = "Phone"
+      contactSupport1.textContent = "Get support"
+      contactSupport2.textContent = "Get support"
+      contactSupport3.textContent = "Get support"
+
+      // * Map
+      mapHeader.children[0].textContent = "Our address"
+      mapHeader.children[1].textContent = "You can find our office at this address"
+
+    }
+  }
+})();

@@ -71,7 +71,7 @@
         <section class="contact" id="contact">
             <div class="container">
                 <div class="contact__content">
-                    <div class="section--header">
+                    <div class="section--header" id="contact--header">
                         <h3>
                             We are always ready to contact you
                         </h3>
@@ -79,29 +79,29 @@
                     </div>
                     <div class="contact__cards">
                         <div class="contact__card">
-                            <img src="../image/contact/phone-icon.svg" alt="icon...">
+                            <img src="../image/contact/message-icon.svg" alt="icon...">
                             <div class="contact__card-addresses">
                                 <span>info@maab.uz</span>
                             </div>
-                            <h4>Get support</h4>
-                            <a href="https://info@maab.uz" class="button__contact">Email</a>
+                            <h4 id="contact-support-1">Get support</h4>
+                            <a href="https://info@maab.uz" class="button__contact" id="contact--email">Email</a>
                         </div>
                         <div class="contact__card contact--card--active">
                             <img src="../image/contact/location-icon.svg" alt="icon...">
                             <div class="contact__card-addresses">
-                                <span>Uzbekistan, Tashkent, Mirabad district Nukus, 83A</span>
+                                <span id="contact--address">Uzbekistan, Tashkent, Mirabad district Nukus, 83A</span>
                             </div>
-                            <h4>Get support</h4>
+                            <h4 id="contact-support-2">Get support</h4>
                             <a href="https://yandex.ru/maps/10335/tashkent/house/YkAYdABhT0AFQFprfX55d3plbA==/?ll=69.271651%2C41.286668&z=16"
-                                class="button__contact">Location</a>
+                                class="button__contact" id="contact--location">Location</a>
                         </div>
                         <div class="contact__card">
-                            <img src="../image/contact/message-icon.svg" alt="icon...">
+                            <img src="../image/contact/phone-icon.svg" alt="icon...">
                             <div class="contact__card-addresses">
                                 <span>+998 99 8957706</span>
                             </div>
-                            <h4>Get support</h4>
-                            <a href="tel:+998998957706" class="button__contact">Phone</a>
+                            <h4 id="contact-support-3">Get support</h4>
+                            <a href="tel:+998998957706"  id="contact--phone" class="button__contact">Phone</a>
                         </div>
                     </div>
                 </div>
@@ -113,7 +113,7 @@
         <section class="map" id="map">
             <div class="container">
                 <div class="map__content">
-                    <div class="section--header" id="map-header">
+                    <div class="section--header" id="map--header">
                         <h3>Our address</h3>
                         <p>You can find our office at this address</p>
                     </div>
@@ -129,16 +129,17 @@
         <!--* MAP SECTION END -->
     </main>
 
-     <!--* FOOTER SECTION START -->
-     <section class="footer">
+
+       <!--* FOOTER SECTION START -->
+       <section class="footer">
         <div class="footer__content">
             <div class="footer__top">
                 <div class="container">
                     <div class="footer__top-content">
-                        <div class="footer__top-text" id="footer-top-header">
-                            <h3>Let<sup>●</sup>s develop
-                                software together!</h3>
-                            <span>Be the first to know about IT innovations and interesting case studies.</span>
+                        <div class="footer__top-text" data-aos="fade-up" id="footer-top-header">
+                            <h3 id="footer-top-text">Let's
+                                work together to develop business intelligence solutions for your company!
+                            </h3>
                         </div>
                         <a href="#" data-aos="fade-up" class="button__footer"
                             id="footer-top-button">Contact us</a>
@@ -188,9 +189,12 @@
                                     <a href="#" class="footer__logo">
                                         <img src="../image/footer/maab-white-logo.png" alt="MAAB-LOGO" />
                                     </a>
-                                    <span class="footer__create" id="footer__create"> © <span id="nowYear"></span>. All
-                                        Rights
-                                        Reserved.</span>
+                                    <span class="footer__create" >
+                                        © <span id="nowYear"></span>
+                                        <span id="footer-create">
+                                            All Rights Reserved.
+                                        </span>
+                                    </span>
                                 </div>
                                 <div id="footer-address" class="footer__item">
                                     <h3 class="footer__item-title">Our office</h3>
@@ -219,7 +223,7 @@
     <!--* FOOTER SECTION END -->
 
     <!--* JAVASCRIPT FILE START -->
-    <!-- <script src="../js/translate-contact.js"></script> -->
+    <script src="../js/translate-contact.js"></script>
     <script src="../js/index.js"></script>
     <!--* JAVASCRIPT FILE END -->
 </body>

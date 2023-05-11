@@ -37,23 +37,32 @@
         gap: 20px;
       }
       @include responsive(sm) {
-        margin-bottom: 40px;
+        margin-bottom: 20px;
       }
 
       h3 {
         @extend .element-title;
         font-size: 38px;
         margin-bottom: 20px;
+        max-width: 95%;
+        line-height: 1.5;
         sup {
           font-size: 22px;
           color: $main-red-color;
         }
+        @include responsive(lg) {
+          line-height: 1.5;
+          font-size: 34px;
+        }
+        @include responsive(md) {
+          font-size: 29px;
+        }
         @include responsive(xs) {
-          font-size: 32px;
+          font-size: 26px;
           margin-bottom: 15px;
         }
-        @include responsive(xxs) {
-          font-size: 28px;
+        @include responsive(ss) {
+          font-size: 23px;
           margin-bottom: 10px;
         }
       }
@@ -183,8 +192,8 @@
     span {
       color: $white-color;
       font-size: 12px;
-      span{
-        all:inherit;
+      span {
+        all: inherit;
         display: inline-block;
       }
       @include responsive(md) {
