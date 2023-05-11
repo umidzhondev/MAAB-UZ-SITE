@@ -36,7 +36,7 @@
     }
     &-title {
       margin-bottom: 40px;
-      font-family: "Sora";
+      font-family: "Sora",sans-serif;
       font-style: normal;
       @extend .card-title;
       @include responsive(md) {
@@ -44,7 +44,7 @@
       }
     }
     &-description {
-      font-family: "Karla";
+      font-family: "Karla",sans-serif;
       font-style: normal;
       @extend .card-description-2;
       color: #2e2e2e;
