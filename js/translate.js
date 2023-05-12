@@ -1,4 +1,3 @@
-import changeLanguagePage, { getLanguagePage } from "./language";
 
 (function () {
   const selectBox = document.getElementById("change-language");
