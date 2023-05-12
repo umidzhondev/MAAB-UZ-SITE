@@ -1,7 +1,7 @@
 var swiper3 = new Swiper(".use-cases--swiper", {
     slidesPerView: 5,
     autoplay: {
-      delay: 24444500,
+      delay: 2500,
       disableOnInteraction: false,
     },
     breakpoints: {

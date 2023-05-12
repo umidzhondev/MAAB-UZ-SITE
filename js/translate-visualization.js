@@ -25,22 +25,6 @@
   const cloudItemDescription2 = document.querySelector(
     "#cloud-item-description-2"
   );
-  const cloudItemListTitle1 = document.querySelector(
-    "#cloud-item-list-title-1"
-  );
-  const cloudItemListTitle2 = document.querySelector(
-    "#cloud-item-list-title-2"
-  );
-  const cloudItemOneText1 = document.querySelector("#cloud-item-1-text-1");
-  const cloudItemOneText2 = document.querySelector("#cloud-item-1-text-2");
-  const cloudItemOneText3 = document.querySelector("#cloud-item-1-text-3");
-  const cloudItemOneText4 = document.querySelector("#cloud-item-1-text-4");
-  const cloudItemOneText5 = document.querySelector("#cloud-item-1-text-5");
-  const cloudItemTwoText1 = document.querySelector("#cloud-item-2-text-1");
-  const cloudItemTwoText2 = document.querySelector("#cloud-item-2-text-2");
-  const cloudItemTwoText3 = document.querySelector("#cloud-item-2-text-3");
-  const cloudItemTwoText4 = document.querySelector("#cloud-item-2-text-4");
-  const cloudItemTwoText5 = document.querySelector("#cloud-item-2-text-5");
 
   const useCasesHeader = document.querySelector("#use-cases-header");
   const useCasesCardTitle1 = document.querySelector("#use-cases-card-title-1");
@@ -134,8 +118,8 @@
       businessItem4.children[1].textContent = `Мы создаем индивидуальные информационные панели и отчеты, которые показывают ключевые показатели для развития вашей компании и улучшения бизнес-аналитики.`;
       businessItem5.children[0].textContent = `Аналитика данных и оптимизация визуализации`;
       businessItem5.children[1].textContent = `Наша команда инженеров данных может оптимизировать существующие системы управления данными, улучшая процессы или устраняя зависимость от ручного ввода данных.`;
-      businessItem6.children[0].textContent = ``;
-      businessItem6.children[1].textContent = ``;
+      businessItem6.children[0].textContent = `Управление данными`;
+      businessItem6.children[1].textContent = `В нашу команду входят опытные специалисты с обширным опытом в области управления данными, охватывающие различные области, такие как сбор, хранение, защита и организация данных.`;
 
       // * Cloud
 
@@ -148,21 +132,7 @@
       cloudItemDescription1.textContent = `Облачная платформа Amazon Web Services (AWS) предлагает множество сервисов для расширенной аналитики, позволяя владельцам бизнеса получать ценную информацию и сравнивать свою производительность с показателями основных конкурентов. `;
       cloudItemDescription2.textContent = `В MAAB Innovation мы используем сервис Microsoft, который предлагает выдающиеся вычислительные возможности для обработки огромных объемов данных. Эта информация может быть преобразована в комплексную бизнес-аналитику для вашего проекта. Кроме того, эту службу можно легко интегрировать с Microsoft Power BI, которая обеспечивает дополнительную аналитику в различных областях.`;
 
-      cloudItemListTitle1.textContent = ``;
-      cloudItemListTitle2.textContent = ``;
-
-      cloudItemOneText1.textContent = ``;
-      cloudItemOneText2.textContent = ``;
-      cloudItemOneText3.textContent = ``;
-      cloudItemOneText4.textContent = ``;
-      cloudItemOneText5.textContent = ``;
-
-      cloudItemTwoText1.textContent = ``;
-      cloudItemTwoText2.textContent = ``;
-      cloudItemTwoText3.textContent = ``;
-      cloudItemTwoText4.textContent = ``;
-      cloudItemTwoText5.textContent = ``;
-
+      
       // * Use Cases
       useCasesHeader.children[0].textContent = `Примеры использования визуализации данных`;
       useCasesHeader.children[1].textContent = `Чтобы работать эффективно, компания должна иметь всестороннее представление о своих производственных процессах, финансовом положении и других важных факторах. MAAB Innovation признает важность объединения этой информации в единый источник, визуального представления каждой точки данных и выявления сильных и слабых сторон в бизнесе. Преимущества визуализации данных для бизнеса включают в себя:`;
@@ -303,8 +273,8 @@
       businessItem4.children[1].textContent = `Biz biznesingizni rivojlantirish va yaxshilashga yordam berish uchun muhim raqamlar va ma'lumotlarni aks ettiruvchi shaxsiy boshqaruv paneli va hisobotlarni tayyorlaymiz.`;
       businessItem5.children[0].textContent = `Ma'lumotlarni tahlil qilish va vizualizatsiyani optimallashtirish`;
       businessItem5.children[1].textContent = `Mutaxassislarimiz sizning ma'lumotlaringizni boshqarishni yaxshilashi mumkin. Biz jarayonlarni takomillashtirish orqali ishlarni yanada samaraliroq qilishimiz yoki ma'lumotlarni qo'lda kiritish zaruriyatini olib tashlashimiz mumkin.`;
-      businessItem6.children[0].textContent = ``;
-      businessItem6.children[1].textContent = ``;
+      businessItem6.children[0].textContent = `Ma'lumotlarni boshqarish`;
+      businessItem6.children[1].textContent = `Bizning jamoamiz ma'lumotlarni yig'ish, saqlash, himoya qilish va tartibga solish kabi turli sohalarni qamrab oluvchi ma'lumotlarni boshqarish bo'yicha katta tajribaga ega bo'lgan tajribali ekspertlarni o’z ichiga oladi.`;
 
       // * Cloud
 
@@ -317,21 +287,7 @@
       cloudItemDescription1.textContent = `Amazon Web Services (AWS) bulutli platformasi turli ilg‘or tahliliy xizmatlarni taklif etadi, bu esa biznes egalariga qimmatli ma’lumotlarga ega bo‘lish va o‘z ish faoliyatini asosiy raqobatchilar bilan solishtirish imkonini beradi. `;
       cloudItemDescription2.textContent = `MAAB Innovationda biz loyihangiz uchun ko'plab ma'lumotlarni qayta ishlash uchun Microsoft xizmatidan foydalanamiz. Bu sizning biznesingizni batafsil tahlil qilishimizga yordam beradi. Loyihangizga yanada koʻproq tahlillarni qoʻshish uchun biz Microsoft Power BI’dan ham foydalanamiz.`;
 
-      cloudItemListTitle1.textContent = ``;
-      cloudItemListTitle2.textContent = ``;
-
-      cloudItemOneText1.textContent = ``;
-      cloudItemOneText2.textContent = ``;
-      cloudItemOneText3.textContent = ``;
-      cloudItemOneText4.textContent = ``;
-      cloudItemOneText5.textContent = ``;
-
-      cloudItemTwoText1.textContent = ``;
-      cloudItemTwoText2.textContent = ``;
-      cloudItemTwoText3.textContent = ``;
-      cloudItemTwoText4.textContent = ``;
-      cloudItemTwoText5.textContent = ``;
-
+      
       // * Use Cases
       useCasesHeader.children[0].textContent = `Ma'lumotlarni vizualizatsiyasi qilish bo’yicha misollar`;
       useCasesHeader.children[1].textContent = `Samarali ishlash uchun kompaniya o'zining ishlab chiqarish jarayonlari, moliyaviy holati va boshqa muhim omillarni har tomonlama tushunishi va nazorat qilishi kerak. MAAB Innovationda biz barcha ma’lumotlarni bir joyga to‘plash, ularni vizual ko‘rsatish va biznesingizning qaysi qismlari yaxshi ishlayotgani va qaysi qismlarini yaxshilash kerakligini aniqlash muhimligini bilamiz. Biznes uchun ma'lumotlar vizualizatsiyasidan foydalanish ko'plab afzalliklarga ega, jumladan:`;
@@ -439,11 +395,7 @@
       evaluate market trends and analyze business performance.`;
 
       // * Contact Us
-      contactUsHeader.children[0].textContent = ` If you're looking to gain a comprehensive understanding of our services and develop a
-        tailor-made business intelligence solution that fits your unique needs, we invite you to contact
-        our team of experienced business intelligence consultants. Our experts will work with you to
-        optimize your business growth while keeping costs low, helping you achieve success and stay
-        ahead of the competition.`;
+      contactUsHeader.children[0].textContent = `Contact our experts to learn about our services, analyze and visualize your data, and create a customized BI solution that will help your business grow while saving you money and time.`;
       contactUsHeader.children[1].textContent = "Contact us";
 
       //  * Footer
@@ -474,7 +426,7 @@
       businessItem5.children[0].textContent = `Data analytics and visualization optimization`;
       businessItem5.children[1].textContent = `Our team of data engineers can optimize existing data management frameworks by improving processes or removing the dependency on manual data entry.`;
       businessItem6.children[0].textContent = `Data management`;
-      businessItem6.children[1].textContent = `MAAB Innovation LLC has a team of top experts who have worked for years in data management, including data collection, storage, protection, and organization.`;
+      businessItem6.children[1].textContent = `Our team includes experienced professionals with extensive expertise in the field of data management, covering various areas such as data collection, storage, protection, and organization.`;
 
       // * Cloud
 
@@ -486,21 +438,6 @@
 
       cloudItemDescription1.textContent = `The cloud-based Amazon Web Services (AWS) platform offers numerous services to carry out advanced analytics, enabling business owners to gain valuable insights and compare their performance with that of major competitors. At our organization, we utilize AWS to precisely identify various performance metrics.`;
       cloudItemDescription2.textContent = `At MAAB Innovation LLC, we utilize Microsoft's service, which offers outstanding computational capabilities for processing vast amounts of data. This information can be transformed into comprehensive business analytics for your project. Additionally, this service can be seamlessly integrated with Microsoft's Power BI, which provides supplementary analytics in various domains.`;
-
-      cloudItemListTitle1.textContent = `Here are the capacities of Amazon Web Services:`;
-      cloudItemListTitle2.textContent = `Here’s what Microsoft Azure provides for data:`;
-
-      cloudItemOneText1.textContent = ` Predicting business metrics`;
-      cloudItemOneText2.textContent = ` Ongoing machine learning analysis`;
-      cloudItemOneText3.textContent = ` Integration of data from different sources`;
-      cloudItemOneText4.textContent = ` Visualization of key performance indicator`;
-      cloudItemOneText5.textContent = ` Data storage and encryption`;
-
-      cloudItemTwoText1.textContent = ` Visualization with Azure Dashboards`;
-      cloudItemTwoText2.textContent = ` Integration of other cloud platforms`;
-      cloudItemTwoText3.textContent = ` Machine learning models and tools`;
-      cloudItemTwoText4.textContent = ` Prediction from artificial intelligence`;
-      cloudItemTwoText5.textContent = ` Ongoing data flow analytics`;
 
       // * Use Cases
       useCasesHeader.children[0].textContent = `Data visualization use cases`;
