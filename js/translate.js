@@ -1,3 +1,5 @@
+import changeLanguagePage, { getLanguagePage } from "./language";
+
 (function () {
   const selectBox = document.getElementById("change-language");
   const nav = document.getElementById("nav");
@@ -60,11 +62,14 @@
   const footerTopText = document.querySelector("#footer-top-text")
   const footerTopButton = document.querySelector("#footer-top-button");
 
+  
   translateContent();
   selectBox.addEventListener("change", translateContent);
 
+
   function translateContent() {
-    const languageValue = selectBox.options[selectBox.selectedIndex].value;
+    const languageValue = selectBox.options[selectBox.selectedIndex].value;    
+
 
     if (languageValue == "ru") {
       // * Nav

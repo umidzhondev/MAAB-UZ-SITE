@@ -63,22 +63,31 @@
 
       businessItem1.children[0].textContent = `Управление данными`;
       businessItem1.children[1].textContent = `В MAAB Innovation работает команда ведущих экспертов, которые много лет работают в области управления данными, включая сбор, хранение, защиту и организацию данных.`;
+      
       businessItem2.children[0].textContent = `Хранилище данных`;
       businessItem2.children[1].textContent = `Наши клиенты могут рассчитывать на то, что мы обеспечим надлежащее хранение данных, включая интеграцию информации, полученной из различных источников, в надежную базу данных.`;
+      
       businessItem3.children[0].textContent = `Преобразование данных`;
       businessItem3.children[1].textContent = `Мы конвертируем данные из любого возможного формата, чтобы они стали читабельными и совместимыми для анализа.`;
+      
       businessItem4.children[0].textContent = `Отображение данных`;
       businessItem4.children[1].textContent = `Наши специалисты обеспечивают беспрепятственный процесс гомогенизации данных путем сопоставления полей в разных базах данных для улучшения управления, интеграции и переноса данных.`;
+      
       businessItem5.children[0].textContent = `Качество данных`;
       businessItem5.children[1].textContent = `Мы оцениваем качество данных по различным параметрам, чтобы гарантировать, что информация, которую получают наши клиенты, соответствует всем стандартам качества данных.`;
+      
       businessItem6.children[0].textContent = `Аналитика данных как услуга`;
       businessItem6.children[1].textContent = `Мы предоставляем нашим клиентам все преимущества платформы DaaaS`;
-      businessItem7.children[0].textContent = `Модернизация данных`;
-      businessItem7.children[1].textContent = `MAAB Innovation помогает клиентам выполнить безошибочную и модернизацию данных любой сложности, включая перенос данных из устаревших баз данных в современные, в том числе с использованием облачных технологий.`;
-      businessItem8.children[0].textContent = `Консалтинг по данным`;
-      businessItem8.children[1].textContent = `Наши консультационные услуги помогают компаниям правильно использовать информацию в своей деятельности, поскольку только малое количество организаций знают, как применять данные, полученные от консалтинга по данным, в своей деловой рутине.`;
-      businessItem9.children[0].textContent = ``;
-      businessItem9.children[1].textContent = ``;
+      
+      businessItem7.children[0].textContent = `Расширенная аналитика`;
+      businessItem7.children[1].textContent = `Мы внедряем технологии машинного обучения и искусственного интеллекта для повышения эффективности и точности всей процедуры анализа данных.`;
+      
+      businessItem8.children[0].textContent = `Модернизация данных`;
+      businessItem8.children[1].textContent = `MAAB Innovation помогает клиентам выполнить безошибочную и модернизацию данных любой сложности, включая перенос данных из устаревших баз данных в современные, в том числе с использованием облачных технологий.`;
+      
+      businessItem9.children[0].textContent = `Консалтинг по данным`;
+      businessItem9.children[1].textContent = `Наши консультационные услуги помогают компаниям правильно использовать информацию в своей деятельности, поскольку только малое количество организаций знают, как применять данные, полученные от консалтинга по данным, в своей деловой рутине.`;
+      
     }
 
     if (languageValue == "uz") {
@@ -121,22 +130,31 @@
 
       businessItem1.children[0].textContent = `Ma'lumotlarni boshqarish`;
       businessItem1.children[1].textContent = `MAAB Innovation kompaniyasi ma’lumotlarni boshqarish, jumladan, ma’lumotlarni yig‘ish, saqlash, himoya qilish va tashkil etish bo‘yicha ko‘p yillik ish tajribasiga ega yetakchi mutaxassislar jamoasiga ega.`;
+      
       businessItem2.children[0].textContent = `Ma'lumotlar ombori`;
       businessItem2.children[1].textContent = `Mijozlarimiz ma'lumotlarning to'g'ri saqlanishini, shu jumladan turli manbalardan olingan ma'lumotlarni xavfsiz ma'lumotlar bazasiga integratsiyalashuvini ta'minlash uchun bizga ishonishlari mumkin.`;
+      
       businessItem3.children[0].textContent = `Ma'lumotlar transformatsiyasi`;
       businessItem3.children[1].textContent = `Biz ma'lumotlarni o'qish va tahlil qilish uchun mos qilish uchun har qanday mumkin bo'lgan formatga aylantiramiz.`;
+      
       businessItem4.children[0].textContent = `Ma'lumotlarni ko'rsatish`;
       businessItem4.children[1].textContent = `Mutaxassislarimiz o'xshash ma'lumotlarni topish va solishtirish orqali turli ma'lumotlar bazalari ma'lumotlari birgalikda yaxshi ishlashini tashkil qiladi. Bu ma'lumotlarni boshqarish, birlashtirish va ko'chirishni osonlashtirishga yordam beradi.`;
+      
       businessItem5.children[0].textContent = `Ma'lumotlar sifati`;
       businessItem5.children[1].textContent = `Mijozlarimiz oladigan ma'lumotlar yoqori sifat standartlariga javob berishini ta'minlash uchun biz ma'lumotlar sifatini turli usullar bilan baholaymiz.`;
+      
       businessItem6.children[0].textContent = `Ma'lumotlar tahlili xizmat sifatida`;
       businessItem6.children[1].textContent = `Biz mijozlarimizga DaaaS platformasining barcha afzalliklarini taqdim etamiz.`;
-      businessItem7.children[0].textContent = `Ma'lumotlarni modernizatsiya qilish`;
-      businessItem7.children[1].textContent = `MAAB Innovation mijozlarga har qanday murakkablikdagi ma'lumotlarni xatosiz shakllantirish va modernizatsiya qilish, jumladan, eski ma'lumotlar bazalaridan ma'lumotlarni zamonaviy ma'lumotlarga o'tkazish, shu jumladan bulutli texnologiyalardan foydalanishda yordam beradi.`;
-      businessItem8.children[0].textContent = `Ma'lumotlar bo'yicha konsalting`;
-      businessItem8.children[1].textContent = `Bizning konsalting xizmatlarimiz kompaniyalarga o'z faoliyatida ma'lumotlardan to'g'ri foydalanishda yordam beradi, chunki faqat oz sonli tashkilotlar ma'lumotlar konsaltingidan olingan ma'lumotlarni o'z biznes faoliyatida qanday qo'llashni biladi.`;
-      businessItem9.children[0].textContent = ``;
-      businessItem9.children[1].textContent = ``;
+      
+      businessItem7.children[0].textContent = `Kengaytirilgan tahlil`;
+      businessItem7.children[1].textContent = `Biz butun ma'lumotlarni tahlil qilish jarayonining samaradorligi va aniqligini oshirish uchun machine learning va sun'iy intellekt texnologiyalarini joriy qilamiz.`;
+    
+      businessItem8.children[0].textContent = `Ma'lumotlarni modernizatsiya qilish`;
+      businessItem8.children[1].textContent = `MAAB Innovation mijozlarga har qanday murakkablikdagi ma'lumotlarni xatosiz shakllantirish va modernizatsiya qilish, jumladan, eski ma'lumotlar bazalaridan ma'lumotlarni zamonaviy ma'lumotlarga o'tkazish, shu jumladan bulutli texnologiyalardan foydalanishda yordam beradi.`;
+      
+      businessItem9.children[0].textContent = `Ma'lumotlar bo'yicha konsalting`;
+      businessItem9.children[1].textContent = `Bizning konsalting xizmatlarimiz kompaniyalarga o'z faoliyatida ma'lumotlardan to'g'ri foydalanishda yordam beradi, chunki faqat oz sonli tashkilotlar ma'lumotlar konsaltingidan olingan ma'lumotlarni o'z biznes faoliyatida qanday qo'llashni biladi.`;
+      
     }
 
     if (languageValue == "en") {
@@ -180,22 +198,30 @@
 
       businessItem1.children[0].textContent = `Data management`;
       businessItem1.children[1].textContent = `MAAB Innovation LLC has a team of top experts who have worked for years in data management, including data collection, storage, protection, and organization.`;
+    
       businessItem2.children[0].textContent = `Data warehousing`;
       businessItem2.children[1].textContent = `Our clients can rely on us to provide proper data warehousing, including the integration of information received from various sources into a dependable database.`;
+      
       businessItem3.children[0].textContent = `Data transformation`;
       businessItem3.children[1].textContent = `We convert data from any possible format so that it becomes readable and compatible for analysis.`;
+     
       businessItem4.children[0].textContent = `Data mapping`;
       businessItem4.children[1].textContent = `Our experts ensure a seamless process of data homogenizing by matching fields in different databases to improve the management, integration, and migration of data.`;
+      
       businessItem5.children[0].textContent = `Data quality`;
       businessItem5.children[1].textContent = `We assess data quality with various parameters to guarantee that the information our clients receive meets all data quality standards.`;
+      
       businessItem6.children[0].textContent = `Data analytics as a service`;
       businessItem6.children[1].textContent = `MAAB Innovation LLC provides our clients with all the advantages of a DAaaS platform, which is a fast-growing niche that is expanding up to 30% in the next following years.`;
+      
       businessItem7.children[0].textContent = `Augmented analytics`;
-      businessItem7.children[1].textContent = `Our company introduces ML and AI tools to make the whole data analytics process more effective and accurate.`;
+      businessItem7.children[1].textContent = `We implement machine learning and artificial intelligence technologies to enhance the efficiency and precision of the entire data analysis procedure.`;
+      
       businessItem8.children[0].textContent = `Data modernization`;
       businessItem8.children[1].textContent = `MAAB Innovation LLC helps customers complete error-free and data modernization of any complexity, including transferring data from legacy databases to modern ones, including cloud technologies.`;
+      
       businessItem9.children[0].textContent = `Data advisory and consulting`;
-      businessItem9.children[1].textContent = `Our consultancy and advisory services help companies properly use the information in their business activities since only 24% of organizations know how to apply the data received from DA in their business routine according to the latest studies.`;
+      businessItem9.children[1].textContent = `Our consultancy and advisory services help companies properly use the information in their business activities since only a few organizations know how to apply the data received from DA in their business routine.`;
     }
   }
 })();

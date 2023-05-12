@@ -85,8 +85,8 @@
       engineeringItem7.children[0].textContent = `Консалтинг по обработке данных`;
       engineeringItem7.children[1].textContent = `Наша команда опытных инженеров имеет основополагающее значение для успешного управления данными. Наши инженеры по обработке данных проектируют данные и управляют ими, чтобы подготовить их к отчетности, что приводит к лучшим результатам и решениям, основанным на данных.`;
 
-      engineeringItem8.children[0].textContent = ``;
-      engineeringItem8.children[1].textContent = ``;
+      engineeringItem8.children[0].textContent = `Стратегия данных и дорожная карта`;
+      engineeringItem8.children[1].textContent = `Мы можем помочь вам разработать стратегию и дорожную карту данных, в которой будут описаны шаги, необходимые для достижения ваших целей и задач, связанных с данными.`;
     }
 
     if (languageValue == "uz") {
@@ -152,8 +152,8 @@
       engineeringItem7.children[0].textContent = `Ma'lumotlarni qayta ishlash bo'yicha konsalting`;
       engineeringItem7.children[1].textContent = `Ekspertlarimiz turli soha korxonalariga oid ma'lumotlarni boshqarishda katta tajribaga ega. Bizning ekspertlarimiz ma'lumotlarni ulardan foydalangan holda hisobotlar shakllantirishga tayyorlash uchun loyihalashtiradi, bu esa yaxshi natijalarga va ma'lumotlarga asoslangan qarorlar qabul qilishga yordam beradi.`;
 
-      engineeringItem8.children[0].textContent = ``;
-      engineeringItem8.children[1].textContent = ``;
+      engineeringItem8.children[0].textContent = `Ma'lumotlar strategiyasi va yo'l xaritasi`;
+      engineeringItem8.children[1].textContent = `Biz sizga maʼlumotlardan maqsad va vazifalaringizga erishish uchun zarur qadamlarni koʻrsatuvchi maʼlumotlar strategiyasi va yoʻl xaritasini ishlab chiqishda yordam bera olamiz.`;
     }
 
     if (languageValue == "en") {
@@ -216,9 +216,10 @@
       engineeringItem7.children[0].textContent = `Data Engineering Consulting`;
       engineeringItem7.children[1].textContent = `Our expert team of engineers is fundamental to successful data management. Our data engineers design and manage data to prepare it for reporting, leading to better results and data-driven decisions.`;
 
-      engineeringItem8.children[0].textContent = ` DataOps implementation
+      engineeringItem8.children[0].textContent = `Data Strategy and Roadmap
       `;
-      engineeringItem8.children[1].textContent = `DataOps practice improves communication, integration, and automatization of data flows between data managers and consumers across the company. We can optimize the DataOps, so your business can deliver relevant and high-quality data to customers.`;
+      engineeringItem8.children[1].textContent = `We can help you to develop a data strategy and roadmap, which outlines the steps needed to achieve your data-related goals and objectives.
+      `;
     }
   }
 })();
