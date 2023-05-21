@@ -38,7 +38,7 @@
       // * Footer
       footerAddress.children[0].textContent = "Наш офис";
       footerAddress.children[1].textContent =
-        "Узбекистан, г.Ташкент, Мирабадский район Нукус, 83А";
+        'г.Ташкент, Мирабадский район, Ойбека, 18/1 Бизнес Центр "ATRIUM" 5м этажЕ-1.';
       footerPhone.children[0].textContent = "Номер телефона";
       footerPhone.children[1].textContent = "+998 99 8957706";
       footerEmail.children[0].textContent = "Электронная почта";
@@ -52,7 +52,7 @@
           contactHeader.children[0].textContent = "Мы всегда готовы связаться с вами"
           contactHeader.children[1].textContent = "Оставаться на связи"
     
-          contactAddress.textContent =`Узбекистан, г.Ташкент, Мирабадский район Нукус, 83А`
+          contactAddress.textContent =`г.Ташкент, Мирабадский район, Ойбека, 18/1 Бизнес Центр "ATRIUM" 5м этажЕ-1.`
           contactEmail.textContent = `Электронная почта`
           contactLocation.textContent = "Локация"
           contactPhone.textContent  = "Телефон"
@@ -82,7 +82,7 @@
       //   * Footer
       footerAddress.children[0].textContent = "Bizning ofisimiz";
       footerAddress.children[1].textContent =
-        "O'zbekiston, Toshkent shahri, Nukus Mirobod tumani, 83a";
+        "Toshkent shahri, Mirobod tumani, Oybek, 18/1 ATRIUM biznes markazi 5m qavat-1.";
       footerPhone.children[0].textContent = "Telefon raqami";
       footerPhone.children[1].textContent = "+998 99 8957706";
       footerEmail.children[0].textContent = "Elektron pochta";
@@ -96,7 +96,7 @@
          contactHeader.children[0].textContent = "Biz har doim siz bilan bog'lanishga tayyormiz"
          contactHeader.children[1].textContent = "Aloqada Qoling"
    
-         contactAddress.textContent =`O'zbekiston, Toshkent, Mirobod tumani Nukus, 83a`
+         contactAddress.textContent =`Toshkent shahri, Mirobod tumani, Oybek, 18/1 ATRIUM biznes markazi 5m qavat-1.`
          contactEmail.textContent = `Elektron pochta`
          contactLocation.textContent = "Lokatsiya"
          contactPhone.textContent  = "Telefon"
@@ -122,7 +122,7 @@
       //  * Footer
       footerAddress.children[0].textContent = "Our office";
       footerAddress.children[1].textContent =
-        "Uzbekistan, Tashkent, Mirabad district Nukus, 83A";
+        "Tashkent, Mirabad district, Oybeka, 18/1 ATRIUM Business Center on the 5th floor-1.";
       footerPhone.children[0].textContent = "Phone number";
       footerPhone.children[1].textContent = "+998 99 8957706";
       footerEmail.children[0].textContent = "Email";
@@ -136,7 +136,7 @@
       contactHeader.children[0].textContent = "We are always ready to contact you"
       contactHeader.children[1].textContent = "Stay In Touch"
 
-      contactAddress.textContent =`Uzbekistan, Tashkent, Mirabad district Nukus, 83A`
+      contactAddress.textContent =`Tashkent, Mirabad district, Oybeka, 18/1 ATRIUM Business Center on the 5th floor-1.`
       contactEmail.textContent = `Email`
       contactLocation.textContent = "Location"
       contactPhone.textContent  = "Phone"

@@ -35,19 +35,21 @@
   const toolsItemTitle1 = document.querySelector("#tools-item-title-1");
   const toolsItemTitle2 = document.querySelector("#tools-item-title-2");
   const toolsItemTitle3 = document.querySelector("#tools-item-title-3");
-    const footerAddress = document.querySelector("#footer-address");
+  const footerAddress = document.querySelector("#footer-address");
   const footerPhone = document.querySelector("#footer-phone");
   const footerEmail = document.querySelector("#footer-email");
   const footerCreate = document.querySelector("#footer-create");
-  const footerTopText = document.querySelector("#footer-top-text")
+  const footerTopText = document.querySelector("#footer-top-text");
   const footerTopButton = document.querySelector("#footer-top-button");
+  const toolsItemsMainTitle = document.querySelector("#tools-items-main-title");
+  const teamTitle = document.querySelector("#team--title");
 
   translateContent();
   selectBox.addEventListener("change", translateContent);
 
   function translateContent() {
     const languageValue = selectBox.options[selectBox.selectedIndex].value;
-
+    localStorage.setItem("language", languageValue);
     if (languageValue == "ru") {
       // * Nav
       nav.children[0].firstElementChild.textContent = "Главная";
@@ -60,7 +62,6 @@
       hero.children[0].textContent = "Услуги бизнес-аналитики";
       hero.children[2].textContent =
         "Поскольку объем цифровых данных продолжает расти, процессы принятия решений становятся все более сложными. Именно здесь могут оказаться весьма полезными технологии бизнес-аналитики, интеллектуальный анализ данных, прогнозная аналитика и другие инструменты. В MAAB Innovation работает команда опытных профессионалов, которая специализируется на предоставлении ряда решений бизнес-аналитики для различных отраслей. Наши специалисты сотрудничают с клиентами для улучшения рабочих процессов и увеличения продаж.";
-
 
       //  * About
       aboutHeader.children[0].textContent = "Наша компания";
@@ -78,7 +79,7 @@
       aboutAccordionBody3.textContent = `Важно, чтобы вы обращались за советом к нужным специалистам в соответствующей области. Консультанты «MAAB INNOVATION» обладают опытом и способностью обрабатывать, анализировать и формулировать решения ваших проблем. Они заслуживают доверия, представительны и искренне увлечены вашими потребностями в бизнес-аналитике`;
 
       //  * Statement
-      statementTitle.textContent = "Наши заявления:";
+      statementTitle.textContent = "Миссия и видение";
       statementOne.children[0].textContent = `Наша миссия`;
       statementOne.children[1].textContent = `Наша миссия состоит в том, чтобы предоставить компаниям интеллектуальные идеи и инструменты для принятия решений на основе данных, что позволит им достичь своих стратегических целей и стимулировать рост. Мы стремимся предоставлять превосходные услуги бизнес-аналитики, которые позволяют нашим клиентам оставаться впереди своих конкурентов, снижать риски и извлекать выгоду из новых возможностей. Наша цель — стать надежным партнером для компаний, которым нужны действенные идеи и интеллектуальные решения.`;
       statementTwo.children[0].textContent = `Наше видение`;
@@ -111,16 +112,22 @@
       toolsItemTitle1.textContent = `БАЗА ДАННЫХ + ХРАНИЛИЩЕ`;
       toolsItemTitle2.textContent = `ИНТЕГРАЦИЯ + АНАЛИТИКА`;
       toolsItemTitle3.textContent = `ХРАНИЛИЩЕ ДАННЫХ + ИНФОРМАЦИОННЫЕ ПАНЕЛИ`;
-          // * Footer
-    footerAddress.children[0].textContent = "Наш офис"
-    footerAddress.children[1].textContent = "Узбекистан, г.Ташкент, Мирабадский район Нукус, 83А"
-    footerPhone.children[0].textContent = "Номер телефона"
-    footerPhone.children[1].textContent = "+998 99 8957706"
-    footerEmail.children[0].textContent = "Электронная почта"
-    footerEmail.children[1].textContent = "info@maab.uz"
-    footerCreate.textContent = "Все права защищены."
-    footerTopText.textContent  ="Давайте вместе разрабатывать решения бизнес-аналитики для Вашей компании!"
-    footerTopButton.textContent  ="Связаться с нами"
+      toolsItemsMainTitle.textContent = "Технологии, которые мы используем";
+      // * Footer
+      footerAddress.children[0].textContent = "Наш офис";
+      footerAddress.children[1].textContent =
+        'г.Ташкент, Мирабадский район, Ойбека, 18/1 Бизнес Центр "ATRIUM" 5м этажЕ-1.';
+      footerPhone.children[0].textContent = "Номер телефона";
+      footerPhone.children[1].textContent = "+998 99 8957706";
+      footerEmail.children[0].textContent = "Электронная почта";
+      footerEmail.children[1].textContent = "info@maab.uz";
+      footerCreate.textContent = "Все права защищены.";
+      footerTopText.textContent =
+        "Давайте вместе разрабатывать решения бизнес-аналитики для Вашей компании!";
+      footerTopButton.textContent = "Связаться с нами";
+      // * Team
+      teamTitle.textContent =
+        "Вы можете нанять наших экспертов по бизнес-аналитике";
     }
 
     if (languageValue == "uz") {
@@ -153,7 +160,7 @@
       topishga nisbatan ishonchli va chinakam ishtiyoqmandlar.`;
 
       //  * Statement
-      statementTitle.textContent = "Bizning bayonotlarimiz:";
+      statementTitle.textContent = "Bizning missiyamiz va maqsadlarimiz";
       statementOne.children[0].textContent = `Bizning missiyamiz`;
       statementOne.children[1].textContent = `Bizning missiyamiz tadbirkorlik subyektlari imkoniyatlarini kengaytirishdir. Biz buni tadbirkorlik subyektlari faoliyatini tahlil qilish (business intelligence) natijalariga ko’ra intellektual xulosalar taqdim qilish orqali amalga oshiramiz. Bizning xizmatlarimiz korxonalarga strategik maqsadlarga erishish va rivojlanish imkonini beradi. Biz taqdim qiladigan yuqori sifatli biznes tahlili (business intelligence) xizmatlaridan foydalanish mijozlarimizga o’z raqobatchilaridan oldinda bo’lishlariga, riskni kamaytirishlari va yangi imkoniyatlardan manfaat olsihlariga imkon beradi. Bizning missiyamiz intellektual yechimlarni taqdim qilish orqali ishonchli biznes hamkoriga aylanishdir.`;
       statementTwo.children[0].textContent = `Bizning maqsadimiz`;
@@ -181,22 +188,29 @@
       whyItem9.children[2].textContent = `Mijozlarimiz Jira kabi vazifalarni kuzatish tizimlarimizga va loyiha bilan bog'liq barcha ishlarni hujjatlashtiradigan bilimlar bazasiga doimiy kirish huquqiga ega.`;
 
       //  * Tools
-      toolsHeader.children[0].textContent = ``;
-      toolsHeader.children[1].textContent = ``;
+      toolsHeader.children[0].textContent = `MAAB Innovationda biz mijozlarimizga biznes tahlili xizmatlarini taqdim etish uchun zamonaviy texnologiyalar va vositalardan foydalanamiz. `;
+      toolsHeader.children[1].textContent = `Mijozlarimiz o’zlarida mavjud ma'lumotlarni mukammal anglab olishlari uchun ilg'or tahliliy dasturlardan va vizual vositalardan foydalanamiz. Bizning jamoamiz turli dasturlardan foydalanishga qodir, shuning uchun biz har bir mijozning o'ziga xos ehtiyojlariga mos keladigan maxsus yechimlarni yaratishimiz mumkin. Bizning asosiy maqsadimiz mijozlarimizga ma'lumotlarga asoslangan qarorlar qabul qilishda yordam berish va ularning biznesini rivojlantirishdir.`;
       toolsItemTitle1.textContent = `MA'LUMOTLAR BAZASI + SAQLASH`;
       toolsItemTitle2.textContent = `INTEGRATSIYA + TAHLIL`;
       toolsItemTitle3.textContent = `MA'LUMOTLAR OMBORI + ASBOBLAR PANELI`;
+      toolsItemsMainTitle.textContent = "Biz foydalanadigan texnologiyalar";
 
-          //   * Footer
-    footerAddress.children[0].textContent = "Bizning ofisimiz"
-    footerAddress.children[1].textContent = "O'zbekiston, Toshkent shahri, Nukus Mirobod tumani, 83a"
-    footerPhone.children[0].textContent = "Telefon raqami"
-    footerPhone.children[1].textContent = "+998 99 8957706"
-    footerEmail.children[0].textContent = "Elektron pochta"
-    footerEmail.children[1].textContent = "info@maab.uz"
-    footerCreate.textContent = "Barcha huquqlar himoyalangan."
-    footerTopText.textContent  ="Keling, Sizning kompaniyangiz uchun biznes tahlili yechimlarini birgalikda ishlab chiqamiz!"
-    footerTopButton.textContent  ="Bog'lanish"
+      //   * Footer
+      footerAddress.children[0].textContent = "Bizning ofisimiz";
+      footerAddress.children[1].textContent =
+        "Toshkent shahri, Mirobod tumani, Oybek, 18/1 ATRIUM biznes markazi 5m qavat-1.";
+      footerPhone.children[0].textContent = "Telefon raqami";
+      footerPhone.children[1].textContent = "+998 99 8957706";
+      footerEmail.children[0].textContent = "Elektron pochta";
+      footerEmail.children[1].textContent = "info@maab.uz";
+      footerCreate.textContent = "Barcha huquqlar himoyalangan.";
+      footerTopText.textContent =
+        "Keling, Sizning kompaniyangiz uchun biznes tahlili yechimlarini birgalikda ishlab chiqamiz!";
+      footerTopButton.textContent = "Bog'lanish";
+
+      // * Team
+      teamTitle.textContent =
+        "Bizning biznes tahlili bo'yicha ekspertlarimizni yollashingiz mumkin";
     }
 
     if (languageValue == "en") {
@@ -226,7 +240,7 @@
       aboutAccordionBody3.textContent = `It’s important that you seek advice from the right subject matter experts. “MAAB INNOVATION” consultants have the experience and the ability to process, analyze, and articulate solutions to your problems. They are credible, personable and genuinely passionate about your business intelligence needs.`;
 
       //  * Statement
-      statementTitle.textContent = "Our statements:";
+      statementTitle.textContent = "Mission and vision";
       statementOne.children[0].textContent = `Our mission`;
       statementOne.children[1].textContent = `Our mission is to empower businesses with intelligent insights and data-driven decision-making tools, enabling them to achieve their strategic objectives and drive growth. We strive to deliver superior business intelligence services that enable our clients to stay ahead of their competition, mitigate risks, and capitalize on new opportunities. Our goal is to become the go-to partner for businesses seeking actionable insights and intelligent solutions.`;
       statementTwo.children[0].textContent = `Our vision`;
@@ -259,17 +273,23 @@
       toolsItemTitle1.textContent = `DATABASE + STORAGE`;
       toolsItemTitle2.textContent = `INTEGRATION + ANALYTICS`;
       toolsItemTitle3.textContent = `DATAWAREHOUSE + DASHBOARDS`;
+      toolsItemsMainTitle.textContent = `Technologies we use`;
 
-          //  * Footer
-    footerAddress.children[0].textContent = "Our office"
-    footerAddress.children[1].textContent = "Uzbekistan, Tashkent, Mirabad district Nukus, 83A"
-    footerPhone.children[0].textContent = "Phone number"
-    footerPhone.children[1].textContent = "+998 99 8957706"
-    footerEmail.children[0].textContent = "Email"
-    footerEmail.children[1].textContent = "info@maab.uz"
-    footerCreate.textContent = "All rights reserved."
-    footerTopText.textContent  ="Let's work together to develop business intelligence solutions for your company!"
-    footerTopButton.textContent  ="Contact us"
+      //  * Footer
+      footerAddress.children[0].textContent = "Our office";
+      footerAddress.children[1].textContent =
+        "Tashkent, Mirabad district, Oybeka, 18/1 ATRIUM Business Center on the 5th floor-1.";
+      footerPhone.children[0].textContent = "Phone number";
+      footerPhone.children[1].textContent = "+998 99 8957706";
+      footerEmail.children[0].textContent = "Email";
+      footerEmail.children[1].textContent = "info@maab.uz";
+      footerCreate.textContent = "All rights reserved.";
+      footerTopText.textContent =
+        "Let's work together to develop business intelligence solutions for your company!";
+      footerTopButton.textContent = "Contact us";
+
+      // * Team
+      teamTitle.textContent = "You can hire our business intelligence experts";
     }
   }
 })();

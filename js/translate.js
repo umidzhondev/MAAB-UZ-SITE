@@ -1,6 +1,5 @@
-
+const selectBox = document.getElementById("change-language");
 (function () {
-  const selectBox = document.getElementById("change-language");
   const nav = document.getElementById("nav");
   const hero = document.querySelector(".hero__info");
   const servicesHeader = document.querySelector(".services--header");
@@ -14,13 +13,11 @@
   const servicesCard8 = document.querySelector("#services-card-8");
   const servicesCard9 = document.querySelector("#services-card-9");
   const contactUsHeader = document.querySelector("#contact-us-header");
-
   const exploreHeader = document.querySelector("#explore-header");
   const exploreCard1 = document.querySelector("#explore-card-1");
   const exploreCard2 = document.querySelector("#explore-card-2");
   const exploreCard3 = document.querySelector("#explore-card-3");
   const exploreCard4 = document.querySelector("#explore-card-4");
-
   const expertiseHeader = document.querySelector("#expertise-header");
   const expertiseCardTitleOne = document.querySelector(
     "#expertise-card-title-one"
@@ -44,7 +41,6 @@
   const expertiseCardListFour = document.querySelector(
     "#expertise-card-list-four"
   );
-
   const valuesHeader = document.querySelector("#values-header");
   const valuesCardOne = document.querySelector("#values-card-one");
   const valuesCardTwo = document.querySelector("#values-card-two");
@@ -58,17 +54,15 @@
   const footerPhone = document.querySelector("#footer-phone");
   const footerEmail = document.querySelector("#footer-email");
   const footerCreate = document.querySelector("#footer-create");
-  const footerTopText = document.querySelector("#footer-top-text")
+  const footerTopText = document.querySelector("#footer-top-text");
   const footerTopButton = document.querySelector("#footer-top-button");
 
-  
   translateContent();
   selectBox.addEventListener("change", translateContent);
 
-
   function translateContent() {
-    const languageValue = selectBox.options[selectBox.selectedIndex].value;    
-
+    const languageValue = selectBox.options[selectBox.selectedIndex].value;
+    localStorage.setItem("language", languageValue);
 
     if (languageValue == "ru") {
       // * Nav
@@ -165,54 +159,54 @@
       expertiseCardTitleThree.textContent = "Анализ данных";
 
       expertiseCardMainList.children[0].textContent =
-        "Преобразование данных, Сопоставление данных, Очистка данных, Обнаружение данных, Финансовое балансирование, Анализ и проверка данных, Миграция данных, Очистка корпоративных данных, устранение неполадок.";
+        "Преобразование данных, сопоставление данных, очистка данных, обнаружение данных, финансовый баланс, анализ и проверка данных, миграция данных, очистка корпоративных данных, устранение неполадок.";
       expertiseCardMainList.children[1].textContent =
-        "Отчеты самообслуживания, информационные панели и аналитика.";
+        "Самостоятельная отчетность, информационные панели и аналитика.";
       expertiseCardMainList.children[2].textContent =
-        "Централизованное хранилище данных для финансовой информации и информации о транзакциях.";
+        "Централизованное хранилище данных для финансовой и транзакционной информации.";
       expertiseCardMainList.children[3].textContent =
-        "Замените устаревшую или несовершенную технологию.";
+        "Замена устаревшей или несовершенной технологии.";
       expertiseCardMainList.children[4].textContent =
-        "Создавайте оптимизированные наборы данных для конкретных и целевых потребностей.";
+        "Создание оптимизированных наборов данных для конкретных и целевых потребностей.";
       expertiseCardMainList.children[5].textContent =
         "Включите аналитику практически в режиме реального времени с помощью корпоративных служб обработки данных.";
       expertiseCardMainList.children[6].textContent =
-        "Разработка систем бизнес-аналитики и доставки информации.";
+        "Проектирование систем бизнес-аналитики и доставки информации";
 
       expertiseCardListOne.children[0].textContent =
         "Облачные хранилища данных";
       expertiseCardListOne.children[1].textContent =
-        "Microsoft Azure (база данных SQL Azure, Azure AD, подписки, группы ресурсов, Azure Озеро данных, хранилище больших двоичных объектов Azure, Azure Synapse, службы анализа Azure)";
-      expertiseCardListOne.children[2].textContent = "Снежинка";
+        "Microsoft Azure (Azure SQL Database, Azure AD, Subscriptions, Resource Groups, Azure Data Lake, Azure Blob Storage, Azure Synapse, Azure Analysis Services)";
+      expertiseCardListOne.children[2].textContent = "Snowflake";
       expertiseCardListOne.children[3].textContent =
-        "Веб-сервисы Amazon (AWS Redshift, AWS S3 bucket, AWS RDS)";
+        "Amazon Web Services (AWS Redshift, AWS S3 bucket, AWS RDS)";
 
       expertiseCardListTwo.children[0].textContent =
         "Локальное хранилище данных : Microsoft SQL Server, Oracle";
       expertiseCardListTwo.children[1].textContent =
         "Локальные решения для миграции в облако.";
       expertiseCardListTwo.children[2].textContent =
-        "Решения для архитектуры локальных и облачных хранилищ данных.";
+        "Локальные и облачные решения архитектуры хранилища данных.";
       expertiseCardListTwo.children[3].textContent =
-        "Хранилище данных, поддерживающее отчеты самообслуживания, информационные панели и аналитику.";
+        "Хранилище данных, которое поддерживает самостоятельную отчетность, информационные панели и аналитику.";
 
       expertiseCardListThree.children[0].textContent =
-        "Мы внедряем ETL и ETL-решения.";
+        "Решения ETL и ELT";
       expertiseCardListThree.children[1].textContent =
-        "Инструменты разработки данных: MS SQL Server, службы интеграции SQL Server, Azure Data Factory, Azure Synapse Analytics, Azure Data bricks, Python (Pandas)";
+        "Инструменты обработки данных: MS SQL Server, SQL Server Integration Services, Azure Data Factory, Azure Synapse Analytics, Azure Data bricks, Python (Pandas)";
       expertiseCardListThree.children[2].textContent =
         "Пакетная обработка: Apache Spark (PySpark)";
       expertiseCardListThree.children[3].textContent =
         "Потоковая обработка: Apache Kafka";
       expertiseCardListThree.children[4].textContent =
-        "Инструменты мониторинга: Агент SQL Server, триггеры фабрики данных Azure, Apache Airflow.";
+        "Инструменты мониторинга: SQL Server Agent, Azure Data Factory Triggers, Apache Airflow.";
 
       expertiseCardListFour.children[0].textContent =
-        "Мы предоставляем углубленную аналитику данных, чтобы получить полезную бизнес-информацию.";
+        "Углубленная аналитика данных для предоставления полезных бизнес-идей.";
       expertiseCardListFour.children[1].textContent =
         "Инструменты анализа: SQL Server, MySQL, Postgres SQL, Snowflake Cloud SQL, Spark SQL.";
       expertiseCardListFour.children[2].textContent =
-        "Инструменты создания отчетов: MS Power BI, службы отчетов SQL Server, Tableau, QlikView, Qlik Sense.";
+        "Инструменты отчетности: MS Power BI, SQL Server Reporting Services, Tableau, QlikView, Qlik Sense";
 
       // * Values
       valuesHeader.children[0].textContent = "НАШИ ЦЕННОСТИ";
@@ -241,16 +235,18 @@
       // * Partners
       partnersTitle.textContent = "Наши партнеры";
 
-    // * Footer
-    footerAddress.children[0].textContent = "Наш офис"
-    footerAddress.children[1].textContent = "Узбекистан, г.Ташкент, Мирабадский район Нукус, 83А"
-    footerPhone.children[0].textContent = "Номер телефона"
-    footerPhone.children[1].textContent = "+998 99 8957706"
-    footerEmail.children[0].textContent = "Электронная почта"
-    footerEmail.children[1].textContent = "info@maab.uz"
-    footerCreate.textContent = "Все права защищены."
-    footerTopText.textContent  ="Давайте вместе разрабатывать решения бизнес-аналитики для Вашей компании!"
-    footerTopButton.textContent  ="Связаться с нами"
+      // * Footer
+      footerAddress.children[0].textContent = "Наш офис";
+      footerAddress.children[1].textContent =
+        'г.Ташкент, Мирабадский район, Ойбека, 18/1 Бизнес Центр "ATRIUM" 5м этажЕ-1.';
+      footerPhone.children[0].textContent = "Номер телефона";
+      footerPhone.children[1].textContent = "+998 99 8957706";
+      footerEmail.children[0].textContent = "Электронная почта";
+      footerEmail.children[1].textContent = "info@maab.uz";
+      footerCreate.textContent = "Все права защищены.";
+      footerTopText.textContent =
+        "Давайте вместе разрабатывать решения бизнес-аналитики для Вашей компании!";
+      footerTopButton.textContent = "Связаться с нами";
     }
 
     if (languageValue == "uz") {
@@ -355,54 +351,54 @@
       expertiseCardTitleThree.textContent = "Ma'lumotlarni tahlil qilish";
 
       expertiseCardMainList.children[0].textContent =
-        "Ma'lumotlarni konvertatsiya qilish, ma'lumotlarni xaritalash, ma'lumotlarni tozalash, ma'lumotlarni aniqlash, moliyaviy muvozanat, ma'lumotlarni tahlil qilish va tekshirish, ma'lumotlarni ko'chirish, korporativ ma'lumotlarni tozalash, muammolarni bartaraf etish.";
+        "Ma'lumotlarni o'zgartirish, ma'lumotlarni moslashtirish, ma'lumotlarni tozalash, ma'lumotlarni topish, moliyaviy balans, ma'lumotlarni tahlil qilish va tekshirish, ma'lumotlarni ko'chirish, korporativ ma'lumotlarni tozalash, muammolarni bartaraf etish.";
       expertiseCardMainList.children[1].textContent =
-        "O'z-o'ziga xizmat ko'rsatish hisobotlari, boshqaruv panellari va tahlillar.";
+        "Mustaqil hisobot berish tizimi, boshqaruv paneli va tahlillar.";
       expertiseCardMainList.children[2].textContent =
-        "Moliyaviy va tranzaksiya ma'lumotlari uchun markazlashtirilgan ma'lumotlar ombori.";
+        "Moliyaviy va tranzaksiya ma'lumotlari uchun markazlashtirilgan ma'lumotlar ombori";
       expertiseCardMainList.children[3].textContent =
-        "Eskirgan yoki nomukammal texnologiyani almashtiring.";
+        "Eskirgan yoki mukammal bo’lmagan texnologiyani almashtirish";
       expertiseCardMainList.children[4].textContent =
-        "Muayyan va maqsadli ehtiyojlar uchun optimallashtirilgan ma'lumotlar to'plamlarini yarating.";
+        "Muayyan va maqsadli ehtiyojlar uchun optimallashtirilgan ma'lumotlar to'plamini yaratish";
       expertiseCardMainList.children[5].textContent =
         "Korporativ ma'lumotlarni qayta ishlash xizmatlaridan foydalangan holda Real vaqt rejimida tahlillarni yoqing.";
       expertiseCardMainList.children[6].textContent =
-        "Biznes razvedkasi va axborot etkazib berish tizimlarini ishlab chiqish.";
+        "Biznes tahlili (business intelligence) va axborotni yetkazib berish tizimlarini loyihalash";
 
       expertiseCardListOne.children[0].textContent =
         "Bulutli ma'lumotlarni saqlash";
       expertiseCardListOne.children[1].textContent =
-        "Microsoft Azure (Azure SQL ma'lumotlar bazasi, Azure AD, obunalar, resurslar guruhlari, Azure ma'lumotlar ko'li, Azure Big binary Object Storage, Azure Synapse, Azure Analysis services)";
-      expertiseCardListOne.children[2].textContent = "Qor parchasi";
+        "Microsoft Azure (Azure SQL Database, Azure AD, Subscriptions, Resource Groups, Azure Data Lake, Azure Blob Storage, Azure Synapse, Azure Analysis Services)";
+      expertiseCardListOne.children[2].textContent = "Snowflake";
       expertiseCardListOne.children[3].textContent =
-        "Amazon veb-xizmatlari (AWS Redshift, AWS S3 bucket, AWS RDS)";
+        "Amazon Web Services (AWS Redshift, AWS S3 bucket, AWS RDS)";
 
       expertiseCardListTwo.children[0].textContent =
         "Mahalliy ma'lumotlarni saqlash: Microsoft SQL Server, Oracle";
       expertiseCardListTwo.children[1].textContent =
-        "Bulutga ko'chish uchun mahalliy echimlar.";
+        "Mahalliy bulutli migratsiya yechimlari.";
       expertiseCardListTwo.children[2].textContent =
-        "Mahalliy va bulutli ma'lumotlarni saqlash arxitekturasi echimlari.";
+        "Ma'lumotlar ombori arxitekturasi uchun mahalliy va bulutli yechimlar.";
       expertiseCardListTwo.children[3].textContent =
-        "O'z-o'ziga xizmat ko'rsatish hisobotlari, boshqaruv panellari va tahlillarni qo'llab-quvvatlaydigan ma'lumotlar ombori.";
+        "Mustaqil hisobotlar tizimi, ma’lumotlar paneli va tahlillarni qo'llab-quvvatlaydigan ma'lumotlar ombori.";
 
       expertiseCardListThree.children[0].textContent =
-        "Biz ETL va ETL echimlarini amalga oshirmoqdamiz.";
+        "ETL va ELT yechimlari";
       expertiseCardListThree.children[1].textContent =
-        "Ma'lumotlarni ishlab chiqish vositalari: MS SQL Server, SQL Server integratsiya xizmatlari, Azure Data Factory, Azure Synapse Analytics, Azure Data bricks, Python (Pandas)";
+        "Ma'lumotlarni qayta ishlash vositalari: MS SQL Server, SQL Server Integration Services, Azure Data Factory, Azure Synapse Analytics, Azure Data bricks, Python (Pandas)";
       expertiseCardListThree.children[2].textContent =
-        "Ommaviy ishlov berish: Apache Spark (Payspark)";
+        "Ommaviy ishlov berish: Apache Spark (PySpark)";
       expertiseCardListThree.children[3].textContent =
-        "Oqim bilan ishlash: Apache Kafka";
+        "Oqimni qayta ishlash: Apache Kafka";
       expertiseCardListThree.children[4].textContent =
-        "Monitoring vositalari: SQL Server agenti, Azure Data Factory triggerlari, Apache Air flow.";
+        "Monitoring vositalari: SQL Server Agent, Azure Data Factory Triggers, Apache Airflow.";
 
       expertiseCardListFour.children[0].textContent =
-        "Biz foydali biznes ma'lumotlarini olish uchun chuqur ma'lumotlar tahlilini taqdim etamiz.";
+        "Foydali biznes g’oyalarini taqdim etish uchun chuqur ma'lumotlar tahlili.";
       expertiseCardListFour.children[1].textContent =
-        "Tahlil vositalari: SQL Server, MySQL, Postgresql, Snowflake Cloud SQL, Spark SQL.";
+        "Tahlil vositalari: SQL Server, MySQL, Postgres SQL, Snowflake Cloud SQL, Spark SQL.";
       expertiseCardListFour.children[2].textContent =
-        "Hisobot vositalari: MS Power BI, SQL Server hisobot xizmatlari, Tableau, QlikView, Qlik Sense.";
+        "Hisobot vositalari: MS Power BI, SQL Server Reporting Services, Tableau, QlikView, Qlik Sense";
 
       // * Values
       valuesHeader.children[0].textContent = "BIZNING QADRIYATLARIMIZ";
@@ -431,17 +427,18 @@
       // * Partners
       partnersTitle.textContent = "Bizning hamkorlar";
 
-    //   * Footer
-    footerAddress.children[0].textContent = "Bizning ofisimiz"
-    footerAddress.children[1].textContent = "O'zbekiston, Toshkent shahri, Nukus Mirobod tumani, 83a"
-    footerPhone.children[0].textContent = "Telefon raqami"
-    footerPhone.children[1].textContent = "+998 99 8957706"
-    footerEmail.children[0].textContent = "Elektron pochta"
-    footerEmail.children[1].textContent = "info@maab.uz"
-    footerCreate.textContent = "Barcha huquqlar himoyalangan."
-    footerTopText.textContent  ="Keling, Sizning kompaniyangiz uchun biznes tahlili yechimlarini birgalikda ishlab chiqamiz!"
-    footerTopButton.textContent  ="Bog'lanish"
-
+      //   * Footer
+      footerAddress.children[0].textContent = "Bizning ofisimiz";
+      footerAddress.children[1].textContent =
+        "Toshkent shahri, Mirobod tumani, Oybek, 18/1 ATRIUM biznes markazi 5m qavat-1.";
+      footerPhone.children[0].textContent = "Telefon raqami";
+      footerPhone.children[1].textContent = "+998 99 8957706";
+      footerEmail.children[0].textContent = "Elektron pochta";
+      footerEmail.children[1].textContent = "info@maab.uz";
+      footerCreate.textContent = "Barcha huquqlar himoyalangan.";
+      footerTopText.textContent =
+        "Keling, Sizning kompaniyangiz uchun biznes tahlili yechimlarini birgalikda ishlab chiqamiz!";
+      footerTopButton.textContent = "Bog'lanish";
     }
 
     if (languageValue == "en") {
@@ -615,17 +612,18 @@
       // * Partners
       partnersTitle.textContent = "Our partners";
 
-    //  * Footer
-    footerAddress.children[0].textContent = "Our office"
-    footerAddress.children[1].textContent = "Uzbekistan, Tashkent, Mirabad district Nukus, 83A"
-    footerPhone.children[0].textContent = "Phone number"
-    footerPhone.children[1].textContent = "+998 99 8957706"
-    footerEmail.children[0].textContent = "Email"
-    footerEmail.children[1].textContent = "info@maab.uz"
-    footerCreate.textContent = "All rights reserved."
-    footerTopText.textContent  ="Let's work together to develop business intelligence solutions for your company!"
-    footerTopButton.textContent  ="Contact us"
-
+      //  * Footer
+      footerAddress.children[0].textContent = "Our office";
+      footerAddress.children[1].textContent =
+        "Tashkent, Mirabad district, Oybeka, 18/1 ATRIUM Business Center on the 5th floor-1.";
+      footerPhone.children[0].textContent = "Phone number";
+      footerPhone.children[1].textContent = "+998 99 8957706";
+      footerEmail.children[0].textContent = "Email";
+      footerEmail.children[1].textContent = "info@maab.uz";
+      footerCreate.textContent = "All rights reserved.";
+      footerTopText.textContent =
+        "Let's work together to develop business intelligence solutions for your company!";
+      footerTopButton.textContent = "Contact us";
     }
   }
 })();

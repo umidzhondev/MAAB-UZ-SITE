@@ -12,6 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
     <!--* FONT LINK END -->
+    <!--* SWIPER JS START -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!--* SWIPER JS END -->
 </head>
 
 <body>
@@ -166,7 +169,7 @@
         <section class="statement">
             <div class="container">
                 <div class="statement__content">
-                    <h2 class="statement__title" id="statement--title"> Our statements:</h2>
+                    <h2 class="statement__title" id="statement--title">Mission and vision:</h2>
                     <div class="statement__sections">
                         <div class="statement__section" id="statement-section-one">
                             <h3>Mission Statement</h3>
@@ -224,7 +227,7 @@
                                 transparency over the development process and proactive risk management.
                             </p>
                         </div>
-                     
+
                         <div class="why__item" id="why-item-3">
                             <div class="why__item-imgbox">
                                 <img src="../image/why/icon-4.svg" alt="why">
@@ -311,13 +314,25 @@
             <div class="container">
                 <div class="tools__content">
                     <div class="section--header" id="tools--header">
-                        <h3>At MAAB Innovation, we utilize the latest technologies, instruments, and tools to deliver comprehensive business intelligence services to our clients.
+                        <h3>At MAAB Innovation, we utilize the latest technologies, instruments, and tools to deliver
+                            comprehensive business intelligence services to our clients.
                         </h3>
                         <p>
-                            We leverage advanced analytics platforms to extract insights from data, and we employ powerful visualization tools to communicate those insights in an intuitive way. Our team is proficient in a variety of programming languages, allowing us to develop custom solutions tailored to the unique needs of each client. Ultimately, our goal is to empower our clients with the information they need to make data-driven decisions that drive their business forward.
+                            We leverage advanced analytics platforms to extract insights from data, and we employ
+                            powerful visualization tools to communicate those insights in an intuitive way. Our team is
+                            proficient in a variety of programming languages, allowing us to develop custom solutions
+                            tailored to the unique needs of each client. Ultimately, our goal is to empower our clients
+                            with the information they need to make data-driven decisions that drive their business
+                            forward.
                         </p>
                     </div>
+
                     <div class="tools__items">
+                        <div class="section--header">
+                            <h3 id="tools-items-main-title">
+                                Technologies we use
+                            </h3>
+                        </div>
                         <div class="tools__item">
                             <h3 class="tools__item-title" id="tools-item-title-1">
                                 DATABASE + STORAGE
@@ -332,7 +347,7 @@
                                     <h5>Azure SQL Database</h5>
                                 </div>
                                 <div class="tools__item-technology">
-                                    <img src="../image/tools/sql.png" alt="image...">
+                                    <img src="../image/tools/sql-server.png" alt="image...">
                                     <h5>SQL Server DB</h5>
                                 </div>
                                 <div class="tools__item-technology">
@@ -345,7 +360,7 @@
                                 </div>
                                 <div class="tools__item-technology">
                                     <img src="../image/tools/apache-cassandra.svg" alt="image...">
-                                    <h5>Apaceh Cassandra MI</h5>
+                                    <h5>Apache Cassandra MI</h5>
                                 </div>
                                 <div class="tools__item-technology">
                                     <img src="../image/tools/cosmos-db.jpg" alt="image...">
@@ -400,7 +415,7 @@
                                     <h5>S3</h5>
                                 </div>
                                 <div class="tools__item-technology">
-                                    <img src="../image/tools/ebs.svg" alt="image...">
+                                    <img src="../image/tools/abs-logo.png" alt="image...">
                                     <h5>EBS</h5>
                                 </div>
                                 <div class="tools__item-technology">
@@ -487,8 +502,8 @@
                                     <h5>AWS Glue</h5>
                                 </div>
                                 <div class="tools__item-technology">
-                                    <img src="../image/tools/ece.avif" alt="image...">
-                                    <h5>ECE</h5>
+                                    <img src="../image/tools/ESE-2.png" alt="image...">
+                                    <h5>EC2</h5>
                                 </div>
                                 <div class="tools__item-technology">
                                     <img src="../image/tools/aws-lambda.svg" alt="image...">
@@ -520,7 +535,7 @@
                                 </div>
                                 <div class="tools__item-technology">
                                     <img src="../image/tools/intellij.png" alt="image...">
-                                    <h5>Entellij</h5>
+                                    <h5>IntelliJ</h5>
                                 </div>
                             </div>
                         </div>
@@ -530,7 +545,7 @@
                             </h3>
                             <div class="tools__item-technologyies">
                                 <div class="tools__item-technology">
-                                    <img src="../image/tools/sql.png" alt="image...">
+                                    <img src="../image/tools/sql-server.png" alt="image...">
                                     <h5>SQL Server</h5>
                                 </div>
                                 <div class="tools__item-technology">
@@ -555,10 +570,10 @@
                                 </div>
                                 <div class="tools__item-technology">
                                     <img src="../image/tools/power-BL-services.png" alt="image...">
-                                    <h5>Power BL Services</h5>
+                                    <h5>Power BI Services</h5>
                                 </div>
                                 <div class="tools__item-technology">
-                                    <img src="../image/tools/Tableau.png" alt="image...">
+                                    <img src="../image/tools/tableau.png" alt="image...">
                                     <h5>Tableau Services Manager</h5>
                                 </div>
                                 <div class="tools__item-technology">
@@ -583,7 +598,7 @@
                                 </div>
                                 <div class="tools__item-technology">
                                     <img src="../image/tools/power-bi-embedded.webp" alt="image...">
-                                    <h5>Power BL Embedded</h5>
+                                    <h5>Power BI Embedded</h5>
                                 </div>
                             </div>
                         </div>
@@ -592,6 +607,286 @@
             </div>
         </section>
         <!--* TOOLS SECTION END -->
+
+        <!--* TEAM SECTION START -->
+        <section class="team">
+            <div class="container">
+                <div class="section--header">
+                    <h3 id="team--title">You can hire our business intelligence experts</h3>
+                </div>
+                <div class="team__swiper swiper">
+                    <div class="swiper-wrapper team--wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="team__item">
+                                <div class="team__item-main">
+                                    <div class="team__item-header">
+                                        <h2 class="team__item-title">Azatov F.</h2>
+                                        <p class="team__item-job">Middle Data Engineer</p>
+                                        <p class="team__item-experience">2.5+ years experience</p>
+                                    </div>
+                                    <div class="team__item-tools">
+                                        <div class="team__item-tool">T-SQL</div>
+                                        <div class="team__item-tool">PosSQL</div>
+                                        <div class="team__item-tool">Snowflake</div>
+                                        <div class="team__item-tool">SSIS</div>
+                                        <div class="team__item-tool">C#</div>
+                                        <div class="team__item-tool">PYTHON</div>
+                                        <div class="team__item-tool">Apache Airflow</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="team__item">
+                                <div class="team__item-main">
+                                    <div class="team__item-header">
+                                        <h2 class="team__item-title">Rahimov X.</h2>
+                                        <p class="team__item-job">Senior Full Stack BI Developer</p>
+                                        <p class="team__item-experience">4+ years experience</p>
+                                    </div>
+                                    <div class="team__item-tools">
+                                        <div class="team__item-tool">T-SQL</div>
+                                        <div class="team__item-tool">PL/SQL</div>
+                                        <div class="team__item-tool">PosSQL</div>
+                                        <div class="team__item-tool">Snowflake</div>
+                                        <div class="team__item-tool">SSIS</div>
+                                        <div class="team__item-tool">SSRS</div>
+                                        <div class="team__item-tool">PBI</div>
+                                        <div class="team__item-tool">Redsh</div>
+                                        <div class="team__item-tool">ADF</div>
+                                        <div class="team__item-tool">Glue</div>
+                                        <div class="team__item-tool">Quicksight</div>
+                                        <div class="team__item-tool">C#</div>
+                                        <div class="team__item-tool">PYTHON</div>
+                                        <div class="team__item-tool">Apache Airflow</div>
+                                        <div class="team__item-tool">GIT</div>
+                                        <div class="team__item-tool">TFS</div>
+                                        <div class="team__item-tool">AzDEV</div>
+                                        <div class="team__item-tool">BitBuck</div>
+                                        <div class="team__item-tool">Jira</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="team__item">
+                                <div class="team__item-main">
+                                    <div class="team__item-header">
+                                        <h2 class="team__item-title">Saidnazarov O.</h2>
+                                        <p class="team__item-job">Middle Full Stack BI Developer, DevOps Engineer</p>
+                                        <p class="team__item-experience">2.5+ years experience</p>
+                                    </div>
+                                    <div class="team__item-tools">
+                                        <div class="team__item-tool">T-SQL</div>
+                                        <div class="team__item-tool">PL/SQL</div>
+                                        <div class="team__item-tool">PosSQL</div>
+                                        <div class="team__item-tool">SSIS</div>
+                                        <div class="team__item-tool">SSRS</div>
+                                        <div class="team__item-tool">IICS</div>
+                                        <div class="team__item-tool">DBT</div>
+                                        <div class="team__item-tool">PBI</div>
+                                        <div class="team__item-tool">Redsh</div>
+                                        <div class="team__item-tool">ADF</div>
+                                        <div class="team__item-tool">Glue</div>
+                                        <div class="team__item-tool">Quicksight</div>
+                                        <div class="team__item-tool">C#</div>
+                                        <div class="team__item-tool">PYTHON</div>
+                                        <div class="team__item-tool">Apache Airflow</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="team__item">
+                                <div class="team__item-main">
+                                    <div class="team__item-header">
+                                        <h2 class="team__item-title">Qalandarov B.</h2>
+                                        <p class="team__item-job">Senior Full Stack BI Developer</p>
+                                        <p class="team__item-experience">4+ years experience</p>
+                                    </div>
+                                    <div class="team__item-tools">
+                                        <div class="team__item-tool">T-SQL</div>
+                                        <div class="team__item-tool">PL/SQL</div>
+                                        <div class="team__item-tool">Snowflake</div>
+                                        <div class="team__item-tool">SSIS</div>
+                                        <div class="team__item-tool">SSRS</div>
+                                        <div class="team__item-tool">PBI</div>
+                                        <div class="team__item-tool">TABLEAU</div>
+                                        <div class="team__item-tool">Redsh</div>
+                                        <div class="team__item-tool">ADF</div>
+                                        <div class="team__item-tool">Glue</div>
+                                        <div class="team__item-tool">Quicksight</div>
+                                        <div class="team__item-tool">C#</div>
+                                        <div class="team__item-tool">PYTHON</div>
+                                        <div class="team__item-tool">Apache Airflow</div>
+                                        <div class="team__item-tool">GIT</div>
+                                        <div class="team__item-tool">TFS</div>
+                                        <div class="team__item-tool">AzDEV</div>
+                                        <div class="team__item-tool">BitBuck</div>
+                                        <div class="team__item-tool">Jira</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="team__item">
+                                <div class="team__item-main">
+                                    <div class="team__item-header">
+                                        <h2 class="team__item-title">Qalandarov Sh.</h2>
+                                        <p class="team__item-job">Middle Data Engineer</p>
+                                        <p class="team__item-experience">2.5+ years experience</p>
+                                    </div>
+                                    <div class="team__item-tools">
+                                        <div class="team__item-tool">T-SQL</div>
+                                        <div class="team__item-tool">PL/SQL</div>
+                                        <div class="team__item-tool">PosSQL</div>
+                                        <div class="team__item-tool">Snowflake</div>
+                                        <div class="team__item-tool">SSIS</div>
+                                        <div class="team__item-tool">SSRS</div>
+                                        <div class="team__item-tool">IICS</div>
+                                        <div class="team__item-tool">PBI</div>
+                                        <div class="team__item-tool">Redsh</div>
+                                        <div class="team__item-tool">ADF</div>
+                                        <div class="team__item-tool">Glue</div>
+                                        <div class="team__item-tool">Quicksight</div>
+                                        <div class="team__item-tool">C#</div>
+                                        <div class="team__item-tool">PYTHON</div>
+                                        <div class="team__item-tool">Apache Airflow</div>
+                                        <div class="team__item-tool">GIT</div>
+                                        <div class="team__item-tool">TFS</div>
+                                        <div class="team__item-tool">AzDEV</div>
+                                        <div class="team__item-tool">BitBuck</div>
+                                        <div class="team__item-tool">Jira</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="team__item">
+                                <div class="team__item-main">
+                                    <div class="team__item-header">
+                                        <h2 class="team__item-title">Ro'ziboyev B.</h2>
+                                        <p class="team__item-job">Middle Data Analyst</p>
+                                        <p class="team__item-experience">2.5+ years experience</p>
+                                    </div>
+                                    <div class="team__item-tools">
+                                        <div class="team__item-tool">T-SQL</div>
+                                        <div class="team__item-tool">PosSQL</div>
+                                        <div class="team__item-tool">Snowflake</div>
+                                        <div class="team__item-tool">SSRS</div>
+                                        <div class="team__item-tool">PBI</div>
+                                        <div class="team__item-tool">Redsh</div>
+                                        <div class="team__item-tool">ADF</div>
+                                        <div class="team__item-tool">Glue</div>
+                                        <div class="team__item-tool">GIT</div>
+                                        <div class="team__item-tool">TFS</div>
+                                        <div class="team__item-tool">AzDEV</div>
+                                        <div class="team__item-tool">BitBuck</div>
+                                        <div class="team__item-tool">Jira</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="team__item">
+                                <div class="team__item-main">
+                                    <div class="team__item-header">
+                                        <h2 class="team__item-title">Nurullayev Sh.</h2>
+                                        <p class="team__item-job">Senior Full Stack BI Developer</p>
+                                        <p class="team__item-experience">4+ years experience</p>
+                                    </div>
+                                    <div class="team__item-tools">
+                                        <div class="team__item-tool">T-SQL</div>
+                                        <div class="team__item-tool">PosSQL</div>
+                                        <div class="team__item-tool">PL/SQL</div>
+                                        <div class="team__item-tool">SSIS</div>
+                                        <div class="team__item-tool">SSRS</div>
+                                        <div class="team__item-tool">IICS</div>
+                                        <div class="team__item-tool">PBI</div>
+                                        <div class="team__item-tool">TABLEAU</div>
+                                        <div class="team__item-tool">Redsh</div>
+                                        <div class="team__item-tool">ADF</div>
+                                        <div class="team__item-tool">Glue</div>
+                                        <div class="team__item-tool">Quicksight</div>
+                                        <div class="team__item-tool">C#</div>
+                                        <div class="team__item-tool">PYTHON</div>
+                                        <div class="team__item-tool">Apache Airflow</div>
+                                        <div class="team__item-tool">GIT</div>
+                                        <div class="team__item-tool">TFS</div>
+                                        <div class="team__item-tool">AzDEV</div>
+                                        <div class="team__item-tool">BitBuck</div>
+                                        <div class="team__item-tool">Jira</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="team__item">
+                                <div class="team__item-main">
+                                    <div class="team__item-header">
+                                        <h2 class="team__item-title">Ozodov R.</h2>
+                                        <p class="team__item-job">Senior Full Stack BI Developer</p>
+                                        <p class="team__item-experience">4+ years experience</p>
+                                    </div>
+                                    <div class="team__item-tools">
+                                        <div class="team__item-tool">T-SQL</div>
+                                        <div class="team__item-tool">PL/SQL</div>
+                                        <div class="team__item-tool">Snowflake</div>
+                                        <div class="team__item-tool">SSIS</div>
+                                        <div class="team__item-tool">SSRS</div>
+                                        <div class="team__item-tool">IICS</div>
+                                        <div class="team__item-tool">PBI</div>
+                                        <div class="team__item-tool">TABLEAU</div>
+                                        <div class="team__item-tool">Redsh</div>
+                                        <div class="team__item-tool">ADF</div>
+                                        <div class="team__item-tool">PYTHON</div>
+                                        <div class="team__item-tool">ApacheAirflow</div>
+                                        <div class="team__item-tool">GIT</div>
+                                        <div class="team__item-tool">AzDEV</div>
+                                        <div class="team__item-tool">BitBuck</div>
+                                        <div class="team__item-tool">Jira</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="team__item">
+                                <div class="team__item-main">
+                                    <div class="team__item-header">
+                                        <h2 class="team__item-title">Fahriddinov B.</h2>
+                                        <p class="team__item-job">Senior Full Stack BI Developer</p>
+                                        <p class="team__item-experience">4+ years experience</p>
+                                    </div>
+                                    <div class="team__item-tools">
+                                        <div class="team__item-tool">T-SQL</div>
+                                        <div class="team__item-tool">SSIS</div>
+                                        <div class="team__item-tool">SSRS</div>
+                                        <div class="team__item-tool">PBI</div>
+                                        <div class="team__item-tool">TABLEAU</div>
+                                        <div class="team__item-tool">C#</div>
+                                        <div class="team__item-tool">TFS</div>
+                                        <div class="team__item-tool">AzDEV</div>
+                                        <div class="team__item-tool">BitBuck</div>
+                                        <div class="team__item-tool">Jira</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--* TEAM SECTION END -->
 
     </main>
 
@@ -624,7 +919,7 @@
                                         fill="#d13b3b"></path>
                                 </svg>
                             </a>
-                            <a href="https://linkedin.com" class="footer__social-icon">
+                            <a href="http://www.linkedin.com/company/maab-innovation-llc/" class="footer__social-icon">
                                 <svg width="81" height="81" viewBox="0 0 81 81" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="40.6079" cy="40.9648" r="40" fill="white"></circle>
@@ -654,7 +949,7 @@
                                     <a href="#" class="footer__logo">
                                         <img src="../image/footer/maab-white-logo.png" alt="MAAB-LOGO" />
                                     </a>
-                                    <span class="footer__create" >
+                                    <span class="footer__create">
                                         © <span id="nowYear"></span>
                                         <span id="footer-create">
                                             All Rights Reserved.
@@ -663,9 +958,10 @@
                                 </div>
                                 <div id="footer-address" class="footer__item">
                                     <h3 class="footer__item-title">Our office</h3>
-                                    <a target="_blank" href="https://goo.gl/maps/MUXhi1YPK3oAPscUA"
+                                    <a target="_blank" href="https://goo.gl/maps/4xbxfbsUbBbnHSf16"
                                         class="footer__item-link">
-                                        Uzbekistan, Tashkent, Mirabad district Nukus, 83A
+                                        Tashkent, Mirabad district, Oybeka, 18/1 ATRIUM Business Center on the 5th
+                                        floor-1.
                                     </a>
                                 </div>
                             </div>
@@ -688,9 +984,11 @@
     <!--* FOOTER SECTION END -->
 
     <!--* JAVASCRIPT FILE START -->
-    
+
     <script src="../js/accordion.js"></script>
     <script src="../js/translate-about.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/swiper-about.js"></script>
     <script src="../js/index.js"></script>
     <!--* JAVASCRIPT FILE END -->
 </body>

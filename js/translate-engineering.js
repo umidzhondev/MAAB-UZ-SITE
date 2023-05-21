@@ -47,7 +47,7 @@
       // * Footer
       footerAddress.children[0].textContent = "Наш офис";
       footerAddress.children[1].textContent =
-        "Узбекистан, г.Ташкент, Мирабадский район Нукус, 83А";
+        'г.Ташкент, Мирабадский район, Ойбека, 18/1 Бизнес Центр "ATRIUM" 5м этажЕ-1.';
       footerPhone.children[0].textContent = "Номер телефона";
       footerPhone.children[1].textContent = "+998 99 8957706";
       footerEmail.children[0].textContent = "Электронная почта";
@@ -62,7 +62,7 @@
       engineeringHeader.children[1].textContent = `Инжиниринг данных включает в себя обработку огромных объемов необработанных данных, создание и поддержку конвейеров данных для объединения информации из различных источников и организации ее в одном месте для тщательного бизнес-анализа.`;
       engineeringHeader.children[2].textContent = `Преобразовывая данные в формат, пригодный для анализа специалистами по данным, инженеры данных предоставляют предприятиям точную аналитику, которая позволяет принимать решения на основе фактов. Точная обработка данных позволяет компаниям решать сложные бизнес-задачи и ускорять разработку новых продуктов и услуг при минимальных затратах.`;
 
-      engineeringMainTitle.textContent = "Решения для обработки данных, которые мы предоставляем"
+      engineeringMainTitle.textContent = "Решения для обработки данных, которые мы поставляем"
 
       engineeringItem1.children[0].textContent = `Построение архитектуры данных`;
       engineeringItem1.children[1].textContent = `Наша компания предоставляет настраиваемые и легкодоступные решения для архитектуры данных. Наша структура объединяет информацию о том, как данные передаются внутри конкретной организации. Наши решения по архитектуре данных помогают компаниям достичь своих целей.`;
@@ -113,7 +113,7 @@
       //   * Footer
       footerAddress.children[0].textContent = "Bizning ofisimiz";
       footerAddress.children[1].textContent =
-        "O'zbekiston, Toshkent shahri, Nukus Mirobod tumani, 83a";
+        "Toshkent shahri, Mirobod tumani, Oybek, 18/1 ATRIUM biznes markazi 5m qavat-1.";
       footerPhone.children[0].textContent = "Telefon raqami";
       footerPhone.children[1].textContent = "+998 99 8957706";
       footerEmail.children[0].textContent = "Elektron pochta";
@@ -128,7 +128,7 @@
       engineeringHeader.children[1].textContent = `Ma'lumotlar muhandisligi katta hajmdagi qayta ishlanmagan ma'lumotlarni qayta ishlashni, turli manbalardan olingan ma'lumotlarni birlashtirish va biznesni to'liq tahlil qilish maqsadida ularni bir joyda to’plash uchun ma'lumotlar konveyerlarini yaratish va saqlashni o'z ichiga oladi.`;
       engineeringHeader.children[2].textContent = `Ma'lumotlarni tahlilchilar tahlil qilishi uchun mos formatga aylantirish orqali ma'lumotlar muhandislari korxonalarni faktlarga asoslangan qarorlar qabul qilish imkonini beruvchi aniq tahlillar bilan ta'minlaydilar. Ma'lumotlarni to'g'ri qayta ishlash kompaniyalarga murakkab biznes muammolarini hal qilish va minimal xarajatlar bilan yangi mahsulot va xizmatlarni ishlab chiqishni tezlashtirish imkonini beradi.`;
 
-      engineeringMainTitle.textContent = `Biz etkazib beradigan ma'lumotlar muhandislik echimlari`
+      engineeringMainTitle.textContent = `Ma'lumotlarni qayta ishlash bo'yicha biz taqdim etadigan yechimlar`
 
 
       engineeringItem1.children[0].textContent = `Ma'lumotlar arxitekturasini qurish`;
@@ -178,7 +178,7 @@
       //  * Footer
       footerAddress.children[0].textContent = "Our office";
       footerAddress.children[1].textContent =
-        "Uzbekistan, Tashkent, Mirabad district Nukus, 83A";
+        "Tashkent, Mirabad district, Oybeka, 18/1 ATRIUM Business Center on the 5th floor-1.";
       footerPhone.children[0].textContent = "Phone number";
       footerPhone.children[1].textContent = "+998 99 8957706";
       footerEmail.children[0].textContent = "Email";

@@ -53,7 +53,6 @@
   const useCasesCardList5 = document.querySelector("#use-cases-card-list-5");
   const useCasesCardList6 = document.querySelector("#use-cases-card-list-6");
   const useCasesCardList7 = document.querySelector("#use-cases-card-list-7");
-  const useCasesCardList8 = document.querySelector("#use-cases-card-list-8");
   const useCasesCardList9 = document.querySelector("#use-cases-card-list-9");
   const useCasesCardList10 = document.querySelector("#use-cases-card-list-10");
   const useCasesCardList11 = document.querySelector("#use-cases-card-list-11");
@@ -94,7 +93,7 @@
       // * Footer
       footerAddress.children[0].textContent = "Наш офис";
       footerAddress.children[1].textContent =
-        "Узбекистан, г.Ташкент, Мирабадский район Нукус, 83А";
+        'г.Ташкент, Мирабадский район, Ойбека, 18/1 Бизнес Центр "ATRIUM" 5м этажЕ-1.';
       footerPhone.children[0].textContent = "Номер телефона";
       footerPhone.children[1].textContent = "+998 99 8957706";
       footerEmail.children[0].textContent = "Электронная почта";
@@ -144,7 +143,6 @@
       useCasesCardTitle5.textContent = `Финансы`;
       useCasesCardTitle6.textContent = `Рекрутинг и HR`;
       useCasesCardTitle7.textContent = `Безопасность`;
-      useCasesCardTitle8.textContent = `Обслуживание`;
       useCasesCardTitle9.textContent = `Розничная торговля и электронная коммерция`;
       useCasesCardTitle10.textContent = `Здравоохранение`;
       useCasesCardTitle11.textContent = `Транспорт`;
@@ -181,11 +179,6 @@
       useCasesCardList7.children[1].textContent = `Планирование технического обслуживания`;
       useCasesCardList7.children[2].textContent = `Анализ операционных рисков`;
 
-      useCasesCardList8.children[0].textContent = ``;
-      useCasesCardList8.children[1].textContent = ``;
-      useCasesCardList8.children[2].textContent = ``;
-      useCasesCardList8.children[3].textContent = ``;
-
       useCasesCardList9.children[0].textContent = `Анализ операционных рисков`;
       useCasesCardList9.children[1].textContent = `Оптимизация цен`;
       useCasesCardList9.children[2].textContent = `Прогноз тенденций рынка`;
@@ -220,8 +213,8 @@
       benefitsItem6.children[1].textContent = `Для составления аналитики на основе анализа данных`
       benefitsItem6.children[2].textContent = `Данные, визуальные эффекты и повествование можно объединить, чтобы создать убедительную историю, которая поможет ключевым лицам, принимающим решения, сосредоточиться на наиболее важных факторах.`
 
-      benefitsItem5.children[1].textContent = ``
-      benefitsItem5.children[2].textContent = ``
+      benefitsItem5.children[1].textContent = `Для получения ценной информации для вашего бизнеса`
+      benefitsItem5.children[2].textContent = `Визуализация данных может раскрыть захватывающие открытия и перспективы расширения бизнеса, а также предоставить обоснование для их поддержки.`
 
     }
 
@@ -249,7 +242,7 @@
       //   * Footer
       footerAddress.children[0].textContent = "Bizning ofisimiz";
       footerAddress.children[1].textContent =
-        "O'zbekiston, Toshkent shahri, Nukus Mirobod tumani, 83a";
+        "Toshkent shahri, Mirobod tumani, Oybek, 18/1 ATRIUM biznes markazi 5m qavat-1.";
       footerPhone.children[0].textContent = "Telefon raqami";
       footerPhone.children[1].textContent = "+998 99 8957706";
       footerEmail.children[0].textContent = "Elektron pochta";
@@ -260,7 +253,7 @@
       footerTopButton.textContent = "Bog'lanish";
 
       // * Business
-      businessHeader.children[0].textContent = `Ma'lumotlarni vizualizatsiya qilish`;
+      businessHeader.children[0].textContent = `Ma'lumotlarni vizualizatsiya qilish bo'yicha xizmatlarimiz`;
       businessHeader.children[1].textContent = `Biznesni shakllantirishning dastlabki bosqichlarida katta hajmdagi ma'lumotlar bilan ishlash qiyin bo'lishi mumkin, bu esa loyihani ishlab chiqishda kechikishlarga olib keladi. MAAB Innovationda biz murakkab ma'lumotlarni boshqarish va ulardan qiymat yaratishga yordam beradigan ma'lumotlarni vizualizatsiya qilish xizmatlarini taklif etamiz. Bizning xizmatlarimizga quyidagilar kiradi:`;
 
       businessItem1.children[0].textContent = `Ma'lumotlarni vizuallashtirish bo'yicha konsalting`;
@@ -299,7 +292,6 @@
       useCasesCardTitle5.textContent = `Moliya`;
       useCasesCardTitle6.textContent = `Ishga qabul qilish va HR`;
       useCasesCardTitle7.textContent = `Xizmat ko’rsatish`;
-      useCasesCardTitle8.textContent = `Xavfzsizlik`;
       useCasesCardTitle9.textContent = `Chakana savdo va elektron tijorat`;
       useCasesCardTitle10.textContent = `Sog'liqni saqlash`;
       useCasesCardTitle11.textContent = `Transport`;
@@ -336,11 +328,6 @@
       useCasesCardList7.children[1].textContent = `Ta'mirlashni rejalashtirish`;
       useCasesCardList7.children[2].textContent = `Operatsion xavf tahlili`;
 
-      useCasesCardList8.children[0].textContent = ``;
-      useCasesCardList8.children[1].textContent = ``;
-      useCasesCardList8.children[2].textContent = ``;
-      useCasesCardList8.children[3].textContent = ``;
-
       useCasesCardList9.children[0].textContent = `Maqsadli auditoriya tahlili`;
       useCasesCardList9.children[1].textContent = `Narxlarni optimallashtirish`;
       useCasesCardList9.children[2].textContent = `Bozor tendentsiyalari prognozi`;
@@ -375,8 +362,8 @@
       benefitsItem6.children[1].textContent = `Ma'lumotlarni tahlil qilish asosida tahlillarni yaratish`
       benefitsItem6.children[2].textContent = `Ma'lumotlar, vizual va boshqa tahlillar qaror qabul qiluvchilarga eng muhim omillarga e'tibor qaratishga yordam beradi.`
 
-      benefitsItem5.children[2].textContent = ``
-      benefitsItem5.children[1].textContent = ``
+      benefitsItem5.children[1].textContent = `Biznesingiz uchun qimmatli ma'lumotlar`
+      benefitsItem5.children[2].textContent = `Ma'lumotlarni vizualizatsiya qilish biznesni kengaytirish imkoniyatlarini ochib berishi va ularni qo'llab-quvvatlash uchun zarur asosni taqdim etishi mumkin.`
 
     }
 
@@ -401,7 +388,7 @@
       //  * Footer
       footerAddress.children[0].textContent = "Our office";
       footerAddress.children[1].textContent =
-        "Uzbekistan, Tashkent, Mirabad district Nukus, 83A";
+        "Tashkent, Mirabad district, Oybeka, 18/1 ATRIUM Business Center on the 5th floor-1.";
       footerPhone.children[0].textContent = "Phone number";
       footerPhone.children[1].textContent = "+998 99 8957706";
       footerEmail.children[0].textContent = "Email";
@@ -450,7 +437,6 @@
       useCasesCardTitle5.textContent = `Financials`;
       useCasesCardTitle6.textContent = `Recruiting and HR`;
       useCasesCardTitle7.textContent = `Maintenance`;
-      useCasesCardTitle8.textContent = `Security`;
       useCasesCardTitle9.textContent = `Retail and eCommerce`;
       useCasesCardTitle10.textContent = `Healthcare`;
       useCasesCardTitle11.textContent = `Transportation`;
@@ -487,11 +473,6 @@
       useCasesCardList7.children[1].textContent = `Maintenance planning`;
       useCasesCardList7.children[2].textContent = `Operational risk analysis`;
 
-      useCasesCardList8.children[0].textContent = `Cyber security analysis of site and servers`;
-      useCasesCardList8.children[1].textContent = `Fraud detection`;
-      useCasesCardList8.children[2].textContent = `Threat assessment analysis`;
-      useCasesCardList8.children[3].textContent = `Location and platform sourcing monitoring`;
-
       useCasesCardList9.children[0].textContent = `Target audience analysis`;
       useCasesCardList9.children[1].textContent = `Price optimization`;
       useCasesCardList9.children[2].textContent = `Market trend forecast`;
@@ -524,9 +505,10 @@
 
       
    
-      benefitsItem5.children[1].textContent = `To discover valuable business intelligence
+      benefitsItem5.children[1].textContent = `To discover valuable insights for your business
       `
-      benefitsItem5.children[2].textContent = `Data visualization enhanced with artificial intelligence can uncover compelling insights and opportunities for business growth and provide a justification for them.
+      benefitsItem5.children[2].textContent = `ENGLISH: To discover valuable insights for your business
+      Data visualization has the potential to reveal captivating discoveries and prospects for business expansion while furnishing a rationale to support them.
 
       `
       benefitsItem6.children[1].textContent = `To tell stories through data`
