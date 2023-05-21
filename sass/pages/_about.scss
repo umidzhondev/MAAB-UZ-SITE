@@ -164,6 +164,14 @@
     display: flex;
     flex-direction: column;
     gap: 80px;
+    .section--header {
+      padding-bottom: 0;
+      margin-bottom: 0;
+      h3 {
+        padding-bottom: 0;
+        margin-bottom: 0px;
+      }
+    }
   }
   &__item {
     width: 100%;
@@ -208,7 +216,7 @@
         width: 130px;
       }
       @include responsive(xxs) {
-        max-width:45%;
+        max-width: 45%;
         width: 100%;
       }
       img {
@@ -230,6 +238,101 @@
         @include responsive(xs) {
           font-size: 14px;
         }
+      }
+    }
+  }
+}
+
+.team {
+  padding: 100px 0;
+  @include responsive(lg) {
+    padding: 70px 0;
+    padding-top: 50px;
+  }
+  @include responsive(xxs) {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+
+  .section--header {
+    max-width: 800px;
+    margin-bottom: 40px;
+    padding-bottom: 0;
+    @include responsive(sm) {
+      margin-bottom: 15px;
+    }
+  }
+  &--wrapper {
+    align-items: stretch;
+    display: flex;
+    .swiper-slide {
+      height: auto !important;
+    }
+  }
+  &__swiper {
+    width: 100%;
+  }
+  &__item {
+    height: 100%;
+    cursor: grab;
+
+    width: 100%;
+    border: 1px solid #2e2e2e;
+    margin-right: 40px;
+    padding: 40px;
+    @include responsive(xxs) {
+      padding: 25px;
+    }
+    &-title {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 46px;
+      color: #2e2e2e;
+      font-family: "Sora", sans-serif;
+      margin-bottom: 20px;
+      @include responsive(sm) {
+        font-size: 30px;
+      }
+      @include responsive(xxs) {
+        font-size: 25px;
+      }
+    }
+    &-header {
+      margin-bottom: 40px;
+      p {
+        margin-bottom: 5px;
+        font-family: "Karla", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #2e2e2e;
+      }
+    }
+    &-tools {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+    &-tool {
+      display: inline-block;
+      font-family: "Karla",sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: #959595;
+      padding: 4px 12px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      margin-right: 8px;
+      margin-bottom: 8px;
+      transition: all 0.3s;
+      width: max-content;
+      &:hover{
+        color: $main-red-color;
+        cursor: pointer;
       }
     }
   }

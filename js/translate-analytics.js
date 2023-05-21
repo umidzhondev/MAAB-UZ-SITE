@@ -47,7 +47,7 @@
       // * Footer
       footerAddress.children[0].textContent = "Наш офис";
       footerAddress.children[1].textContent =
-        "Узбекистан, г.Ташкент, Мирабадский район Нукус, 83А";
+        'г.Ташкент, Мирабадский район, Ойбека, 18/1 Бизнес Центр "ATRIUM" 5м этажЕ-1.';
       footerPhone.children[0].textContent = "Номер телефона";
       footerPhone.children[1].textContent = "+998 99 8957706";
       footerEmail.children[0].textContent = "Электронная почта";
@@ -114,7 +114,7 @@
       //   * Footer
       footerAddress.children[0].textContent = "Bizning ofisimiz";
       footerAddress.children[1].textContent =
-        "O'zbekiston, Toshkent shahri, Nukus Mirobod tumani, 83a";
+        "Toshkent shahri, Mirobod tumani, Oybek, 18/1 ATRIUM biznes markazi 5m qavat-1.";
       footerPhone.children[0].textContent = "Telefon raqami";
       footerPhone.children[1].textContent = "+998 99 8957706";
       footerEmail.children[0].textContent = "Elektron pochta";
@@ -125,7 +125,7 @@
       footerTopButton.textContent = "Bog'lanish";
 
       // * Business
-      businessHeader.children[0].textContent = `Biznes razvedkasini qo'llash sohalari`;
+      businessHeader.children[0].textContent = `Biznes tahlilini qo'llash sohalari`;
       businessHeader.children[1].textContent = `Ma'lumotlar tahlili ko'p qirrali jarayon bo'lib, turli vositalar va amaliyotlardan foydalanishni o'z ichiga oladi. MAAB Innovation kompaniyasida biz mijozlarimizga ushbu sohada keng ko‘lamli xizmatlar, jumladan, konsalting, ma’lumotlarni boshqarish, xaritalash, sifatni baholash va boshqalarni taqdim etamiz. Bizning mijozlarimiz ma'lumotlar tahlili bo'shlig'idagi barcha eng mashhur xizmatlarni bir joyda qo’lga kiritishlari mumkin.`;
 
       businessItem1.children[0].textContent = `Ma'lumotlarni boshqarish`;
@@ -182,7 +182,7 @@
       //  * Footer
       footerAddress.children[0].textContent = "Our office";
       footerAddress.children[1].textContent =
-        "Uzbekistan, Tashkent, Mirabad district Nukus, 83A";
+        "Tashkent, Mirabad district, Oybeka, 18/1 ATRIUM Business Center on the 5th floor-1.";
       footerPhone.children[0].textContent = "Phone number";
       footerPhone.children[1].textContent = "+998 99 8957706";
       footerEmail.children[0].textContent = "Email";
