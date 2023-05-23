@@ -41,9 +41,3 @@ let pagesPath =[
   "/index.html",
 ]
 
-let locationPath = window.location.pathname;
-if(locationPath){
-  if(pagesPath.includes(locationPath)){
-    
-  }
-}
