@@ -1596,6 +1596,8 @@ button {
   background-image: url(../../image/contact/contact-bg-new.jpg);
   background-size: cover;
   padding: 120px 0;
+  background-color: rgba(20, 20, 20, 0.5647058824);
+  background-blend-mode: color;
 }
 @media screen and (max-width: 768px) {
   .contact__us {
