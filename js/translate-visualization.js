@@ -222,11 +222,11 @@
       // * Nav
       nav.children[0].firstElementChild.textContent = "Asosiy";
       nav.children[1].firstElementChild.textContent = "Biz haqimizda";
-      nav.children[2].firstElementChild.textContent = "Ma'lumotlar Tahlili";
+      nav.children[2].firstElementChild.textContent = "Ma'lumotlar tahlili";
       nav.children[3].firstElementChild.textContent =
         "Ma'lumotlar vizualizatsiyasi";
       nav.children[4].firstElementChild.textContent =
-        "Ma'lumotlar Muhandisligi";
+        "Ma'lumotlar muhandisligi";
       nav.children[5].firstElementChild.textContent = "Kontaktlar";
 
       // * Hero
