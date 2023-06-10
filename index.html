@@ -675,30 +675,30 @@
         <!--* PARTNERS SECTION END -->
 
         <!--* FORM SECTION START -->
-        <section class="form">
-            <div class="container">
-                <div class="form__content">
-                    <div class="section--header">
-                        <h3>Contact us</h3>
-                    </div>
-                    <form action="" class="form__form">
-                        <div class="form__row">
-                            <input type="text" placeholder="Name">
-                            <input type="text" placeholder="Surename">
-                        </div>
-                        <div class="form__row">
-                            <input type="date" >
-                            <input type="text" placeholder="Address">
-                        </div>
-                        <div class="form__row">
-                            <input type="text" placeholder="English level">
-                            <input type="text" placeholder="Phone number">
-                        </div>
-                        <input class="form__button" type="submit" value="Send">
-                    </form>
-                </div>
+     <section class="form">
+    <div class="container">
+        <div class="form__content">
+            <div class="section--header">
+                <h3>Contact us</h3>
             </div>
-        </section>
+            <form action="http://16.16.171.16:8080/api/v1/student/register" class="form__form" id="contactForm">
+                <div class="form__row">
+                    <input type="text" placeholder="Name" name="name" required>
+                    <input type="text" placeholder="Surname" name="surname" required>
+                </div>
+                <div class="form__row">
+                    <input type="date" name="date" required>
+                    <input type="text" placeholder="Address" name="address" required>
+                </div>
+                <div class="form__row">
+                    <input type="text" placeholder="English level" name="englishLevel" required>
+                    <input type="text" placeholder="Phone number" name="phoneNumber" required>
+                </div>
+                <input class="form__button" type="submit" value="Send">
+            </form>
+        </div>
+    </div>
+</section>
         <!--* FORM SECTION END -->
 
     </main>
