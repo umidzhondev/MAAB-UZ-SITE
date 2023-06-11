@@ -43,8 +43,20 @@ let pagesPath = [
 const contactForm = document.getElementById("contactForm");
 const submitButton = document.querySelector(".form__button");
 
+// Check if form has already been submitted
+const isSubmitted = sessionStorage.getItem("isSubmitted");
+
+if (isSubmitted) {
+  submitButton.disabled = true;
+}
+
 contactForm.addEventListener("submit", function (event) {
   event.preventDefault(); // Prevent the default form submission
+
+  if (isSubmitted) {
+    // If form has already been submitted, do nothing
+    return;
+  }
 
   // Disable the submit button to prevent multiple submissions
   submitButton.disabled = true;
@@ -55,10 +67,20 @@ contactForm.addEventListener("submit", function (event) {
   // Get form data
   const formData = new FormData(contactForm);
 
+  // Convert form data to JSON object
+  const jsonData = {};
+  for (const [key, value] of formData.entries()) {
+    jsonData[key] = value;
+  }
+  const jsonPayload = JSON.stringify(jsonData);
+
   // Make a POST request to the backend API
   fetch(contactForm.action, {
     method: "POST",
-    body: formData,
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: jsonPayload,
   })
     .then((response) => {
       // Restore the submit button and remove loading state
@@ -72,9 +94,12 @@ contactForm.addEventListener("submit", function (event) {
 
         // Disable form submission after success
         contactForm.removeEventListener("submit", onSubmit);
+
+        // Store information that form has been submitted
+        sessionStorage.setItem("isSubmitted", true);
+        submitButton.disabled = true;
       } else {
         // Handle errors if the request was not successful
-        alert("An error occurred. Please try again.");
       }
     })
     .catch((error) => {
@@ -83,6 +108,5 @@ contactForm.addEventListener("submit", function (event) {
       submitButton.value = "Send";
 
       // Handle network errors
-      alert("A network error occurred. Please try again.");
     });
 });
