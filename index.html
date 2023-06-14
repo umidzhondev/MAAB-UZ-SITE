@@ -767,33 +767,71 @@
                 />
               </div>
               <div class="form__row">
-                <input type="date" name="birthDate" required />
-                <input
-                  type="text"
-                  placeholder="Address"
-                  name="birthPlace"
-                  required
-                />
-              </div>
-              <div class="form__row">
-                <input
-                  type="text"
-                  placeholder="English level"
-                  name="englishLevel"
-                  required
-                />
                 <input
                   type="text"
                   placeholder="Phone number"
                   name="phoneNumber"
                   required
                 />
+                <input type="email" placeholder="Email" name="email" required />
               </div>
+
+              <div class="form__row">
+                <select name="englishProficiencyLevel" required>
+                  <option value="">Select English Proficiency Level</option>
+                  <option value="4">IELTS 4</option>
+                  <option value="5">IELTS 5</option>
+                  <option value="6">IELTS 6</option>
+                  <option value="7">IELTS 7</option>
+                  <option value="8">IELTS 8</option>
+                  <option value="9">IELTS 9</option>
+                </select>
+                <select name="problemSolvingSkills" required>
+                  <option value="">Select Problem Solving Skills</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+              </div>
+
+              <div class="form__row">
+                <select name="itskills" required>
+                  <option value="">Select IT Skills</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+                <select name="ittools" required>
+                  <option value="Volvo">Volvo</option>
+                  <option value="Mercedes">Mercedes</option>
+                  <option value="Hilux">Hilux</option>
+                  <option value="Corsa">Corsa</option>
+                  <option value="BMW">BMW</option>
+                  <option value="Ferrari">Ferrari</option>
+                  <option value="Gol">Gol</option>
+                </select>
+              </div>
+
               <input class="form__button" type="submit" value="Send" />
             </form>
           </div>
         </div>
       </section>
+
       <!--* FORM SECTION END -->
     </main>
     <!--* FOOTER SECTION START -->

@@ -1,5 +1,6 @@
 @charset "UTF-8";
-.section--title, .features__card h2 {
+.section--title,
+.features__card h2 {
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -9,7 +10,8 @@
   color: #191b1d;
 }
 @media screen and (max-width: 768px) {
-  .section--title, .features__card h2 {
+  .section--title,
+  .features__card h2 {
     font-size: 35px;
     line-height: 50px;
     width: 75%;
@@ -17,7 +19,8 @@
   }
 }
 @media screen and (max-width: 576px) {
-  .section--title, .features__card h2 {
+  .section--title,
+  .features__card h2 {
     width: 90%;
     font-weight: 700;
     font-style: 30px;
@@ -26,12 +29,14 @@
   }
 }
 @media screen and (max-width: 400px) {
-  .section--title, .features__card h2 {
+  .section--title,
+  .features__card h2 {
     width: 90%;
   }
 }
 
-.section--subtitle, .practice__card-info p {
+.section--subtitle,
+.practice__card-info p {
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
@@ -72,7 +77,8 @@
   }
 }
 
-.box--title, .practice__card-info h5 {
+.box--title,
+.practice__card-info h5 {
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -81,14 +87,16 @@
   color: #191b1d;
 }
 
-.image, .practice__card-imgbox img {
+.image,
+.practice__card-imgbox img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
-.main-text, .nav__link {
+.main-text,
+.nav__link {
   font-family: "Karla";
   font-style: normal;
   font-weight: 400;
@@ -96,24 +104,49 @@
   line-height: 150%;
 }
 
-.element-title, .why__title, .expertise__title, .statement__title, .facts__title, .contact__us-title, .footer__top-text h3, .section--header h3 {
+.element-title,
+.why__title,
+.expertise__title,
+.statement__title,
+.facts__title,
+.contact__us-title,
+.footer__top-text h3,
+.section--header h3 {
   font-family: "Sora", Sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 46px;
 }
 @media screen and (max-width: 768px) {
-  .element-title, .why__title, .expertise__title, .statement__title, .facts__title, .contact__us-title, .footer__top-text h3, .section--header h3 {
+  .element-title,
+  .why__title,
+  .expertise__title,
+  .statement__title,
+  .facts__title,
+  .contact__us-title,
+  .footer__top-text h3,
+  .section--header h3 {
     font-size: 30px;
   }
 }
 @media screen and (max-width: 400px) {
-  .element-title, .why__title, .expertise__title, .statement__title, .facts__title, .contact__us-title, .footer__top-text h3, .section--header h3 {
+  .element-title,
+  .why__title,
+  .expertise__title,
+  .statement__title,
+  .facts__title,
+  .contact__us-title,
+  .footer__top-text h3,
+  .section--header h3 {
     font-size: 25px;
   }
 }
 
-.element-description, .hero__description, .footer__item-title, .footer__top-text span, .section--header p {
+.element-description,
+.hero__description,
+.footer__item-title,
+.footer__top-text span,
+.section--header p {
   color: #2e2e2e;
   font-family: "Karla", Sans-serif;
   font-size: 22px;
@@ -121,7 +154,8 @@
   line-height: 28px;
 }
 
-.hero-title, .hero__title {
+.hero-title,
+.hero__title {
   margin-top: 0;
   margin-bottom: 30px;
   font-family: "Sora", sans-serif;
@@ -131,7 +165,8 @@
   line-height: 70px;
 }
 @media screen and (max-width: 768px) {
-  .hero-title, .hero__title {
+  .hero-title,
+  .hero__title {
     padding-top: 42px;
     margin-top: 0;
     font-style: normal;
@@ -162,7 +197,16 @@
   }
 }
 
-.card-title, .engineering__item-title, .benefits__item-title, .cloud__item-title, .why__item-title, .business__item h4, .statement__section h3, .values__item-title, .explore__card-title, .services__card-title {
+.card-title,
+.engineering__item-title,
+.benefits__item-title,
+.cloud__item-title,
+.why__item-title,
+.business__item h4,
+.statement__section h3,
+.values__item-title,
+.explore__card-title,
+.services__card-title {
   font-family: "Sora", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -171,31 +215,62 @@
   color: #2e2e2e;
 }
 @media screen and (max-width: 576px) {
-  .card-title, .engineering__item-title, .benefits__item-title, .cloud__item-title, .why__item-title, .business__item h4, .statement__section h3, .values__item-title, .explore__card-title, .services__card-title {
+  .card-title,
+  .engineering__item-title,
+  .benefits__item-title,
+  .cloud__item-title,
+  .why__item-title,
+  .business__item h4,
+  .statement__section h3,
+  .values__item-title,
+  .explore__card-title,
+  .services__card-title {
     font-size: 20px !important;
     line-height: 24px !important;
   }
 }
 
-.card-description, .benefits__item-description, .about .section--header > p, .why__item-description, .values__item-description {
+.card-description,
+.benefits__item-description,
+.about .section--header > p,
+.why__item-description,
+.values__item-description {
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
 }
 @media screen and (max-width: 576px) {
-  .card-description, .benefits__item-description, .about .section--header > p, .why__item-description, .values__item-description {
+  .card-description,
+  .benefits__item-description,
+  .about .section--header > p,
+  .why__item-description,
+  .values__item-description {
     font-size: 16px;
     line-height: 21px;
   }
 }
 
-.card-description-2, .engineering__item-description, .cloud__item-list__item, .cloud__item-main__title, .cloud__item-description, .business__item p, .explore__card-description, .services__card-description {
+.card-description-2,
+.engineering__item-description,
+.cloud__item-list__item,
+.cloud__item-main__title,
+.cloud__item-description,
+.business__item p,
+.explore__card-description,
+.services__card-description {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
 }
 @media screen and (max-width: 576px) {
-  .card-description-2, .engineering__item-description, .cloud__item-list__item, .cloud__item-main__title, .cloud__item-description, .business__item p, .explore__card-description, .services__card-description {
+  .card-description-2,
+  .engineering__item-description,
+  .cloud__item-list__item,
+  .cloud__item-main__title,
+  .cloud__item-description,
+  .business__item p,
+  .explore__card-description,
+  .services__card-description {
     font-size: 14px !important;
     line-height: 20px !important;
   }
@@ -250,7 +325,8 @@ img {
 }
 
 button,
-input {
+input,
+select {
   border: none;
   outline: none;
 }
@@ -416,8 +492,29 @@ button {
   width: 100%;
   border: 1px solid #666;
 }
+
+.form__row > select {
+  display: flex;
+  flex: 1;
+  max-width: 100%;
+  height: 36px;
+  border-top: unset !important;
+  border-left: unset !important;
+  border-right: unset !important;
+  background-color: rgba(255, 255, 255, 0);
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36px;
+  border-radius: unset;
+  width: 100%;
+  border: 1px solid #666;
+}
 @media screen and (max-width: 576px) {
   .form__row > input {
+    font-size: 16px;
+  }
+  .form__row > select {
     font-size: 16px;
   }
 }
@@ -488,7 +585,7 @@ button {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .services__card-info {
   padding: 40px;
@@ -1156,7 +1253,7 @@ button {
   font-weight: 400;
   line-height: 2;
   -webkit-text-decoration: underline solid #fff;
-          text-decoration: underline solid #fff;
+  text-decoration: underline solid #fff;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -1531,7 +1628,22 @@ button {
   align-items: center;
   flex-direction: row;
   height: 100%;
-  background: radial-gradient(ellipse at center, rgba(255, 112, 2, 0.1) 0%, rgba(98, 51, 0, 0) 70%), radial-gradient(ellipse at center, rgba(255, 111, 0, 0.05) 0%, rgba(0, 0, 0, 0) 70%), radial-gradient(ellipse at center, rgba(255, 191, 0, 0.1) 0%, rgba(200, 77, 6, 0) 70%) #ffffff;
+  background: radial-gradient(
+      ellipse at center,
+      rgba(255, 112, 2, 0.1) 0%,
+      rgba(98, 51, 0, 0) 70%
+    ),
+    radial-gradient(
+      ellipse at center,
+      rgba(255, 111, 0, 0.05) 0%,
+      rgba(0, 0, 0, 0) 70%
+    ),
+    radial-gradient(
+        ellipse at center,
+        rgba(255, 191, 0, 0.1) 0%,
+        rgba(200, 77, 6, 0) 70%
+      )
+      #ffffff;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: 1200px 1200px, 1200px 1200px, 1200px 1200px;
   background-attachment: fixed;
@@ -2073,7 +2185,7 @@ button {
   height: auto;
   max-width: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   width: 100%;
   height: 80px;
   padding: 10px;
@@ -2674,7 +2786,7 @@ button {
 .tools__item-technology img {
   height: 60px;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   margin: 0 auto;
   margin-bottom: 10px;
   max-width: 80%;
@@ -3000,7 +3112,7 @@ button {
   height: 100%;
   max-width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .use-cases__card-list {
   font-size: 14px;
@@ -3191,4 +3303,4 @@ button {
 }
 .engineering__item-description {
   margin-top: 25px;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
