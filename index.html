@@ -813,7 +813,7 @@
       <!--* PARTNERS SECTION END -->
 
       <!--* FORM SECTION START -->
-      <section class="form">
+      <section id="form" class="form">
         <div class="container">
           <div class="form__content">
             <div class="section--header">
@@ -883,14 +883,41 @@
                   <option value="10">10</option>
                 </select>
                 <select name="ittools" required>
-                  <option value="Volvo">Volvo</option>
-                  <option value="Mercedes">Mercedes</option>
-                  <option value="Hilux">Hilux</option>
-                  <option value="Corsa">Corsa</option>
-                  <option value="BMW">BMW</option>
-                  <option value="Ferrari">Ferrari</option>
-                  <option value="Gol">Gol</option>
+                  <optgroup label="Languages">
+                    <option>SQL - beginner</option>
+                    <option>SQL - middle</option>
+                    <option>SQL - advanced</option>
+                    <option>Python - beginner</option>
+                    <option>Python - middle</option>
+                    <option>Python - advanced</option>
+                  </optgroup>
+                  <optgroup label="Data Platform / RDBMS">
+                    <option>Snowflake</option>
+                    <option>Azure Databricks</option>
+                    <option>Azure DataLake Analytics</option>
+                    <option>Azure Synapse Analytics</option>
+                    <option>Apache Spark</option>
+                    <option>GCP BigQuery</option>
+                    <option>Amazon Redshift</option>
+                  </optgroup>
+                  <optgroup label="Integration / ETL / ELT Tools">
+                    <option>Apache Airflow</option>
+                    <option>Azure Data Factory</option>
+                    <option>AWS Glue</option>
+                  </optgroup>
+                  <optgroup label="Visualization tools">
+                    <option>Microsoft Power BI</option>
+                    <option>Tableau</option>
+                    <option>Looker</option>
+                    <option>Qlik View / Sense</option>
+                  </optgroup>
+                  <optgroup label="Cloud">
+                    <option>Azure</option>
+                    <option>AWS</option>
+                    <option>GCP</option>
+                  </optgroup>
                 </select>
+                
               </div>
 
               <input class="form__button" type="submit" value="Send" />
@@ -1043,6 +1070,7 @@
           </div>
         </div>
       </div>
+      <a href="#form" class="help" style="position: fixed; z-index: 99; border-radius:4px; padding-left: 10px; padding-right: 10px; white-space: nowrap; background: red; font-weight: 400; color: white; right: 2%; bottom: 5%;">Need a help ? <i class="fa-solid fa-messages-question"></i></a>
     </section>
     <!--* FOOTER SECTION END -->
 

@@ -110,3 +110,13 @@ contactForm.addEventListener("submit", function (event) {
       // Handle network errors
     });
 });
+
+const selectElement = document.getElementById("mySelect");
+
+selectElement.addEventListener("focus", function () {
+  selectElement.size = selectElement.length;
+});
+
+selectElement.addEventListener("blur", function () {
+  selectElement.size = 1;
+});

@@ -3304,3 +3304,30 @@ button {
 .engineering__item-description {
   margin-top: 25px;
 } /*# sourceMappingURL=main.css.map */
+
+#mySelect {
+  display: none;
+}
+
+#mySelect:focus,
+#mySelect:active {
+  display: block;
+  position: absolute;
+  z-index: 9999;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+#mySelect option {
+  padding: 5px;
+}
+
+#mySelect option:before {
+  content: "\2610";
+  margin-right: 5px;
+}
+
+#mySelect option:checked:before {
+  content: "\2611";
+}
