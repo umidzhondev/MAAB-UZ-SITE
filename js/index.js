@@ -110,3 +110,24 @@ contactForm.addEventListener("submit", function (event) {
       // Handle network errors
     });
 });
+
+// Fetch blogs from the API endpoint
+fetch("http://16.16.171.16:8080/api/v1/news/getAll")
+  .then((response) => response.json())
+  .then((data) => {
+    const blogsList = document.getElementById("blogs-list");
+
+    // Create blog cards dynamically
+    data.data.forEach((blog) => {
+      const blogCard = document.createElement("div");
+      blogCard.className = "blog-card";
+      blogCard.textContent = blog.newsContent;
+
+      // Add click event listener to redirect to the blog page
+      blogCard.addEventListener("click", () => {
+        window.location.href = `blog.html?id=${blog.id}`;
+      });
+
+      blogsList.appendChild(blogCard);
+    });
+  });

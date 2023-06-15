@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div id="blog-content" class="blog-content"></div>
+
+    <script>
+      // Get the blog ID from the URL query parameters
+      const params = new URLSearchParams(window.location.search);
+      const blogId = params.get("id");
+
+      // Fetch the blog details using the ID
+      fetch(`http://16.16.171.16:8080/api/v1/news/get/${blogId}`)
+        .then((response) => response.json())
+        .then((blog) => {
+          const blogContent = document.getElementById("blog-content");
+
+          // Display the blog content and description
+          const blogCard = document.createElement("div");
+          blogCard.className = "blog-card";
+          blogCard.innerHTML = `
+      <h2>${blog.data.newsContent}</h2>
+    ${blog.data.description}
+    `;
+
+          blogContent.appendChild(blogCard);
+        });
+    </script>
+  </body>
+</html>
