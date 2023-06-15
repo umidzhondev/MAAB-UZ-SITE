@@ -973,6 +973,13 @@
       optionsDiv.style.display = 'block';
     });
 
+    input.addEventListener('blur', () => {
+     setTimeout(() => {
+      optionsDiv.style.display = 'none';
+     }, 1000);
+    });
+ 
+
 
     document.addEventListener('DOMContentLoaded', () => {
       document.getElementById('optionsList').addEventListener('click', (e) => {
@@ -987,14 +994,14 @@
       });
     });
 
-   // Add and remove the "active" class to start and stop the animation
-const helpButton = document.getElementById('helpButton');
-helpButton.addEventListener('click', () => {
-  helpButton.classList.add('active');
-  setTimeout(() => {
-    helpButton.classList.remove('active');
-  }, 2000);
-});
+    // Add and remove the "active" class to start and stop the animation
+    const helpButton = document.getElementById('helpButton');
+    helpButton.addEventListener('click', () => {
+      helpButton.classList.add('active');
+      setTimeout(() => {
+        helpButton.classList.remove('active');
+      }, 2000);
+    });
 
 
 
