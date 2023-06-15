@@ -1,10 +1,189 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
+    <!--* HEADER SECTION START -->
+    <header class="header" id="header">
+      <div class="container">
+        <div class="navbar">
+          <a href="#" class="navbar__logo">
+            <img src="./image/header/logo-site.png" alt="maad dlogo" />
+          </a>
+          <div class="navbar__main" id="mobile__menu">
+            <ul class="nav" id="nav">
+              <li class="nav__item">
+                <a href="#" class="nav__link">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="./pages/about.html" class="nav__link">About us</a>
+              </li>
+              <li class="nav__item">
+                <a href="./pages/data-analytics.html" class="nav__link"
+                  >Data Analytics</a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="./pages/data-visualization.html" class="nav__link"
+                  >Data Visualization</a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="./pages/data-engineering.html" class="nav__link"
+                  >Data Engineering</a
+                >
+              </li>
+              <li class="nav__item contact--us">
+                <a href="./pages/contact.html" class="nav__link">Contact us</a>
+              </li>
+            </ul>
+            <div class="navbar__language">
+              <select
+                class="navbar__language-select"
+                id="change-language"
+                name="languages"
+              >
+                <option value="uz">UZ</option>
+                <option selected value="en">EN</option>
+                <option value="ru">RU</option>
+              </select>
+            </div>
+          </div>
+          <div class="navbar__menu-icon navbar--open--icon">
+            <div class="navbar__burger">
+              <span class="navbar__burger-item f-t"></span>
+              <span class="navbar__burger-item s-d"></span>
+              <span class="navbar__burger-item t-d"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--* HEADER SECTION END -->
     <div id="blog-content" class="blog-content"></div>
+
+    <!--* FOOTER SECTION START -->
+    <section class="footer">
+      <div class="footer__content">
+        <div class="footer__main">
+          <div class="container">
+            <div class="footer__main-content">
+              <div class="footer__social-icons">
+                <a href="https://telegram.com" class="footer__social-icon">
+                  <svg
+                    width="81"
+                    height="81"
+                    viewBox="0 0 81 81"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="40.2632" cy="40.5" r="40" fill="white"></circle>
+                    <path
+                      d="M36.0596 45.5469L35.4136 54.4067C36.3379 54.4067 36.7382 54.0196 37.2183 53.5547L41.5518 49.5167L50.5314 55.9283C52.1782 56.8232 53.3385 56.3519 53.7828 54.4511L59.6769 27.5227L59.6786 27.5211C60.2009 25.1475 58.7982 24.2193 57.1936 24.8016L22.548 37.7343C20.1835 38.6292 20.2193 39.9144 22.146 40.4967L31.0035 43.1828L51.5778 30.6309C52.546 30.0058 53.4264 30.3517 52.7022 30.9768L36.0596 45.5469Z"
+                      fill="#d13b3b"
+                    ></path>
+                  </svg>
+                </a>
+                <a
+                  href="http://www.linkedin.com/company/maab-innovation-llc/"
+                  class="footer__social-icon"
+                >
+                  <svg
+                    width="81"
+                    height="81"
+                    viewBox="0 0 81 81"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="40.6079"
+                      cy="40.9648"
+                      r="40"
+                      fill="white"
+                    ></circle>
+                    <path
+                      d="M27.3363 24.2168C24.7666 24.2168 23.0864 25.9042 23.0864 28.1221C23.0864 30.291 24.7165 32.0265 27.2377 32.0265H27.2865C29.9065 32.0265 31.537 30.291 31.537 28.1221C31.488 25.9042 29.9065 24.2168 27.3363 24.2168V24.2168Z"
+                      fill="#d13b3b"
+                    ></path>
+                    <path
+                      d="M23.5298 35.1113H31.0422V57.7127H23.5298V35.1113Z"
+                      fill="#d13b3b"
+                    ></path>
+                    <path
+                      d="M49.4811 34.5811C45.4284 34.5811 42.7109 38.3892 42.7109 38.3892V35.1115H35.1982V57.7129H42.7104V45.0914C42.7104 44.4157 42.7594 43.7411 42.9579 43.2579C43.501 41.9087 44.7369 40.5109 46.8123 40.5109C49.5307 40.5109 50.6179 42.5835 50.6179 45.6219V57.7129H58.1297V44.7537C58.1297 37.8115 54.4233 34.5811 49.4811 34.5811V34.5811Z"
+                      fill="#d13b3b"
+                    ></path>
+                  </svg>
+                </a>
+                <a href="https://facebook.com" class="footer__social-icon">
+                  <svg
+                    width="81"
+                    height="81"
+                    viewBox="0 0 81 81"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="40.3384"
+                      cy="40.4648"
+                      r="40"
+                      fill="white"
+                    ></circle>
+                    <path
+                      d="M42.9428 59V41.6677H48.7582L49.6307 34.911H42.9428V30.5978C42.9428 28.6422 43.4836 27.3095 46.2911 27.3095L49.866 27.308V21.2645C49.2478 21.1842 47.1256 21 44.6556 21C39.4979 21 35.9668 24.1482 35.9668 29.9286V34.911H30.1338V41.6677H35.9668V59H42.9428Z"
+                      fill="#d13b3b"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+              <div class="footer__items">
+                <div class="footer__col">
+                  <div class="footer__item">
+                    <a href="#" class="footer__logo">
+                      <img
+                        src="./image/footer/maab-white-logo.png"
+                        alt="MAAB-LOGO"
+                      />
+                    </a>
+                    <span class="footer__create">
+                      © <span id="nowYear"></span>
+                      <span id="footer-create"> All Rights Reserved. </span>
+                    </span>
+                  </div>
+                  <div id="footer-address" class="footer__item">
+                    <h3 class="footer__item-title">Our office</h3>
+                    <a
+                      target="_blank"
+                      href="https://goo.gl/maps/4xbxfbsUbBbnHSf16"
+                      class="footer__item-link"
+                    >
+                      Tashkent, Mirabad district, Oybeka, 18/1 ATRIUM Business
+                      Center on the 5th floor-1.
+                    </a>
+                  </div>
+                </div>
+                <div class="footer__col">
+                  <div id="footer-phone" class="footer__item">
+                    <h3 class="footer__item-title">Phone number</h3>
+                    <a href="tel:+998998957706" class="footer__item-link"
+                      >+998 99 8957706</a
+                    >
+                  </div>
+                  <div id="footer-email" class="footer__item">
+                    <h3 class="footer__item-title">Email</h3>
+                    <a href="https://info@maab.uz" class="footer__item-link"
+                      >info@maab.uz</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--* FOOTER SECTION END -->
 
     <script>
       // Get the blog ID from the URL query parameters
@@ -19,7 +198,7 @@
 
           // Display the blog content and description
           const blogCard = document.createElement("div");
-          blogCard.className = "blog-card";
+          blogCard.className = "blog-content-card";
           blogCard.innerHTML = `
       <h2>${blog.data.newsContent}</h2>
     ${blog.data.description}

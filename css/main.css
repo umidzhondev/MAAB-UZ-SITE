@@ -3437,8 +3437,23 @@ button {
   padding: 10px;
   border: 1px solid #ccc;
   cursor: pointer;
+  border-radius: 10px;
 }
 
 .blog-card:hover {
   background-color: #f0f0f0;
+}
+
+.blog-content {
+  margin: 200px auto;
+  width: 100vw !important;
+  padding: 0px 200px;
+}
+
+@media (max-width: 768px) {
+  .blog-content {
+    margin: 200px auto;
+    width: 100vw !important;
+    padding: 0px 50px;
+  }
 }
