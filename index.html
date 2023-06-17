@@ -756,123 +756,6 @@
           </section>
           <!--* PARTNERS SECTION END -->
 
-          <!--* FORM SECTION START -->
-          <section id="form" class="form">
-            <div class="container">
-              <div class="form__content">
-                <div class="section--header">
-                  <h3>Do you consider yourself talented? We invite you to study business intelligence in our bootcamp.
-                    Leave your information and we will contact you!</h3>
-                </div>
-                <form action="http://16.16.171.16:8080/api/v1/student/register" class="form__form" id="contactForm">
-                  <div class="form__row">
-                    <input type="text" placeholder="Name" name="name" required />
-                    <input type="text" placeholder="Surname" name="surname" required />
-                  </div>
-                  <div class="form__row">
-                    <input type="text" placeholder="Phone number" name="phoneNumber" required />
-                    <input type="email" placeholder="Email" name="email" required />
-                  </div>
-
-                  <div class="form__row">
-                    <select name="englishProficiencyLevel" required>
-                      <option value="">Select English Proficiency Level</option>
-                      <option value="4">IELTS 4</option>
-                      <option value="5">IELTS 5</option>
-                      <option value="6">IELTS 6</option>
-                      <option value="7">IELTS 7</option>
-                      <option value="8">IELTS 8</option>
-                      <option value="9">IELTS 9</option>
-                    </select>
-                    <select name="problemSolvingSkills" required>
-                      <option value="">Select Problem Solving Skills</option>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                      <option value="7">7</option>
-                      <option value="8">8</option>
-                      <option value="9">9</option>
-                      <option value="10">10</option>
-                    </select>
-                  </div>
-
-                  <div class="form__row" id="myRow">
-                    <select name="itskills" required>
-                      <option value="">Select IT Skills</option>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                      <option value="7">7</option>
-                      <option value="8">8</option>
-                      <option value="9">9</option>
-                      <option value="10">10</option>
-                    </select>
-                    <input placeholder="Select It Skills" name="ittools" required type="text" id="myInput" />
-
-                    <div id="optionsDiv">
-                      <ul id="optionsList">
-                        <li>Languages
-                          <ul>
-                            <li>SQL - beginner</li>
-                            <li>SQL - middle</li>
-                            <li>SQL - advanced</li>
-                            <li>Python - beginner</li>
-                            <li>Python - middle</li>
-                            <li>Python - advanced</li>
-                          </ul>
-                        </li>
-                        <li>Data Platform / RDBMS
-                          <ul>
-                            <li>Snowflake</li>
-                            <li>Azure Databricks</li>
-                            <li>Azure DataLake Analytics</li>
-                            <li>Azure Synapse Analytics</li>
-                            <li>Apache Spark</li>
-                            <li>GCP BigQuery</li>
-                            <li>Amazon Redshift</li>
-                          </ul>
-                        </li>
-                        <li>Integration / ETL / ELT Tools
-                          <ul>
-                            <li>Apache Airflow</li>
-                            <li>Azure Data Factory</li>
-                            <li>AWS Glue</li>
-                          </ul>
-                        </li>
-                        <li>Visualization tools
-                          <ul>
-                            <li>Microsoft Power BI</li>
-                            <li>Tableau</li>
-                            <li>Looker</li>
-                            <li>Qlik View / Sense</li>
-                          </ul>
-                        </li>
-                        <li>Cloud
-                          <ul>
-                            <li>Azure</li>
-                            <li>AWS</li>
-                            <li>GCP</li>
-                          </ul>
-                        </li>
-                      </ul>
-
-                    </div>
-
-                  </div>
-
-                  <input class="form__button" type="submit" value="Send" />
-                </form>
-              </div>
-            </div>
-          </section>
-
-          <!--* FORM SECTION END -->
   </main>
   <!--* FOOTER SECTION START -->
   <section class="footer">
@@ -958,7 +841,7 @@
         </div>
       </div>
     </div>
-    <a href="#form" class="help" id="helpButton">Need help? <i class="fa-solid fa-messages-question"></i></a>
+    <a href="/contact.html" class="help" id="helpButton">Do you think you are talented?? <i class="fa-solid fa-messages-question"></i></a>
 
 
 
@@ -972,49 +855,7 @@
   <!--* JAVASCRIPT FILE START -->
   <script src="./js/translate.js"></script>
   <script src="./js/index.js"></script>
-  <script>
 
-    const input = document.getElementById('myInput');
-    const optionsDiv = document.getElementById('optionsDiv');
-    const optionsList = document.getElementById('optionsList');
-    input.addEventListener('focus', () => {
-      optionsDiv.style.display = 'block';
-    });
-
-    input.addEventListener('blur', () => {
-     setTimeout(() => {
-      optionsDiv.style.display = 'none';
-     }, 1000);
-    });
- 
-
-
-    document.addEventListener('DOMContentLoaded', () => {
-      document.getElementById('optionsList').addEventListener('click', (e) => {
-        if (e.target.nodeName === 'LI') {
-
-          const input = document.getElementById('myInput');
-          input.value = e.target.innerText;
-          // Hide the options div
-          const optionsDiv = document.getElementById('optionsDiv');
-          optionsDiv.style.display = 'none';
-        }
-      });
-    });
-
-    // Add and remove the "active" class to start and stop the animation
-    const helpButton = document.getElementById('helpButton');
-    helpButton.addEventListener('click', () => {
-      helpButton.classList.add('active');
-      setTimeout(() => {
-        helpButton.classList.remove('active');
-      }, 2000);
-    });
-
-
-
-
-  </script>
   <!--* JAVASCRIPT FILE END -->
 </body>
 
