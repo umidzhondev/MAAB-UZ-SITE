@@ -3384,6 +3384,7 @@ button {
 .help {
   position: fixed;
   z-index: 99;
+  padding: 4px;
   border-radius: 4px;
   padding-left: 10px;
   padding-right: 10px;
@@ -3391,11 +3392,13 @@ button {
   background: red;
   font-weight: 400;
   color: white;
+  white-space: pre-line;
   right: 2%;
   bottom: 5%;
   opacity: 0;
   box-shadow: 0 0 0 rgba(0, 0, 0, 0);
   animation: fade-in 1s forwards, shadow-pulse 2s infinite;
+  max-width: 400px;
 }
 
 @keyframes fade-in {

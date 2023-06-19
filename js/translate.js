@@ -56,6 +56,7 @@ const selectBox = document.getElementById("change-language");
   const footerCreate = document.querySelector("#footer-create");
   const footerTopText = document.querySelector("#footer-top-text");
   const footerTopButton = document.querySelector("#footer-top-button");
+  const helpButton = document.querySelector("#helpButton");
 
   translateContent();
   selectBox.addEventListener("change", translateContent);
@@ -190,8 +191,7 @@ const selectBox = document.getElementById("change-language");
       expertiseCardListTwo.children[3].textContent =
         "Хранилище данных, которое поддерживает самостоятельную отчетность, информационные панели и аналитику.";
 
-      expertiseCardListThree.children[0].textContent =
-        "Решения ETL и ELT";
+      expertiseCardListThree.children[0].textContent = "Решения ETL и ELT";
       expertiseCardListThree.children[1].textContent =
         "Инструменты обработки данных: MS SQL Server, SQL Server Integration Services, Azure Data Factory, Azure Synapse Analytics, Azure Data bricks, Python (Pandas)";
       expertiseCardListThree.children[2].textContent =
@@ -240,13 +240,15 @@ const selectBox = document.getElementById("change-language");
       footerAddress.children[1].textContent =
         'г.Ташкент, Мирабадский район, Ойбека, 18/1 Бизнес Центр "ATRIUM" 5м этажЕ-1.';
       footerPhone.children[0].textContent = "Номер телефона";
-      footerPhone.children[1].textContent = "+998 99 8957706";
+      footerPhone.children[1].textContent = "+998 97 783 90 45";
       footerEmail.children[0].textContent = "Электронная почта";
       footerEmail.children[1].textContent = "info@maab.uz";
       footerCreate.textContent = "Все права защищены.";
       footerTopText.textContent =
         "Давайте вместе разрабатывать решения бизнес-аналитики для Вашей компании!";
       footerTopButton.textContent = "Связаться с нами";
+      helpButton.textContent =
+        "Считаете ли вы себя талантливым? Мы приглашаем Вас учить бизнес-аналитику в нашем буткемп. Оставьте свои данные и мы свяжемся с Вами!";
     }
 
     if (languageValue == "uz") {
@@ -382,8 +384,7 @@ const selectBox = document.getElementById("change-language");
       expertiseCardListTwo.children[3].textContent =
         "Mustaqil hisobotlar tizimi, ma’lumotlar paneli va tahlillarni qo'llab-quvvatlaydigan ma'lumotlar ombori.";
 
-      expertiseCardListThree.children[0].textContent =
-        "ETL va ELT yechimlari";
+      expertiseCardListThree.children[0].textContent = "ETL va ELT yechimlari";
       expertiseCardListThree.children[1].textContent =
         "Ma'lumotlarni qayta ishlash vositalari: MS SQL Server, SQL Server Integration Services, Azure Data Factory, Azure Synapse Analytics, Azure Data bricks, Python (Pandas)";
       expertiseCardListThree.children[2].textContent =
@@ -432,13 +433,15 @@ const selectBox = document.getElementById("change-language");
       footerAddress.children[1].textContent =
         "Toshkent shahri, Mirobod tumani, Oybek, 18/1 ATRIUM biznes markazi 5m qavat-1.";
       footerPhone.children[0].textContent = "Telefon raqami";
-      footerPhone.children[1].textContent = "+998 99 8957706";
+      footerPhone.children[1].textContent = "+998 97 783 90 45";
       footerEmail.children[0].textContent = "Elektron pochta";
       footerEmail.children[1].textContent = "info@maab.uz";
       footerCreate.textContent = "Barcha huquqlar himoyalangan.";
       footerTopText.textContent =
         "Keling, Sizning kompaniyangiz uchun biznes tahlili yechimlarini birgalikda ishlab chiqamiz!";
       footerTopButton.textContent = "Bog'lanish";
+      helpButton.textContent =
+        "Siz o’zingizni talantliman deb hisoblaysizmi? Unda Sizni business intelligence sohasida bizning bootcampda o’qishga taklif qilamiz. Siz o’zingiz haqingizdagi ma’lumotlarni qoldiring, biz Siz bilan bog’lanamiz!";
     }
 
     if (languageValue == "en") {
@@ -617,13 +620,15 @@ const selectBox = document.getElementById("change-language");
       footerAddress.children[1].textContent =
         "Tashkent, Mirabad district, Oybeka, 18/1 ATRIUM Business Center on the 5th floor-1.";
       footerPhone.children[0].textContent = "Phone number";
-      footerPhone.children[1].textContent = "+998 99 8957706";
+      footerPhone.children[1].textContent = "+998 97 783 90 45";
       footerEmail.children[0].textContent = "Email";
       footerEmail.children[1].textContent = "info@maab.uz";
       footerCreate.textContent = "All rights reserved.";
       footerTopText.textContent =
         "Let's work together to develop business intelligence solutions for your company!";
       footerTopButton.textContent = "Contact us";
+      helpButton.textContent =
+        "Do you consider yourself talented? We invite you to study business intelligence in our bootcamp. Leave your information and we will contact you!";
     }
   }
 })();

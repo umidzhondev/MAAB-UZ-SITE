@@ -59,12 +59,12 @@
   const useCasesCardList12 = document.querySelector("#use-cases-card-list-12");
 
   const beniftsHeader = document.querySelector("#benifts--header");
-  const benefitsItem1 = document.querySelector("#benifts-item-1")
-  const benefitsItem2 = document.querySelector("#benifts-item-2")
-  const benefitsItem3 = document.querySelector("#benifts-item-3")
-  const benefitsItem4 = document.querySelector("#benifts-item-4")
-  const benefitsItem5 = document.querySelector("#benifts-item-5")
-  const benefitsItem6 = document.querySelector("#benifts-item-6")
+  const benefitsItem1 = document.querySelector("#benifts-item-1");
+  const benefitsItem2 = document.querySelector("#benifts-item-2");
+  const benefitsItem3 = document.querySelector("#benifts-item-3");
+  const benefitsItem4 = document.querySelector("#benifts-item-4");
+  const benefitsItem5 = document.querySelector("#benifts-item-5");
+  const benefitsItem6 = document.querySelector("#benifts-item-6");
 
   translateContent();
   selectBox.addEventListener("change", translateContent);
@@ -95,7 +95,7 @@
       footerAddress.children[1].textContent =
         'г.Ташкент, Мирабадский район, Ойбека, 18/1 Бизнес Центр "ATRIUM" 5м этажЕ-1.';
       footerPhone.children[0].textContent = "Номер телефона";
-      footerPhone.children[1].textContent = "+998 99 8957706";
+      footerPhone.children[1].textContent = "+998 97 783 90 45";
       footerEmail.children[0].textContent = "Электронная почта";
       footerEmail.children[1].textContent = "info@maab.uz";
       footerCreate.textContent = "Все права защищены.";
@@ -131,7 +131,6 @@
       cloudItemDescription1.textContent = `Облачная платформа Amazon Web Services (AWS) предлагает множество сервисов для расширенной аналитики, позволяя владельцам бизнеса получать ценную информацию и сравнивать свою производительность с показателями основных конкурентов. `;
       cloudItemDescription2.textContent = `В MAAB Innovation мы используем сервис Microsoft, который предлагает выдающиеся вычислительные возможности для обработки огромных объемов данных. Эта информация может быть преобразована в комплексную бизнес-аналитику для вашего проекта. Кроме того, эту службу можно легко интегрировать с Microsoft Power BI, которая обеспечивает дополнительную аналитику в различных областях.`;
 
-      
       // * Use Cases
       useCasesHeader.children[0].textContent = `Примеры использования визуализации данных`;
       useCasesHeader.children[1].textContent = `Чтобы работать эффективно, компания должна иметь всестороннее представление о своих производственных процессах, финансовом положении и других важных факторах. MAAB Innovation признает важность объединения этой информации в единый источник, визуального представления каждой точки данных и выявления сильных и слабых сторон в бизнесе. Преимущества визуализации данных для бизнеса включают в себя:`;
@@ -193,29 +192,27 @@
 
       useCasesCardList12.children[0].textContent = `Варианты визуализации для оценки общей картины бизнеса или компании чрезвычайно разнообразны и применимы повсеместно. Мы сможем подобрать идеальный вариант для ваших нужд.`;
 
-      
       // * Benifts
-      beniftsHeader.children[0].textContent = `Преимущества визуализации данных`
-      beniftsHeader.children[1].textContent = `Сложные методы анализа данных и визуализации очень эффективны для повышения эффективности бизнеса и прогнозирования потенциальных рисков. Ниже приведены основные преимущества визуализации.`
+      beniftsHeader.children[0].textContent = `Преимущества визуализации данных`;
+      beniftsHeader.children[1].textContent = `Сложные методы анализа данных и визуализации очень эффективны для повышения эффективности бизнеса и прогнозирования потенциальных рисков. Ниже приведены основные преимущества визуализации.`;
 
-      benefitsItem1.children[1].textContent = `Для помощи в принятии бизнес-решений`
-      benefitsItem1.children[2].textContent = `Визуализация данных — эффективный инструмент для лиц, принимающих решения, поскольку он упрощает объяснение идей и помогает сделать осознанный выбор.`
+      benefitsItem1.children[1].textContent = `Для помощи в принятии бизнес-решений`;
+      benefitsItem1.children[2].textContent = `Визуализация данных — эффективный инструмент для лиц, принимающих решения, поскольку он упрощает объяснение идей и помогает сделать осознанный выбор.`;
 
-      benefitsItem2.children[1].textContent = `Для обеспечения четкого понимания эффективности бизнеса`
-      benefitsItem2.children[2].textContent = `Представляя данные в отчете, становится проще оценить текущее состояние и будущие перспективы бизнеса.`
+      benefitsItem2.children[1].textContent = `Для обеспечения четкого понимания эффективности бизнеса`;
+      benefitsItem2.children[2].textContent = `Представляя данные в отчете, становится проще оценить текущее состояние и будущие перспективы бизнеса.`;
 
-      benefitsItem3.children[1].textContent = `Для повышения организационной производительности`
-      benefitsItem3.children[2].textContent = `Используя визуализацию данных, легко определить слабые места в отделах или командах и предсказать будущую неэффективность.`
+      benefitsItem3.children[1].textContent = `Для повышения организационной производительности`;
+      benefitsItem3.children[2].textContent = `Используя визуализацию данных, легко определить слабые места в отделах или командах и предсказать будущую неэффективность.`;
 
-      benefitsItem4.children[1].textContent = `Для быстрого распознавания закономерностей и причин`
-      benefitsItem4.children[2].textContent = `Вместо просеивания огромных объемов данных визуализация данных позволяет быстро обрабатывать и анализировать информацию, упрощая выявление тенденций и основных причин.`
+      benefitsItem4.children[1].textContent = `Для быстрого распознавания закономерностей и причин`;
+      benefitsItem4.children[2].textContent = `Вместо просеивания огромных объемов данных визуализация данных позволяет быстро обрабатывать и анализировать информацию, упрощая выявление тенденций и основных причин.`;
 
-      benefitsItem6.children[1].textContent = `Для составления аналитики на основе анализа данных`
-      benefitsItem6.children[2].textContent = `Данные, визуальные эффекты и повествование можно объединить, чтобы создать убедительную историю, которая поможет ключевым лицам, принимающим решения, сосредоточиться на наиболее важных факторах.`
+      benefitsItem6.children[1].textContent = `Для составления аналитики на основе анализа данных`;
+      benefitsItem6.children[2].textContent = `Данные, визуальные эффекты и повествование можно объединить, чтобы создать убедительную историю, которая поможет ключевым лицам, принимающим решения, сосредоточиться на наиболее важных факторах.`;
 
-      benefitsItem5.children[1].textContent = `Для получения ценной информации для вашего бизнеса`
-      benefitsItem5.children[2].textContent = `Визуализация данных может раскрыть захватывающие открытия и перспективы расширения бизнеса, а также предоставить обоснование для их поддержки.`
-
+      benefitsItem5.children[1].textContent = `Для получения ценной информации для вашего бизнеса`;
+      benefitsItem5.children[2].textContent = `Визуализация данных может раскрыть захватывающие открытия и перспективы расширения бизнеса, а также предоставить обоснование для их поддержки.`;
     }
 
     if (languageValue == "uz") {
@@ -244,7 +241,7 @@
       footerAddress.children[1].textContent =
         "Toshkent shahri, Mirobod tumani, Oybek, 18/1 ATRIUM biznes markazi 5m qavat-1.";
       footerPhone.children[0].textContent = "Telefon raqami";
-      footerPhone.children[1].textContent = "+998 99 8957706";
+      footerPhone.children[1].textContent = "+998 97 783 90 45";
       footerEmail.children[0].textContent = "Elektron pochta";
       footerEmail.children[1].textContent = "info@maab.uz";
       footerCreate.textContent = "Barcha huquqlar himoyalangan.";
@@ -280,7 +277,6 @@
       cloudItemDescription1.textContent = `Amazon Web Services (AWS) bulutli platformasi turli ilg‘or tahliliy xizmatlarni taklif etadi, bu esa biznes egalariga qimmatli ma’lumotlarga ega bo‘lish va o‘z ish faoliyatini asosiy raqobatchilar bilan solishtirish imkonini beradi. `;
       cloudItemDescription2.textContent = `MAAB Innovationda biz loyihangiz uchun ko'plab ma'lumotlarni qayta ishlash uchun Microsoft xizmatidan foydalanamiz. Bu sizning biznesingizni batafsil tahlil qilishimizga yordam beradi. Loyihangizga yanada koʻproq tahlillarni qoʻshish uchun biz Microsoft Power BI’dan ham foydalanamiz.`;
 
-      
       // * Use Cases
       useCasesHeader.children[0].textContent = `Ma'lumotlarni vizualizatsiyasi qilish bo’yicha misollar`;
       useCasesHeader.children[1].textContent = `Samarali ishlash uchun kompaniya o'zining ishlab chiqarish jarayonlari, moliyaviy holati va boshqa muhim omillarni har tomonlama tushunishi va nazorat qilishi kerak. MAAB Innovationda biz barcha ma’lumotlarni bir joyga to‘plash, ularni vizual ko‘rsatish va biznesingizning qaysi qismlari yaxshi ishlayotgani va qaysi qismlarini yaxshilash kerakligini aniqlash muhimligini bilamiz. Biznes uchun ma'lumotlar vizualizatsiyasidan foydalanish ko'plab afzalliklarga ega, jumladan:`;
@@ -342,29 +338,27 @@
 
       useCasesCardList12.children[0].textContent = `Biznes yoki kompaniyaning umumiy holatini baholash uchun vizualizatsiya variantlari juda xilma-xil va hamma joyda qo'llanilishi mumkin. Biz sizning ehtiyojlaringiz uchun mukammal variantni topa olamiz.`;
 
-      
       // * Benifts
-      beniftsHeader.children[0].textContent = `Ma'lumotlarni vizualizatsiya qilishning afzalliklari`
-      beniftsHeader.children[1].textContent = `Murakkab ma'lumotlarni tahlil qilish va vizualizatsiya qilish usullari biznes samaradorligini oshirish va potentsial xavflarni bashorat qilishda juda samarali hisoblanadi. Quyida vizualizatsiyaning asosiy afzalliklarini keltirib o’tamiz.`
+      beniftsHeader.children[0].textContent = `Ma'lumotlarni vizualizatsiya qilishning afzalliklari`;
+      beniftsHeader.children[1].textContent = `Murakkab ma'lumotlarni tahlil qilish va vizualizatsiya qilish usullari biznes samaradorligini oshirish va potentsial xavflarni bashorat qilishda juda samarali hisoblanadi. Quyida vizualizatsiyaning asosiy afzalliklarini keltirib o’tamiz.`;
 
-      benefitsItem1.children[1].textContent = `Biznes qarorlar qabul qilishda ko’mak`
-      benefitsItem1.children[2].textContent = `Ma'lumotlarni vizualizatsiya qilish qaror qabul qiluvchilar uchun samarali vositadir, chunki u g'oyalarni tushuntirish va ongli tanlov qilishni osonlashtiradi.`
+      benefitsItem1.children[1].textContent = `Biznes qarorlar qabul qilishda ko’mak`;
+      benefitsItem1.children[2].textContent = `Ma'lumotlarni vizualizatsiya qilish qaror qabul qiluvchilar uchun samarali vositadir, chunki u g'oyalarni tushuntirish va ongli tanlov qilishni osonlashtiradi.`;
 
-      benefitsItem2.children[1].textContent = `Biznes samaradorligini aniq tushunishni ta'minlash`
-      benefitsItem2.children[2].textContent = `Hisobotda ma'lumotlarni taqdim etish biznesning hozirgi holati va kelajakdagi istiqbollarini baholashni osonlashtiradi.`
+      benefitsItem2.children[1].textContent = `Biznes samaradorligini aniq tushunishni ta'minlash`;
+      benefitsItem2.children[2].textContent = `Hisobotda ma'lumotlarni taqdim etish biznesning hozirgi holati va kelajakdagi istiqbollarini baholashni osonlashtiradi.`;
 
-      benefitsItem3.children[1].textContent = `Tashkiliy ish faoliyatini yaxshilash`
-      benefitsItem3.children[2].textContent = `Ma'lumotlar vizualizatsiyasidan foydalanib, bo'limlar yoki guruhlardagi zaif tomonlarni aniqlash va kelajakdagi samaradorlikning pasayishini bashorat qilish mumkin.`
+      benefitsItem3.children[1].textContent = `Tashkiliy ish faoliyatini yaxshilash`;
+      benefitsItem3.children[2].textContent = `Ma'lumotlar vizualizatsiyasidan foydalanib, bo'limlar yoki guruhlardagi zaif tomonlarni aniqlash va kelajakdagi samaradorlikning pasayishini bashorat qilish mumkin.`;
 
-      benefitsItem4.children[1].textContent = `O’zaro bog’liqliklar va sabablarni tezda aniqlash`
-      benefitsItem4.children[2].textContent = `Katta hajmdagi ma'lumotlarni saralash o'rniga, ma'lumotlarni vizualizatsiya qilish sizga ma'lumotlarni tezda qayta ishlash va tahlil qilish imkonini beradi, bu tendentsiyalar va asosiy sabablarni aniqlashni osonlashtiradi.`
+      benefitsItem4.children[1].textContent = `O’zaro bog’liqliklar va sabablarni tezda aniqlash`;
+      benefitsItem4.children[2].textContent = `Katta hajmdagi ma'lumotlarni saralash o'rniga, ma'lumotlarni vizualizatsiya qilish sizga ma'lumotlarni tezda qayta ishlash va tahlil qilish imkonini beradi, bu tendentsiyalar va asosiy sabablarni aniqlashni osonlashtiradi.`;
 
-      benefitsItem6.children[1].textContent = `Ma'lumotlarni tahlil qilish asosida tahlillarni yaratish`
-      benefitsItem6.children[2].textContent = `Ma'lumotlar, vizual va boshqa tahlillar qaror qabul qiluvchilarga eng muhim omillarga e'tibor qaratishga yordam beradi.`
+      benefitsItem6.children[1].textContent = `Ma'lumotlarni tahlil qilish asosida tahlillarni yaratish`;
+      benefitsItem6.children[2].textContent = `Ma'lumotlar, vizual va boshqa tahlillar qaror qabul qiluvchilarga eng muhim omillarga e'tibor qaratishga yordam beradi.`;
 
-      benefitsItem5.children[1].textContent = `Biznesingiz uchun qimmatli ma'lumotlar`
-      benefitsItem5.children[2].textContent = `Ma'lumotlarni vizualizatsiya qilish biznesni kengaytirish imkoniyatlarini ochib berishi va ularni qo'llab-quvvatlash uchun zarur asosni taqdim etishi mumkin.`
-
+      benefitsItem5.children[1].textContent = `Biznesingiz uchun qimmatli ma'lumotlar`;
+      benefitsItem5.children[2].textContent = `Ma'lumotlarni vizualizatsiya qilish biznesni kengaytirish imkoniyatlarini ochib berishi va ularni qo'llab-quvvatlash uchun zarur asosni taqdim etishi mumkin.`;
     }
 
     if (languageValue == "en") {
@@ -390,7 +384,7 @@
       footerAddress.children[1].textContent =
         "Tashkent, Mirabad district, Oybeka, 18/1 ATRIUM Business Center on the 5th floor-1.";
       footerPhone.children[0].textContent = "Phone number";
-      footerPhone.children[1].textContent = "+998 99 8957706";
+      footerPhone.children[1].textContent = "+998 97 783 90 45";
       footerEmail.children[0].textContent = "Email";
       footerEmail.children[1].textContent = "info@maab.uz";
       footerCreate.textContent = "All rights reserved.";
@@ -488,33 +482,29 @@
       useCasesCardList12.children[0].textContent = `Visualization options for assessing the overall picture of a business or company are extremely diverse and applicable everywhere. We will be able to find the ideal option for your needs.`;
 
       // * Benifts
-      beniftsHeader.children[0].textContent = `Data visualization benefits`
-      beniftsHeader.children[1].textContent = `Sophisticated data analytics and visualization techniques are highly effective in enhancing business performance and forecasting potential risks. The following are main benefits of visualization.`
+      beniftsHeader.children[0].textContent = `Data visualization benefits`;
+      beniftsHeader.children[1].textContent = `Sophisticated data analytics and visualization techniques are highly effective in enhancing business performance and forecasting potential risks. The following are main benefits of visualization.`;
 
-      benefitsItem1.children[1].textContent = `To assist in making business decisions`
-      benefitsItem1.children[2].textContent = `Data visualization is an effective tool for decision-makers as it simplifies the explanation of ideas and aids in making informed choices.`
+      benefitsItem1.children[1].textContent = `To assist in making business decisions`;
+      benefitsItem1.children[2].textContent = `Data visualization is an effective tool for decision-makers as it simplifies the explanation of ideas and aids in making informed choices.`;
 
-      benefitsItem2.children[1].textContent = `To provide a clear understanding of business performance`
-      benefitsItem2.children[2].textContent = `By presenting data in a report, it becomes easier to evaluate the current status and future prospects of a business.`
+      benefitsItem2.children[1].textContent = `To provide a clear understanding of business performance`;
+      benefitsItem2.children[2].textContent = `By presenting data in a report, it becomes easier to evaluate the current status and future prospects of a business.`;
 
-      benefitsItem3.children[1].textContent = `To enhance organizational productivity`
-      benefitsItem3.children[2].textContent = `By using data visualization, it is easy to identify weak points within departments or teams and predict future inefficiencies.`
+      benefitsItem3.children[1].textContent = `To enhance organizational productivity`;
+      benefitsItem3.children[2].textContent = `By using data visualization, it is easy to identify weak points within departments or teams and predict future inefficiencies.`;
 
-      benefitsItem4.children[1].textContent = `To quickly recognize patterns and reasons`
-      benefitsItem4.children[2].textContent = `Instead of sifting through vast amounts of data, data visualization enables information to be processed and analyzed quickly, making it easier to identify trends and root causes.`
+      benefitsItem4.children[1].textContent = `To quickly recognize patterns and reasons`;
+      benefitsItem4.children[2].textContent = `Instead of sifting through vast amounts of data, data visualization enables information to be processed and analyzed quickly, making it easier to identify trends and root causes.`;
 
-      
-   
       benefitsItem5.children[1].textContent = `To discover valuable insights for your business
-      `
+      `;
       benefitsItem5.children[2].textContent = `ENGLISH: To discover valuable insights for your business
       Data visualization has the potential to reveal captivating discoveries and prospects for business expansion while furnishing a rationale to support them.
 
-      `
-      benefitsItem6.children[1].textContent = `To tell stories through data`
-      benefitsItem6.children[2].textContent = `Data, visuals, and narrative can be combined to create a compelling story that helps key decision-makers focus on the most important factors.`
-
-
+      `;
+      benefitsItem6.children[1].textContent = `To tell stories through data`;
+      benefitsItem6.children[2].textContent = `Data, visuals, and narrative can be combined to create a compelling story that helps key decision-makers focus on the most important factors.`;
     }
   }
 })();

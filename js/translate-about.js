@@ -118,7 +118,7 @@
       footerAddress.children[1].textContent =
         'г.Ташкент, Мирабадский район, Ойбека, 18/1 Бизнес Центр "ATRIUM" 5м этажЕ-1.';
       footerPhone.children[0].textContent = "Номер телефона";
-      footerPhone.children[1].textContent = "+998 99 8957706";
+      footerPhone.children[1].textContent = "+998 97 783 90 45";
       footerEmail.children[0].textContent = "Электронная почта";
       footerEmail.children[1].textContent = "info@maab.uz";
       footerCreate.textContent = "Все права защищены.";
@@ -200,7 +200,7 @@
       footerAddress.children[1].textContent =
         "Toshkent shahri, Mirobod tumani, Oybek, 18/1 ATRIUM biznes markazi 5m qavat-1.";
       footerPhone.children[0].textContent = "Telefon raqami";
-      footerPhone.children[1].textContent = "+998 99 8957706";
+      footerPhone.children[1].textContent = "+998 97 783 90 45";
       footerEmail.children[0].textContent = "Elektron pochta";
       footerEmail.children[1].textContent = "info@maab.uz";
       footerCreate.textContent = "Barcha huquqlar himoyalangan.";
@@ -280,7 +280,7 @@
       footerAddress.children[1].textContent =
         "Tashkent, Mirabad district, Oybeka, 18/1 ATRIUM Business Center on the 5th floor-1.";
       footerPhone.children[0].textContent = "Phone number";
-      footerPhone.children[1].textContent = "+998 99 8957706";
+      footerPhone.children[1].textContent = "+998 97 783 90 45";
       footerEmail.children[0].textContent = "Email";
       footerEmail.children[1].textContent = "info@maab.uz";
       footerCreate.textContent = "All rights reserved.";

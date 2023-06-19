@@ -1,703 +1,859 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Data visualization</title>
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/main.css" />
     <!--* FONT LINK START -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <!--* FONT LINK END -->
     <!--* SWIPER JS START -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <!--* SWIPER JS END -->
-    <link rel="icon" type="image/x-icon" href="../image/favicon-32x32.png">
+    <link rel="icon" type="image/x-icon" href="../image/favicon-32x32.png" />
+  </head>
 
-</head>
-
-<body>
-   <!--* HEADER SECTION START -->
-<header class="header" id="header">
-    <div class="container">
+  <body>
+    <!--* HEADER SECTION START -->
+    <header class="header" id="header">
+      <div class="container">
         <div class="navbar">
-            <a href="#" class="navbar__logo">
-                <img src="../image/header/logo-site.png" alt="maad dlogo" />
-            </a>
-            <div class="navbar__main" id="mobile__menu">
-                <ul class="nav" id="nav">
-                    <li class="nav__item">
-                        <a href="../index.html" class="nav__link">Home</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="../pages/about.html" class="nav__link">About us</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="../pages/data-analytics.html" class="nav__link">Data Analytics</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Data Visualization</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="../pages/data-engineering.html" class="nav__link">Data Engineering</a>
-                    </li>
-                    <li class="nav__item contact--us">
-                        <a href="../pages/contact.html" class="nav__link">Contact us</a>
-                    </li>
-                </ul>
-                <div class="navbar__language">
-                    <select class="navbar__language-select" id="change-language" name="languages">
-                        <option value="uz">UZ</option>
-                        <option selected value="en">EN</option>
-                        <option value="ru">RU</option>
-                    </select>
-                </div>
+          <a href="#" class="navbar__logo">
+            <img src="../image/header/logo-site.png" alt="maad dlogo" />
+          </a>
+          <div class="navbar__main" id="mobile__menu">
+            <ul class="nav" id="nav">
+              <li class="nav__item">
+                <a href="../index.html" class="nav__link">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="../pages/about.html" class="nav__link">About us</a>
+              </li>
+              <li class="nav__item">
+                <a href="../pages/data-analytics.html" class="nav__link"
+                  >Data Analytics</a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Data Visualization</a>
+              </li>
+              <li class="nav__item">
+                <a href="../pages/data-engineering.html" class="nav__link"
+                  >Data Engineering</a
+                >
+              </li>
+              <li class="nav__item contact--us">
+                <a href="../pages/contact.html" class="nav__link">Contact us</a>
+              </li>
+            </ul>
+            <div class="navbar__language">
+              <select
+                class="navbar__language-select"
+                id="change-language"
+                name="languages"
+              >
+                <option value="uz">UZ</option>
+                <option selected value="en">EN</option>
+                <option value="ru">RU</option>
+              </select>
             </div>
-            <div class="navbar__menu-icon navbar--open--icon">
-                <div class="navbar__burger">
-                    <span class="navbar__burger-item f-t"></span>
-                    <span class="navbar__burger-item s-d"></span>
-                    <span class="navbar__burger-item t-d"></span>
-                </div>
+          </div>
+          <div class="navbar__menu-icon navbar--open--icon">
+            <div class="navbar__burger">
+              <span class="navbar__burger-item f-t"></span>
+              <span class="navbar__burger-item s-d"></span>
+              <span class="navbar__burger-item t-d"></span>
             </div>
+          </div>
         </div>
-    </div>
-</header>
-<!--* HEADER SECTION END -->
+      </div>
+    </header>
+    <!--* HEADER SECTION END -->
 
     <main class="main--other--pages">
-
-        <!--* HERO SECTION START -->
-        <section class="hero services--hero" id="hero">
-            <div class="container">
-                <div class="hero__content">
-                    <div class="hero__info" id="hero--info">
-                        <h1 class="hero__title">Data visualization services</h1>
-                        <hr>
-                        <p class="hero__description">
-                            Skilled data engineers of our company leverage a range of data visualization tools to
-                            evaluate market trends and analyze business performance. </p>
-                    </div>
-                </div>
+      <!--* HERO SECTION START -->
+      <section class="hero services--hero" id="hero">
+        <div class="container">
+          <div class="hero__content">
+            <div class="hero__info" id="hero--info">
+              <h1 class="hero__title">Data visualization services</h1>
+              <hr />
+              <p class="hero__description">
+                Skilled data engineers of our company leverage a range of data
+                visualization tools to evaluate market trends and analyze
+                business performance.
+              </p>
             </div>
-        </section>
-        <!--* HERO SECTION END -->
+          </div>
+        </div>
+      </section>
+      <!--* HERO SECTION END -->
 
-        <!--* CONTACT US SECTION START -->
-        <section class="contact__us data--visualization">
-            <div class="container">
-                <div class="contact__us-content" id="contact-us-header">
-                    <h2 class="contact__us-title">
-                        If you're looking to gain a comprehensive understanding of our services and develop a
-                        tailor-made business intelligence solution that fits your unique needs, we invite you to contact
-                        our team of experienced business intelligence consultants. Our experts will work with you to
-                        optimize your business growth while keeping costs low, helping you achieve success and stay
-                        ahead of the competition.
-                    </h2>
-                    <a href="../pages/contact.html" class="contact__us-button">
-                        Contact us
-                    </a>
-                </div>
+      <!--* CONTACT US SECTION START -->
+      <section class="contact__us data--visualization">
+        <div class="container">
+          <div class="contact__us-content" id="contact-us-header">
+            <h2 class="contact__us-title">
+              If you're looking to gain a comprehensive understanding of our
+              services and develop a tailor-made business intelligence solution
+              that fits your unique needs, we invite you to contact our team of
+              experienced business intelligence consultants. Our experts will
+              work with you to optimize your business growth while keeping costs
+              low, helping you achieve success and stay ahead of the
+              competition.
+            </h2>
+            <a href="../pages/contact.html" class="contact__us-button">
+              Contact us
+            </a>
+          </div>
+        </div>
+      </section>
+      <!--* CONTACT US SECTION END -->
+
+      <!--* BUSINESS SECTION START -->
+      <section class="business services--business">
+        <div class="container">
+          <div class="business__content">
+            <div class="section--header" id="business--header">
+              <h3>Data visualization services</h3>
+              <p>
+                In the early stages of business establishment, dealing with
+                large volumes of data can be challenging, causing project growth
+                delays. At MAAB Innovation LLC, we offer data visualization
+                services to help manage and extract value from complex data. Our
+                suite includes the following:
+              </p>
             </div>
-        </section>
-        <!--* CONTACT US SECTION END -->
-
-        <!--* BUSINESS SECTION START -->
-        <section class="business services--business">
-            <div class="container">
-                <div class="business__content">
-                    <div class="section--header" id="business--header">
-                        <h3>Data visualization services</h3>
-                        <p>
-                            In the early stages of business establishment, dealing with large volumes of data can be
-                            challenging, causing project growth delays. At MAAB Innovation LLC, we offer data
-                            visualization services to help manage and extract value from complex data. Our suite
-                            includes the following:
-                        </p>
-                    </div>
-                    <div class="business__items">
-                        <div class="business__item" id="business-item-1">
-                            <h4>Data management</h4>
-                            <p>
-                                MAAB Innovation LLC has a team of top experts who have worked for years in data
-                                management, including data collection, storage, protection, and organization.
-                            </p>
-                        </div>
-                        <div class="business__item" id="business-item-2">
-                            <h4>Data visualization implementation</h4>
-                            <p>
-                                Our expert team can implement reliable data visualization solutions that extract the
-                                right data and provide new insights on the needs of the target audience.
-                            </p>
-                        </div>
-                        <div class="business__item" id="business-item-3">
-                            <h4>Data platform development</h4>
-                            <p>
-                                We develop customizable data visualization platforms that integrate data from various
-                                sources, create a centralized repository, provide data protection, and improve reporting
-                                and visualization.
-                            </p>
-                        </div>
-                        <div class="business__item" id="business-item-4">
-                            <h4>Customized data visualization software development</h4>
-                            <p>
-                                MAAB Innovation LLC provides bespoke data visualization solutions for clients worldwide
-                                to help businesses identify new trends and react quickly to changes.
-                            </p>
-                        </div>
-                        <div class="business__item" id="business-item-5">
-                            <h4>Custom reports and dashboard development</h4>
-                            <p>
-                                We create tailored dashboards and reports that show key metrics for growing your company
-                                and improving business analytics.
-                            </p>
-                        </div>
-                        <div class="business__item" id="business-item-6">
-                            <h4>Data analytics and visualization optimization</h4>
-                            <p>
-                                Our team of data engineers can optimize existing data management frameworks by improving
-                                processes or removing the dependency on manual data entry.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+            <div class="business__items">
+              <div class="business__item" id="business-item-1">
+                <h4>Data management</h4>
+                <p>
+                  MAAB Innovation LLC has a team of top experts who have worked
+                  for years in data management, including data collection,
+                  storage, protection, and organization.
+                </p>
+              </div>
+              <div class="business__item" id="business-item-2">
+                <h4>Data visualization implementation</h4>
+                <p>
+                  Our expert team can implement reliable data visualization
+                  solutions that extract the right data and provide new insights
+                  on the needs of the target audience.
+                </p>
+              </div>
+              <div class="business__item" id="business-item-3">
+                <h4>Data platform development</h4>
+                <p>
+                  We develop customizable data visualization platforms that
+                  integrate data from various sources, create a centralized
+                  repository, provide data protection, and improve reporting and
+                  visualization.
+                </p>
+              </div>
+              <div class="business__item" id="business-item-4">
+                <h4>Customized data visualization software development</h4>
+                <p>
+                  MAAB Innovation LLC provides bespoke data visualization
+                  solutions for clients worldwide to help businesses identify
+                  new trends and react quickly to changes.
+                </p>
+              </div>
+              <div class="business__item" id="business-item-5">
+                <h4>Custom reports and dashboard development</h4>
+                <p>
+                  We create tailored dashboards and reports that show key
+                  metrics for growing your company and improving business
+                  analytics.
+                </p>
+              </div>
+              <div class="business__item" id="business-item-6">
+                <h4>Data analytics and visualization optimization</h4>
+                <p>
+                  Our team of data engineers can optimize existing data
+                  management frameworks by improving processes or removing the
+                  dependency on manual data entry.
+                </p>
+              </div>
             </div>
-        </section>
-        <!--* BUSINESS SECTION END -->
+          </div>
+        </div>
+      </section>
+      <!--* BUSINESS SECTION END -->
 
-        <!--* CLOUD SERVICES START -->
-        <section class="cloud">
-            <div class="container">
-                <div class="cloud__content">
-                    <div class="section--header" id="cloud--header">
-                        <h3>Data visualization using cloud services
-                        </h3>
-                        <p>
-                            MAAB Innovation LLC can identify the most advantageous cloud-based tools for managing,
-                            analyzing, and visualizing data. These highly adaptable services enable access from any
-                            device, including mobile, and empower entire teams to monitor and visualize data in
-                            real-time.
-                        </p>
-                    </div>
-                    <div class="cloud__items">
-                        <div class="cloud__item">
-                            <div class="cloud__item-header">
-                                <div class="cloud__item-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
-                                        fill="none">
-                                        <path
-                                            d="M12.5822 17.4258C12.5822 17.8466 12.6275 18.1877 12.7066 18.4379C12.7971 18.6881 12.9102 18.961 13.0685 19.2567C13.125 19.3476 13.1476 19.4386 13.1476 19.5182C13.1476 19.6319 13.0798 19.7456 12.9328 19.8594L12.2203 20.337C12.1186 20.4052 12.0168 20.4393 11.9263 20.4393C11.8132 20.4393 11.7002 20.3825 11.5871 20.2801C11.4288 20.1095 11.2931 19.9276 11.18 19.7456C11.0669 19.5523 10.9538 19.3363 10.8294 19.0747C9.94736 20.1209 8.83914 20.644 7.50475 20.644C6.55484 20.644 5.79718 20.3711 5.24307 19.8253C4.68896 19.2794 4.40625 18.5516 4.40625 17.6419C4.40625 16.6753 4.7455 15.8906 5.43531 15.2993C6.12513 14.7079 7.04111 14.4123 8.20587 14.4123C8.59035 14.4123 8.98615 14.4464 9.40456 14.5032C9.82297 14.5601 10.2527 14.6511 10.705 14.7534V13.9233C10.705 13.059 10.5241 12.4563 10.1735 12.1038C9.81166 11.7513 9.20101 11.5807 8.33026 11.5807C7.93447 11.5807 7.52737 11.6262 7.10896 11.7285C6.69055 11.8309 6.28344 11.956 5.88765 12.1152C5.70672 12.1948 5.57101 12.2402 5.49186 12.263C5.4127 12.2857 5.35615 12.2971 5.31092 12.2971C5.1526 12.2971 5.07345 12.1834 5.07345 11.9446V11.3874C5.07345 11.2054 5.09606 11.069 5.1526 10.9893C5.20915 10.9097 5.31092 10.8301 5.46924 10.7505C5.86503 10.5458 6.33998 10.3753 6.8941 10.2388C7.44821 10.091 8.03624 10.0227 8.65821 10.0227C10.0039 10.0227 10.9877 10.3298 11.621 10.9439C12.243 11.5579 12.5596 12.4904 12.5596 13.7413V17.4258H12.5822ZM7.99101 19.1543C8.36419 19.1543 8.74867 19.0861 9.15577 18.9496C9.56288 18.8132 9.92475 18.563 10.2301 18.2218C10.411 18.0058 10.5467 17.767 10.6146 17.494C10.6824 17.2211 10.7276 16.8913 10.7276 16.5047V16.0271C10.3997 15.9475 10.0491 15.8792 9.68727 15.8337C9.3254 15.7883 8.97484 15.7655 8.62428 15.7655C7.86662 15.7655 7.31251 15.9133 6.93933 16.2204C6.56615 16.5274 6.38522 16.9596 6.38522 17.5281C6.38522 18.0626 6.52092 18.4606 6.80363 18.7336C7.07503 19.0179 7.47082 19.1543 7.99101 19.1543ZM17.0716 20.3825C16.8681 20.3825 16.7324 20.3484 16.6419 20.2688C16.5515 20.2005 16.4723 20.0413 16.4045 19.8253L13.747 11.0348C13.6791 10.8074 13.6452 10.6596 13.6452 10.58C13.6452 10.398 13.7357 10.2957 13.9166 10.2957H15.0248C15.2397 10.2957 15.3867 10.3298 15.4659 10.4094C15.5563 10.4776 15.6242 10.6368 15.692 10.8529L17.5918 18.381L19.3559 10.8529C19.4125 10.6255 19.4803 10.4776 19.5708 10.4094C19.6613 10.3412 19.8196 10.2957 20.0231 10.2957H20.9278C21.1427 10.2957 21.2897 10.3298 21.3801 10.4094C21.4706 10.4776 21.5498 10.6368 21.595 10.8529L23.3817 18.472L25.3381 10.8529C25.4059 10.6255 25.4851 10.4776 25.5643 10.4094C25.6547 10.3412 25.8017 10.2957 26.0053 10.2957H27.057C27.2379 10.2957 27.3397 10.3866 27.3397 10.58C27.3397 10.6368 27.3284 10.6937 27.3171 10.7619C27.3057 10.8301 27.2831 10.9211 27.2379 11.0462L24.5126 19.8366C24.4447 20.0641 24.3656 20.2119 24.2751 20.2801C24.1846 20.3484 24.0376 20.3938 23.8454 20.3938H22.8729C22.658 20.3938 22.511 20.3597 22.4205 20.2801C22.33 20.2005 22.2509 20.0527 22.2057 19.8253L20.4529 12.4904L18.7114 19.8139C18.6548 20.0413 18.587 20.1891 18.4965 20.2688C18.406 20.3484 18.2477 20.3825 18.0442 20.3825H17.0716ZM31.6029 20.6895C31.0149 20.6895 30.4269 20.6213 29.8614 20.4848C29.296 20.3484 28.855 20.2005 28.561 20.0299C28.38 19.9276 28.2556 19.8139 28.2104 19.7115C28.1652 19.6092 28.1426 19.4955 28.1426 19.3931V18.8132C28.1426 18.5744 28.233 18.4606 28.4027 18.4606C28.4705 18.4606 28.5384 18.472 28.6062 18.4947C28.6741 18.5175 28.7758 18.563 28.8889 18.6085C29.2734 18.779 29.6918 18.9155 30.1328 19.0065C30.5852 19.0975 31.0262 19.1429 31.4785 19.1429C32.191 19.1429 32.7451 19.0179 33.1296 18.7677C33.5141 18.5175 33.7176 18.1536 33.7176 17.6873C33.7176 17.3689 33.6158 17.1074 33.4123 16.8913C33.2087 16.6753 32.8242 16.4819 32.2701 16.3L30.6304 15.7883C29.8049 15.5267 29.1942 15.1401 28.8211 14.6283C28.4479 14.128 28.2556 13.5708 28.2556 12.9794C28.2556 12.5018 28.3574 12.081 28.561 11.7171C28.7645 11.3532 29.0359 11.0348 29.3752 10.7847C29.7144 10.5231 30.0989 10.3298 30.5513 10.1933C31.0036 10.0569 31.4785 10 31.9761 10C32.2249 10 32.485 10.0114 32.7338 10.0455C32.9939 10.0796 33.2313 10.1251 33.4688 10.1706C33.695 10.2274 33.9098 10.2843 34.1134 10.3525C34.3169 10.4208 34.4753 10.489 34.5883 10.5572C34.7467 10.6482 34.8597 10.7392 34.9276 10.8415C34.9955 10.9325 35.0294 11.0576 35.0294 11.2168V11.7513C35.0294 11.9901 34.9389 12.1152 34.7693 12.1152C34.6788 12.1152 34.5318 12.0697 34.3396 11.9787C33.695 11.683 32.9712 11.5352 32.1684 11.5352C31.5238 11.5352 31.0149 11.6375 30.6643 11.8536C30.3138 12.0697 30.1328 12.3995 30.1328 12.8657C30.1328 13.1841 30.2459 13.457 30.4721 13.6731C30.6983 13.8892 31.1167 14.1052 31.716 14.2985L33.3218 14.8103C34.136 15.0718 34.724 15.4357 35.0746 15.902C35.4252 16.3682 35.5948 16.9027 35.5948 17.494C35.5948 17.983 35.493 18.4265 35.3008 18.8132C35.0972 19.1998 34.8258 19.541 34.4753 19.8139C34.1247 20.0982 33.7063 20.3029 33.22 20.4507C32.7112 20.6099 32.1797 20.6895 31.6029 20.6895Z"
-                                            fill="#252F3E"></path>
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M33.7398 26.2223C30.0194 28.9856 24.614 30.4526 19.9662 30.4526C13.4526 30.4526 7.58352 28.0304 3.15063 24.0048C2.80007 23.6864 3.1167 23.2542 3.53512 23.5044C8.32987 26.3019 14.2442 27.9963 20.362 27.9963C24.4896 27.9963 29.0242 27.132 33.197 25.358C33.819 25.0737 34.3505 25.7674 33.7398 26.2223Z"
-                                            fill="#FF9900"></path>
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M35.2934 24.4453C34.8184 23.8312 32.1496 24.1496 30.9397 24.2974C30.5778 24.3429 30.5212 24.0245 30.8492 23.7857C32.9752 22.2846 36.4695 22.7168 36.8766 23.2171C37.2837 23.7289 36.7635 27.2427 34.7732 28.9258C34.4679 29.1873 34.1739 29.0508 34.3096 28.7097C34.7619 27.5839 35.7683 25.048 35.2934 24.4453Z"
-                                            fill="#FF9900"></path>
-                                    </svg>
-                                </div>
-                                <h4 class="cloud__item-title" id="cloud-item-title-1">
-                                    AWS data visualization
-                                </h4>
-                                <p class="cloud__item-description" id="cloud-item-description-1">
-                                    The cloud-based Amazon Web Services (AWS) platform offers numerous services to carry
-                                    out
-                                    advanced analytics, enabling business owners to gain valuable insights and compare
-                                    their
-                                    performance with that of major competitors. At our organization, we utilize AWS to
-                                    precisely identify various performance metrics.
-                                </p>
-                            </div>
-                     
-                        </div>
-                        <div class="cloud__item">
-                            <div class="cloud__item-header">
-                                <div class="cloud__item-icon">
-                                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M26.8548 9.00171L15.0604 19.2057L5 37.2287H14.0726L26.8548 9.00171ZM28.4233 11.3888L23.3903 25.5431L33.0396 37.641L14.3177 40.8508H45L28.4233 11.3888Z"
-                                            fill="#0072C6"></path>
-                                    </svg>
-                                </div>
-                                <h4 class="cloud__item-title"id="cloud-item-title-2">
-                                    Azure data visualization
-                                </h4>
-                                <p class="cloud__item-description"id="cloud-item-description-2">
-                                    At MAAB Innovation LLC, we utilize Microsoft's service, which offers outstanding
-                                    computational capabilities for processing vast amounts of data. This information can
-                                    be transformed into comprehensive business analytics for your project. Additionally,
-                                    this service can be seamlessly integrated with Microsoft's Power BI, which provides
-                                    supplementary analytics in various domains.
-                                </p>
-                            </div>
-                      
-                        </div>
-                    </div>
-                </div>
+      <!--* CLOUD SERVICES START -->
+      <section class="cloud">
+        <div class="container">
+          <div class="cloud__content">
+            <div class="section--header" id="cloud--header">
+              <h3>Data visualization using cloud services</h3>
+              <p>
+                MAAB Innovation LLC can identify the most advantageous
+                cloud-based tools for managing, analyzing, and visualizing data.
+                These highly adaptable services enable access from any device,
+                including mobile, and empower entire teams to monitor and
+                visualize data in real-time.
+              </p>
             </div>
-        </section>
-        <!--* CLOUD SERVICES END -->
-
-        <!--* USE-CASES SECTION START -->
-        <section class="use-cases">
-            <div class="container">
-                <div class="use-cases__content">
-                    <div class="section--header" id="use-cases-header">
-                        <h3>Data visualization use cases</h3>
-                        <p>
-                            In order to operate efficiently, a company must have a comprehensive understanding of its
-                            production processes, financial status, and other important factors. MAAB Innovation LLC
-                            recognizes the importance of consolidating this information into a unified source, visually
-                            representing each data point, and identifying areas of strength and weakness within a
-                            business. The benefits of data visualization for businesses include:
-                        </p>
-                    </div>
-                    <div class="use-cases__cards swiper use-cases--swiper">
-                        <div class="swiper-wrapper use-cases--wrapper">
-
-                            <div class="swiper-slide">
-                                <div class="use-cases__card">
-                                    <h3 class="use-cases__card-title" id="use-cases-card-title-1">
-                                        Enterprise performance
-                                    </h3>
-                                    <div class="use-cases__card-imgbox">
-                                        <img src="../image/use-cases/use-cases-img-1.jpg" alt="use-cases">
-                                    </div>
-                                    <ul class="use-cases__card-list" id="use-cases-card-list-1">
-                                        <li>
-                                            Monitor KPIs of your entire departments and individual employees
-                                        </li>
-                                        <li>
-                                            Analytics of your direct competitors as well as products
-                                        </li>
-                                        <li>
-                                            Procurement overview and supplier validation
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="use-cases__card">
-                                    <h3 class="use-cases__card-title" id="use-cases-card-title-2">
-                                        Manufacturing
-                                    </h3>
-                                    <div class="use-cases__card-imgbox">
-                                        <img src="../image/use-cases/use-cases-img-2.jpg" alt="use-cases">
-                                    </div>
-                                    <ul class="use-cases__card-list" id="use-cases-card-list-2">
-                                        <li>
-                                            Analysis of equipment efficiency at different stages of operation
-                                        </li>
-                                        <li>
-                                            Detection of deficiencies during the production process to eliminate them
-                                        </li>
-                                        <li>
-                                            Predictions of equipment performance when replacing or improving equipment
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="use-cases__card">
-                                    <h3 class="use-cases__card-title" id="use-cases-card-title-3">
-                                        Supply chain
-                                    </h3>
-                                    <div class="use-cases__card-imgbox">
-                                        <img src="../image/use-cases/use-cases-img-3.jpg" alt="use-cases">
-                                    </div>
-                                    <ul class="use-cases__card-list" id="use-cases-card-list-3">
-                                        <li>
-                                            Identification of goods demands entry points
-                                        </li>
-                                        <li>
-                                            Detailed planning and management of orders with suppliers
-                                        </li>
-                                        <li>
-                                            In-depth analysis of procurement costs
-                                        </li>
-                                        <li>
-                                            Forecasting of risks of ordering from suppliers
-                                        </li>
-                                        <li>
-                                            Structural optimization of all logistics
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="use-cases__card">
-                                    <h3 class="use-cases__card-title" id="use-cases-card-title-4">
-                                        Marketing and sales
-                                    </h3>
-                                    <div class="use-cases__card-imgbox">
-                                        <img src="../image/use-cases/use-cases-img-4.png" alt="use-cases">
-                                    </div>
-                                    <ul class="use-cases__card-list" id="use-cases-card-list-4">
-                                        <li>
-                                            Analysis of customer engagement and sentiments to improve service quality
-                                        </li>
-                                        <li>
-                                            Planning and forecasting the impact on customers from marketing campaigns
-                                        </li>
-                                        <li>
-                                            Budget analysis for marketing activities
-                                        </li>
-                                        <li>
-                                            Analyzing the solvency of the clients for building promotional campaigns
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="use-cases__card">
-                                    <h3 class="use-cases__card-title" id="use-cases-card-title-5">
-                                        Financials
-                                    </h3>
-                                    <div class="use-cases__card-imgbox">
-                                        <img src="../image/use-cases/use-cases-img-5.png" alt="use-cases">
-                                    </div>
-                                    <ul class="use-cases__card-list" id="use-cases-card-list-5">
-                                        <li>
-                                            Monitoring of budget data
-                                        </li>
-                                        <li>
-                                            Forecasting and identification of risks
-                                        </li>
-                                        <li>
-                                            Identifying the most important areas of income and expenses
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="use-cases__card">
-                                    <h3 class="use-cases__card-title" id="use-cases-card-title-6">
-                                        Recruiting and HR
-                                    </h3>
-                                    <div class="use-cases__card-imgbox">
-                                        <img src="../image/use-cases/use-cases-img-6.png" alt="use-cases">
-                                    </div>
-                                    <ul class="use-cases__card-list" id="use-cases-card-list-6">
-                                        <li>
-                                            Analyzing employee sentiment and retention processes
-                                        </li>
-                                        <li>
-                                            A complete breakdown of the entire department and employee performance
-                                        </li>
-                                        <li>
-                                            Planning the development of an employee performance improvement plan
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="use-cases__card">
-                                    <h3 class="use-cases__card-title" id="use-cases-card-title-7">
-                                        Maintenance
-                                    </h3>
-                                    <div class="use-cases__card-imgbox">
-                                        <img src="../image/use-cases/use-cases-img-7.png" alt="use-cases">
-                                    </div>
-                                    <ul class="use-cases__card-list" id="use-cases-card-list-7">
-                                        <li>
-                                            Analysis of equipment, services, and resources
-                                        </li>
-                                        <li>
-                                            Maintenance planning
-                                        </li>
-                                        <li>
-                                            Operational risk analysis
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="use-cases__card">
-                                    <h3 class="use-cases__card-title" id="use-cases-card-title-9">
-                                        Retail and eCommerce
-                                    </h3>
-                                    <div class="use-cases__card-imgbox">
-                                        <img src="../image/use-cases/use-cases-img-9.png" alt="use-cases">
-                                    </div>
-                                    <ul class="use-cases__card-list" id="use-cases-card-list-9">
-                                        <li>
-                                            Target audience analysis
-                                        </li>
-                                        <li>
-                                            Price optimization
-                                        </li>
-                                        <li>
-                                            Market trend forecast
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="use-cases__card">
-                                    <h3 class="use-cases__card-title" id="use-cases-card-title-10">
-                                        Healthcare
-                                    </h3>
-                                    <div class="use-cases__card-imgbox">
-                                        <img src="../image/use-cases/use-cases-img-10.png" alt="use-cases">
-                                    </div>
-                                    <ul class="use-cases__card-list" id="use-cases-card-list-10">
-                                        <li>
-                                            Re-hospitalization rates
-                                        </li>
-                                        <li>
-                                            Analysis of patient sentiment from the quality of care
-                                        </li>
-                                        <li>
-                                            Tracking the time customers spend in healthcare
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="use-cases__card">
-                                    <h3 class="use-cases__card-title" id="use-cases-card-title-11">
-                                        Transportation
-                                    </h3>
-                                    <div class="use-cases__card-imgbox">
-                                        <img src="../image/use-cases/use-cases-img-11.png" alt="use-cases">
-                                    </div>
-                                    <ul class="use-cases__card-list" id="use-cases-card-list-11">
-                                        <li>
-                                            Optimizing passenger flow or supply chain
-                                        </li>
-                                        <li>
-                                            Monitoring of transportation topics
-                                        </li>
-                                        <li>
-                                            Environmental impact analysis
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="use-cases__card">
-                                    <h3 class="use-cases__card-title" id="use-cases-card-title-12">
-                                        Other
-                                    </h3>
-                                    <div class="use-cases__card-imgbox">
-                                        <img src="../image/use-cases/use-cases-img-12.png" alt="use-cases">
-                                    </div>
-                                    <ul class="use-cases__card-list" id="use-cases-card-list-12">
-                                        <li>
-                                            Visualization options for assessing the overall picture of a business or
-                                            company are extremely diverse and applicable everywhere. We will be able to
-                                            find the ideal option for your needs.
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
+            <div class="cloud__items">
+              <div class="cloud__item">
+                <div class="cloud__item-header">
+                  <div class="cloud__item-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="40"
+                      height="40"
+                      viewBox="0 0 40 40"
+                      fill="none"
+                    >
+                      <path
+                        d="M12.5822 17.4258C12.5822 17.8466 12.6275 18.1877 12.7066 18.4379C12.7971 18.6881 12.9102 18.961 13.0685 19.2567C13.125 19.3476 13.1476 19.4386 13.1476 19.5182C13.1476 19.6319 13.0798 19.7456 12.9328 19.8594L12.2203 20.337C12.1186 20.4052 12.0168 20.4393 11.9263 20.4393C11.8132 20.4393 11.7002 20.3825 11.5871 20.2801C11.4288 20.1095 11.2931 19.9276 11.18 19.7456C11.0669 19.5523 10.9538 19.3363 10.8294 19.0747C9.94736 20.1209 8.83914 20.644 7.50475 20.644C6.55484 20.644 5.79718 20.3711 5.24307 19.8253C4.68896 19.2794 4.40625 18.5516 4.40625 17.6419C4.40625 16.6753 4.7455 15.8906 5.43531 15.2993C6.12513 14.7079 7.04111 14.4123 8.20587 14.4123C8.59035 14.4123 8.98615 14.4464 9.40456 14.5032C9.82297 14.5601 10.2527 14.6511 10.705 14.7534V13.9233C10.705 13.059 10.5241 12.4563 10.1735 12.1038C9.81166 11.7513 9.20101 11.5807 8.33026 11.5807C7.93447 11.5807 7.52737 11.6262 7.10896 11.7285C6.69055 11.8309 6.28344 11.956 5.88765 12.1152C5.70672 12.1948 5.57101 12.2402 5.49186 12.263C5.4127 12.2857 5.35615 12.2971 5.31092 12.2971C5.1526 12.2971 5.07345 12.1834 5.07345 11.9446V11.3874C5.07345 11.2054 5.09606 11.069 5.1526 10.9893C5.20915 10.9097 5.31092 10.8301 5.46924 10.7505C5.86503 10.5458 6.33998 10.3753 6.8941 10.2388C7.44821 10.091 8.03624 10.0227 8.65821 10.0227C10.0039 10.0227 10.9877 10.3298 11.621 10.9439C12.243 11.5579 12.5596 12.4904 12.5596 13.7413V17.4258H12.5822ZM7.99101 19.1543C8.36419 19.1543 8.74867 19.0861 9.15577 18.9496C9.56288 18.8132 9.92475 18.563 10.2301 18.2218C10.411 18.0058 10.5467 17.767 10.6146 17.494C10.6824 17.2211 10.7276 16.8913 10.7276 16.5047V16.0271C10.3997 15.9475 10.0491 15.8792 9.68727 15.8337C9.3254 15.7883 8.97484 15.7655 8.62428 15.7655C7.86662 15.7655 7.31251 15.9133 6.93933 16.2204C6.56615 16.5274 6.38522 16.9596 6.38522 17.5281C6.38522 18.0626 6.52092 18.4606 6.80363 18.7336C7.07503 19.0179 7.47082 19.1543 7.99101 19.1543ZM17.0716 20.3825C16.8681 20.3825 16.7324 20.3484 16.6419 20.2688C16.5515 20.2005 16.4723 20.0413 16.4045 19.8253L13.747 11.0348C13.6791 10.8074 13.6452 10.6596 13.6452 10.58C13.6452 10.398 13.7357 10.2957 13.9166 10.2957H15.0248C15.2397 10.2957 15.3867 10.3298 15.4659 10.4094C15.5563 10.4776 15.6242 10.6368 15.692 10.8529L17.5918 18.381L19.3559 10.8529C19.4125 10.6255 19.4803 10.4776 19.5708 10.4094C19.6613 10.3412 19.8196 10.2957 20.0231 10.2957H20.9278C21.1427 10.2957 21.2897 10.3298 21.3801 10.4094C21.4706 10.4776 21.5498 10.6368 21.595 10.8529L23.3817 18.472L25.3381 10.8529C25.4059 10.6255 25.4851 10.4776 25.5643 10.4094C25.6547 10.3412 25.8017 10.2957 26.0053 10.2957H27.057C27.2379 10.2957 27.3397 10.3866 27.3397 10.58C27.3397 10.6368 27.3284 10.6937 27.3171 10.7619C27.3057 10.8301 27.2831 10.9211 27.2379 11.0462L24.5126 19.8366C24.4447 20.0641 24.3656 20.2119 24.2751 20.2801C24.1846 20.3484 24.0376 20.3938 23.8454 20.3938H22.8729C22.658 20.3938 22.511 20.3597 22.4205 20.2801C22.33 20.2005 22.2509 20.0527 22.2057 19.8253L20.4529 12.4904L18.7114 19.8139C18.6548 20.0413 18.587 20.1891 18.4965 20.2688C18.406 20.3484 18.2477 20.3825 18.0442 20.3825H17.0716ZM31.6029 20.6895C31.0149 20.6895 30.4269 20.6213 29.8614 20.4848C29.296 20.3484 28.855 20.2005 28.561 20.0299C28.38 19.9276 28.2556 19.8139 28.2104 19.7115C28.1652 19.6092 28.1426 19.4955 28.1426 19.3931V18.8132C28.1426 18.5744 28.233 18.4606 28.4027 18.4606C28.4705 18.4606 28.5384 18.472 28.6062 18.4947C28.6741 18.5175 28.7758 18.563 28.8889 18.6085C29.2734 18.779 29.6918 18.9155 30.1328 19.0065C30.5852 19.0975 31.0262 19.1429 31.4785 19.1429C32.191 19.1429 32.7451 19.0179 33.1296 18.7677C33.5141 18.5175 33.7176 18.1536 33.7176 17.6873C33.7176 17.3689 33.6158 17.1074 33.4123 16.8913C33.2087 16.6753 32.8242 16.4819 32.2701 16.3L30.6304 15.7883C29.8049 15.5267 29.1942 15.1401 28.8211 14.6283C28.4479 14.128 28.2556 13.5708 28.2556 12.9794C28.2556 12.5018 28.3574 12.081 28.561 11.7171C28.7645 11.3532 29.0359 11.0348 29.3752 10.7847C29.7144 10.5231 30.0989 10.3298 30.5513 10.1933C31.0036 10.0569 31.4785 10 31.9761 10C32.2249 10 32.485 10.0114 32.7338 10.0455C32.9939 10.0796 33.2313 10.1251 33.4688 10.1706C33.695 10.2274 33.9098 10.2843 34.1134 10.3525C34.3169 10.4208 34.4753 10.489 34.5883 10.5572C34.7467 10.6482 34.8597 10.7392 34.9276 10.8415C34.9955 10.9325 35.0294 11.0576 35.0294 11.2168V11.7513C35.0294 11.9901 34.9389 12.1152 34.7693 12.1152C34.6788 12.1152 34.5318 12.0697 34.3396 11.9787C33.695 11.683 32.9712 11.5352 32.1684 11.5352C31.5238 11.5352 31.0149 11.6375 30.6643 11.8536C30.3138 12.0697 30.1328 12.3995 30.1328 12.8657C30.1328 13.1841 30.2459 13.457 30.4721 13.6731C30.6983 13.8892 31.1167 14.1052 31.716 14.2985L33.3218 14.8103C34.136 15.0718 34.724 15.4357 35.0746 15.902C35.4252 16.3682 35.5948 16.9027 35.5948 17.494C35.5948 17.983 35.493 18.4265 35.3008 18.8132C35.0972 19.1998 34.8258 19.541 34.4753 19.8139C34.1247 20.0982 33.7063 20.3029 33.22 20.4507C32.7112 20.6099 32.1797 20.6895 31.6029 20.6895Z"
+                        fill="#252F3E"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M33.7398 26.2223C30.0194 28.9856 24.614 30.4526 19.9662 30.4526C13.4526 30.4526 7.58352 28.0304 3.15063 24.0048C2.80007 23.6864 3.1167 23.2542 3.53512 23.5044C8.32987 26.3019 14.2442 27.9963 20.362 27.9963C24.4896 27.9963 29.0242 27.132 33.197 25.358C33.819 25.0737 34.3505 25.7674 33.7398 26.2223Z"
+                        fill="#FF9900"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M35.2934 24.4453C34.8184 23.8312 32.1496 24.1496 30.9397 24.2974C30.5778 24.3429 30.5212 24.0245 30.8492 23.7857C32.9752 22.2846 36.4695 22.7168 36.8766 23.2171C37.2837 23.7289 36.7635 27.2427 34.7732 28.9258C34.4679 29.1873 34.1739 29.0508 34.3096 28.7097C34.7619 27.5839 35.7683 25.048 35.2934 24.4453Z"
+                        fill="#FF9900"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h4 class="cloud__item-title" id="cloud-item-title-1">
+                    AWS data visualization
+                  </h4>
+                  <p
+                    class="cloud__item-description"
+                    id="cloud-item-description-1"
+                  >
+                    The cloud-based Amazon Web Services (AWS) platform offers
+                    numerous services to carry out advanced analytics, enabling
+                    business owners to gain valuable insights and compare their
+                    performance with that of major competitors. At our
+                    organization, we utilize AWS to precisely identify various
+                    performance metrics.
+                  </p>
                 </div>
-            </div>
-        </section>
-        <!--* USE-CASES SECTION END -->
-
-        <!--* BENEFITS SECTION START -->
-        <section class="benefits">
-            <div class="container">
-                <div class="benefits__content">
-                    <div class="section--header" id="benifts--header">
-                        <h3>Data visualization benefits</h3>
-                        <p>
-                            Sophisticated data analytics and visualization techniques are highly effective in enhancing
-                            business performance and forecasting potential risks. The following are main benefits of
-                            visualization.
-                        </p>
-                    </div>
-                    <div class="benefits__items">
-                        <div class="benefits__item" id="benifts-item-1">
-                            <div class="benefits__item-icon">
-                                <img src="../image/benefits/icon-1.svg" alt="benefits">
-                            </div>
-                            <h4 class="benefits__item-title">
-                                To assist in making business decisions
-                            </h4>
-                            <p class="benefits__item-description">
-                                Data visualization is an effective tool for decision-makers as it simplifies the
-                                explanation of ideas and aids in making informed choices.
-                            </p>
-                        </div>
-                        <div class="benefits__item" id="benifts-item-2">
-                            <div class="benefits__item-icon">
-                                <img src="../image/benefits/icon-2.svg" alt="benefits">
-                            </div>
-                            <h4 class="benefits__item-title">
-                                To provide a clear understanding of business performance
-                            </h4>
-                            <p class="benefits__item-description">
-                                By presenting data in a report, it becomes easier to evaluate the current status and
-                                future prospects of a business.
-                            </p>
-                        </div>
-                        <div class="benefits__item" id="benifts-item-3">
-                            <div class="benefits__item-icon">
-                                <img src="../image/benefits/icon-3.svg" alt="benefits">
-                            </div>
-                            <h4 class="benefits__item-title">
-                                To enhance organizational productivity
-                            </h4>
-                            <p class="benefits__item-description">
-                                By using data visualization, it is easy to identify weak points within departments or
-                                teams and predict future inefficiencies.
-                            </p>
-                        </div>
-                        <div class="benefits__item" id="benifts-item-4">
-                            <div class="benefits__item-icon">
-                                <img src="../image/benefits/icon-4.svg" alt="benefits">
-                            </div>
-                            <h4 class="benefits__item-title">
-                                To quickly recognize patterns and reasons
-                            </h4>
-                            <p class="benefits__item-description">
-                                Instead of sifting through vast amounts of data, data visualization enables information
-                                to be processed and analyzed quickly, making it easier to identify trends and root
-                                causes.
-                            </p>
-                        </div>
-                        <div class="benefits__item" id="benifts-item-5">
-                            <div class="benefits__item-icon">
-                                <img src="../image/benefits/icon-5.svg" alt="benefits">
-                            </div>
-                            <h4 class="benefits__item-title">
-                                To discover valuable business intelligence
-                            </h4>
-                            <p class="benefits__item-description">
-                                Data visualization enhanced with artificial intelligence can uncover compelling insights
-                                and opportunities for business growth and provide a justification for them.
-                            </p>
-                        </div>
-                        <div class="benefits__item" id="benifts-item-6">
-                            <div class="benefits__item-icon">
-                                <img src="../image/benefits/icon-6.svg" alt="benefits">
-                            </div>
-                            <h4 class="benefits__item-title">
-                                To tell stories through data
-                            </h4>
-                            <p class="benefits__item-description">
-                                Data, visuals, and narrative can be combined to create a compelling story that helps key
-                                decision-makers focus on the most important factors.
-                            </p>
-                        </div>
-                    </div>
+              </div>
+              <div class="cloud__item">
+                <div class="cloud__item-header">
+                  <div class="cloud__item-icon">
+                    <svg
+                      width="50"
+                      height="50"
+                      viewBox="0 0 50 50"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M26.8548 9.00171L15.0604 19.2057L5 37.2287H14.0726L26.8548 9.00171ZM28.4233 11.3888L23.3903 25.5431L33.0396 37.641L14.3177 40.8508H45L28.4233 11.3888Z"
+                        fill="#0072C6"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h4 class="cloud__item-title" id="cloud-item-title-2">
+                    Azure data visualization
+                  </h4>
+                  <p
+                    class="cloud__item-description"
+                    id="cloud-item-description-2"
+                  >
+                    At MAAB Innovation LLC, we utilize Microsoft's service,
+                    which offers outstanding computational capabilities for
+                    processing vast amounts of data. This information can be
+                    transformed into comprehensive business analytics for your
+                    project. Additionally, this service can be seamlessly
+                    integrated with Microsoft's Power BI, which provides
+                    supplementary analytics in various domains.
+                  </p>
                 </div>
+              </div>
             </div>
-        </section>
-        <!--* BENEFITS SECTION END -->
+          </div>
+        </div>
+      </section>
+      <!--* CLOUD SERVICES END -->
 
+      <!--* USE-CASES SECTION START -->
+      <section class="use-cases">
+        <div class="container">
+          <div class="use-cases__content">
+            <div class="section--header" id="use-cases-header">
+              <h3>Data visualization use cases</h3>
+              <p>
+                In order to operate efficiently, a company must have a
+                comprehensive understanding of its production processes,
+                financial status, and other important factors. MAAB Innovation
+                LLC recognizes the importance of consolidating this information
+                into a unified source, visually representing each data point,
+                and identifying areas of strength and weakness within a
+                business. The benefits of data visualization for businesses
+                include:
+              </p>
+            </div>
+            <div class="use-cases__cards swiper use-cases--swiper">
+              <div class="swiper-wrapper use-cases--wrapper">
+                <div class="swiper-slide">
+                  <div class="use-cases__card">
+                    <h3
+                      class="use-cases__card-title"
+                      id="use-cases-card-title-1"
+                    >
+                      Enterprise performance
+                    </h3>
+                    <div class="use-cases__card-imgbox">
+                      <img
+                        src="../image/use-cases/use-cases-img-1.jpg"
+                        alt="use-cases"
+                      />
+                    </div>
+                    <ul class="use-cases__card-list" id="use-cases-card-list-1">
+                      <li>
+                        Monitor KPIs of your entire departments and individual
+                        employees
+                      </li>
+                      <li>
+                        Analytics of your direct competitors as well as products
+                      </li>
+                      <li>Procurement overview and supplier validation</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="use-cases__card">
+                    <h3
+                      class="use-cases__card-title"
+                      id="use-cases-card-title-2"
+                    >
+                      Manufacturing
+                    </h3>
+                    <div class="use-cases__card-imgbox">
+                      <img
+                        src="../image/use-cases/use-cases-img-2.jpg"
+                        alt="use-cases"
+                      />
+                    </div>
+                    <ul class="use-cases__card-list" id="use-cases-card-list-2">
+                      <li>
+                        Analysis of equipment efficiency at different stages of
+                        operation
+                      </li>
+                      <li>
+                        Detection of deficiencies during the production process
+                        to eliminate them
+                      </li>
+                      <li>
+                        Predictions of equipment performance when replacing or
+                        improving equipment
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="use-cases__card">
+                    <h3
+                      class="use-cases__card-title"
+                      id="use-cases-card-title-3"
+                    >
+                      Supply chain
+                    </h3>
+                    <div class="use-cases__card-imgbox">
+                      <img
+                        src="../image/use-cases/use-cases-img-3.jpg"
+                        alt="use-cases"
+                      />
+                    </div>
+                    <ul class="use-cases__card-list" id="use-cases-card-list-3">
+                      <li>Identification of goods demands entry points</li>
+                      <li>
+                        Detailed planning and management of orders with
+                        suppliers
+                      </li>
+                      <li>In-depth analysis of procurement costs</li>
+                      <li>Forecasting of risks of ordering from suppliers</li>
+                      <li>Structural optimization of all logistics</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="use-cases__card">
+                    <h3
+                      class="use-cases__card-title"
+                      id="use-cases-card-title-4"
+                    >
+                      Marketing and sales
+                    </h3>
+                    <div class="use-cases__card-imgbox">
+                      <img
+                        src="../image/use-cases/use-cases-img-4.png"
+                        alt="use-cases"
+                      />
+                    </div>
+                    <ul class="use-cases__card-list" id="use-cases-card-list-4">
+                      <li>
+                        Analysis of customer engagement and sentiments to
+                        improve service quality
+                      </li>
+                      <li>
+                        Planning and forecasting the impact on customers from
+                        marketing campaigns
+                      </li>
+                      <li>Budget analysis for marketing activities</li>
+                      <li>
+                        Analyzing the solvency of the clients for building
+                        promotional campaigns
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="use-cases__card">
+                    <h3
+                      class="use-cases__card-title"
+                      id="use-cases-card-title-5"
+                    >
+                      Financials
+                    </h3>
+                    <div class="use-cases__card-imgbox">
+                      <img
+                        src="../image/use-cases/use-cases-img-5.png"
+                        alt="use-cases"
+                      />
+                    </div>
+                    <ul class="use-cases__card-list" id="use-cases-card-list-5">
+                      <li>Monitoring of budget data</li>
+                      <li>Forecasting and identification of risks</li>
+                      <li>
+                        Identifying the most important areas of income and
+                        expenses
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="use-cases__card">
+                    <h3
+                      class="use-cases__card-title"
+                      id="use-cases-card-title-6"
+                    >
+                      Recruiting and HR
+                    </h3>
+                    <div class="use-cases__card-imgbox">
+                      <img
+                        src="../image/use-cases/use-cases-img-6.png"
+                        alt="use-cases"
+                      />
+                    </div>
+                    <ul class="use-cases__card-list" id="use-cases-card-list-6">
+                      <li>
+                        Analyzing employee sentiment and retention processes
+                      </li>
+                      <li>
+                        A complete breakdown of the entire department and
+                        employee performance
+                      </li>
+                      <li>
+                        Planning the development of an employee performance
+                        improvement plan
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="use-cases__card">
+                    <h3
+                      class="use-cases__card-title"
+                      id="use-cases-card-title-7"
+                    >
+                      Maintenance
+                    </h3>
+                    <div class="use-cases__card-imgbox">
+                      <img
+                        src="../image/use-cases/use-cases-img-7.png"
+                        alt="use-cases"
+                      />
+                    </div>
+                    <ul class="use-cases__card-list" id="use-cases-card-list-7">
+                      <li>Analysis of equipment, services, and resources</li>
+                      <li>Maintenance planning</li>
+                      <li>Operational risk analysis</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="use-cases__card">
+                    <h3
+                      class="use-cases__card-title"
+                      id="use-cases-card-title-9"
+                    >
+                      Retail and eCommerce
+                    </h3>
+                    <div class="use-cases__card-imgbox">
+                      <img
+                        src="../image/use-cases/use-cases-img-9.png"
+                        alt="use-cases"
+                      />
+                    </div>
+                    <ul class="use-cases__card-list" id="use-cases-card-list-9">
+                      <li>Target audience analysis</li>
+                      <li>Price optimization</li>
+                      <li>Market trend forecast</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="use-cases__card">
+                    <h3
+                      class="use-cases__card-title"
+                      id="use-cases-card-title-10"
+                    >
+                      Healthcare
+                    </h3>
+                    <div class="use-cases__card-imgbox">
+                      <img
+                        src="../image/use-cases/use-cases-img-10.png"
+                        alt="use-cases"
+                      />
+                    </div>
+                    <ul
+                      class="use-cases__card-list"
+                      id="use-cases-card-list-10"
+                    >
+                      <li>Re-hospitalization rates</li>
+                      <li>
+                        Analysis of patient sentiment from the quality of care
+                      </li>
+                      <li>Tracking the time customers spend in healthcare</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="use-cases__card">
+                    <h3
+                      class="use-cases__card-title"
+                      id="use-cases-card-title-11"
+                    >
+                      Transportation
+                    </h3>
+                    <div class="use-cases__card-imgbox">
+                      <img
+                        src="../image/use-cases/use-cases-img-11.png"
+                        alt="use-cases"
+                      />
+                    </div>
+                    <ul
+                      class="use-cases__card-list"
+                      id="use-cases-card-list-11"
+                    >
+                      <li>Optimizing passenger flow or supply chain</li>
+                      <li>Monitoring of transportation topics</li>
+                      <li>Environmental impact analysis</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="use-cases__card">
+                    <h3
+                      class="use-cases__card-title"
+                      id="use-cases-card-title-12"
+                    >
+                      Other
+                    </h3>
+                    <div class="use-cases__card-imgbox">
+                      <img
+                        src="../image/use-cases/use-cases-img-12.png"
+                        alt="use-cases"
+                      />
+                    </div>
+                    <ul
+                      class="use-cases__card-list"
+                      id="use-cases-card-list-12"
+                    >
+                      <li>
+                        Visualization options for assessing the overall picture
+                        of a business or company are extremely diverse and
+                        applicable everywhere. We will be able to find the ideal
+                        option for your needs.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--* USE-CASES SECTION END -->
+
+      <!--* BENEFITS SECTION START -->
+      <section class="benefits">
+        <div class="container">
+          <div class="benefits__content">
+            <div class="section--header" id="benifts--header">
+              <h3>Data visualization benefits</h3>
+              <p>
+                Sophisticated data analytics and visualization techniques are
+                highly effective in enhancing business performance and
+                forecasting potential risks. The following are main benefits of
+                visualization.
+              </p>
+            </div>
+            <div class="benefits__items">
+              <div class="benefits__item" id="benifts-item-1">
+                <div class="benefits__item-icon">
+                  <img src="../image/benefits/icon-1.svg" alt="benefits" />
+                </div>
+                <h4 class="benefits__item-title">
+                  To assist in making business decisions
+                </h4>
+                <p class="benefits__item-description">
+                  Data visualization is an effective tool for decision-makers as
+                  it simplifies the explanation of ideas and aids in making
+                  informed choices.
+                </p>
+              </div>
+              <div class="benefits__item" id="benifts-item-2">
+                <div class="benefits__item-icon">
+                  <img src="../image/benefits/icon-2.svg" alt="benefits" />
+                </div>
+                <h4 class="benefits__item-title">
+                  To provide a clear understanding of business performance
+                </h4>
+                <p class="benefits__item-description">
+                  By presenting data in a report, it becomes easier to evaluate
+                  the current status and future prospects of a business.
+                </p>
+              </div>
+              <div class="benefits__item" id="benifts-item-3">
+                <div class="benefits__item-icon">
+                  <img src="../image/benefits/icon-3.svg" alt="benefits" />
+                </div>
+                <h4 class="benefits__item-title">
+                  To enhance organizational productivity
+                </h4>
+                <p class="benefits__item-description">
+                  By using data visualization, it is easy to identify weak
+                  points within departments or teams and predict future
+                  inefficiencies.
+                </p>
+              </div>
+              <div class="benefits__item" id="benifts-item-4">
+                <div class="benefits__item-icon">
+                  <img src="../image/benefits/icon-4.svg" alt="benefits" />
+                </div>
+                <h4 class="benefits__item-title">
+                  To quickly recognize patterns and reasons
+                </h4>
+                <p class="benefits__item-description">
+                  Instead of sifting through vast amounts of data, data
+                  visualization enables information to be processed and analyzed
+                  quickly, making it easier to identify trends and root causes.
+                </p>
+              </div>
+              <div class="benefits__item" id="benifts-item-5">
+                <div class="benefits__item-icon">
+                  <img src="../image/benefits/icon-5.svg" alt="benefits" />
+                </div>
+                <h4 class="benefits__item-title">
+                  To discover valuable business intelligence
+                </h4>
+                <p class="benefits__item-description">
+                  Data visualization enhanced with artificial intelligence can
+                  uncover compelling insights and opportunities for business
+                  growth and provide a justification for them.
+                </p>
+              </div>
+              <div class="benefits__item" id="benifts-item-6">
+                <div class="benefits__item-icon">
+                  <img src="../image/benefits/icon-6.svg" alt="benefits" />
+                </div>
+                <h4 class="benefits__item-title">
+                  To tell stories through data
+                </h4>
+                <p class="benefits__item-description">
+                  Data, visuals, and narrative can be combined to create a
+                  compelling story that helps key decision-makers focus on the
+                  most important factors.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--* BENEFITS SECTION END -->
     </main>
 
-   <!--* FOOTER SECTION START -->
-   <section class="footer">
-    <div class="footer__content">
+    <!--* FOOTER SECTION START -->
+    <section class="footer">
+      <div class="footer__content">
         <div class="footer__top">
-            <div class="container">
-                <div class="footer__top-content">
-                    <div class="footer__top-text" data-aos="fade-up" id="footer-top-header">
-                        <h3 id="footer-top-text">Let's
-                            work together to develop business intelligence solutions for your company!
-                        </h3>
-                    </div>
-                    <a href="../pages/contact.html" data-aos="fade-up" class="button__footer"
-                        id="footer-top-button">Contact us</a>
-                </div>
+          <div class="container">
+            <div class="footer__top-content">
+              <div
+                class="footer__top-text"
+                data-aos="fade-up"
+                id="footer-top-header"
+              >
+                <h3 id="footer-top-text">
+                  Let's work together to develop business intelligence solutions
+                  for your company!
+                </h3>
+              </div>
+              <a
+                href="../pages/contact.html"
+                data-aos="fade-up"
+                class="button__footer"
+                id="footer-top-button"
+                >Contact us</a
+              >
             </div>
+          </div>
         </div>
         <div class="footer__main">
-            <div class="container">
-                <div class="footer__main-content">
-                    <div class="footer__social-icons">
-                        <a href="https://telegram.com" class="footer__social-icon">
-                            <svg width="81" height="81" viewBox="0 0 81 81" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="40.2632" cy="40.5" r="40" fill="white"></circle>
-                                <path
-                                    d="M36.0596 45.5469L35.4136 54.4067C36.3379 54.4067 36.7382 54.0196 37.2183 53.5547L41.5518 49.5167L50.5314 55.9283C52.1782 56.8232 53.3385 56.3519 53.7828 54.4511L59.6769 27.5227L59.6786 27.5211C60.2009 25.1475 58.7982 24.2193 57.1936 24.8016L22.548 37.7343C20.1835 38.6292 20.2193 39.9144 22.146 40.4967L31.0035 43.1828L51.5778 30.6309C52.546 30.0058 53.4264 30.3517 52.7022 30.9768L36.0596 45.5469Z"
-                                    fill="#d13b3b"></path>
-                            </svg>
-                        </a>
-                        <a href="http://www.linkedin.com/company/maab-innovation-llc/" class="footer__social-icon">
-                            <svg width="81" height="81" viewBox="0 0 81 81" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="40.6079" cy="40.9648" r="40" fill="white"></circle>
-                                <path
-                                    d="M27.3363 24.2168C24.7666 24.2168 23.0864 25.9042 23.0864 28.1221C23.0864 30.291 24.7165 32.0265 27.2377 32.0265H27.2865C29.9065 32.0265 31.537 30.291 31.537 28.1221C31.488 25.9042 29.9065 24.2168 27.3363 24.2168V24.2168Z"
-                                    fill="#d13b3b"></path>
-                                <path d="M23.5298 35.1113H31.0422V57.7127H23.5298V35.1113Z" fill="#d13b3b">
-                                </path>
-                                <path
-                                    d="M49.4811 34.5811C45.4284 34.5811 42.7109 38.3892 42.7109 38.3892V35.1115H35.1982V57.7129H42.7104V45.0914C42.7104 44.4157 42.7594 43.7411 42.9579 43.2579C43.501 41.9087 44.7369 40.5109 46.8123 40.5109C49.5307 40.5109 50.6179 42.5835 50.6179 45.6219V57.7129H58.1297V44.7537C58.1297 37.8115 54.4233 34.5811 49.4811 34.5811V34.5811Z"
-                                    fill="#d13b3b"></path>
-                            </svg>
-                        </a>
-                        <a href="https://facebook.com" class="footer__social-icon">
-                            <svg width="81" height="81" viewBox="0 0 81 81" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="40.3384" cy="40.4648" r="40" fill="white"></circle>
-                                <path
-                                    d="M42.9428 59V41.6677H48.7582L49.6307 34.911H42.9428V30.5978C42.9428 28.6422 43.4836 27.3095 46.2911 27.3095L49.866 27.308V21.2645C49.2478 21.1842 47.1256 21 44.6556 21C39.4979 21 35.9668 24.1482 35.9668 29.9286V34.911H30.1338V41.6677H35.9668V59H42.9428Z"
-                                    fill="#d13b3b"></path>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="footer__items">
-                        <div class="footer__col">
-                            <div class="footer__item">
-                                <a href="#" class="footer__logo">
-                                    <img src="../image/footer/maab-white-logo.png" alt="MAAB-LOGO" />
-                                </a>
-                                <span class="footer__create" >
-                                    © <span id="nowYear"></span>
-                                    <span id="footer-create">
-                                        All Rights Reserved.
-                                    </span>
-                                </span>
-                            </div>
-                            <div id="footer-address" class="footer__item">
-                                <h3 class="footer__item-title">Our office</h3>
-                                <a target="_blank" href="https://goo.gl/maps/4xbxfbsUbBbnHSf16"
-                                    class="footer__item-link">
-                                    Tashkent, Mirabad district, Oybeka, 18/1 ATRIUM Business Center on the 5th floor-1.
-                                </a>
-                            </div>
-                        </div>
-                        <div class="footer__col">
-                            <div id="footer-phone" class="footer__item">
-                                <h3 class="footer__item-title">Phone number</h3>
-                                <a href="tel:+998998957706" class="footer__item-link">+998 99 8957706</a>
-                            </div>
-                            <div id="footer-email" class="footer__item">
-                                <h3 class="footer__item-title">Email</h3>
-                                <a href="https://info@maab.uz" class="footer__item-link">info@maab.uz</a>
-                            </div>
-                        </div>
-                    </div>
+          <div class="container">
+            <div class="footer__main-content">
+              <div class="footer__social-icons">
+                <a href="https://telegram.com" class="footer__social-icon">
+                  <svg
+                    width="81"
+                    height="81"
+                    viewBox="0 0 81 81"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="40.2632" cy="40.5" r="40" fill="white"></circle>
+                    <path
+                      d="M36.0596 45.5469L35.4136 54.4067C36.3379 54.4067 36.7382 54.0196 37.2183 53.5547L41.5518 49.5167L50.5314 55.9283C52.1782 56.8232 53.3385 56.3519 53.7828 54.4511L59.6769 27.5227L59.6786 27.5211C60.2009 25.1475 58.7982 24.2193 57.1936 24.8016L22.548 37.7343C20.1835 38.6292 20.2193 39.9144 22.146 40.4967L31.0035 43.1828L51.5778 30.6309C52.546 30.0058 53.4264 30.3517 52.7022 30.9768L36.0596 45.5469Z"
+                      fill="#d13b3b"
+                    ></path>
+                  </svg>
+                </a>
+                <a
+                  href="http://www.linkedin.com/company/maab-innovation-llc/"
+                  class="footer__social-icon"
+                >
+                  <svg
+                    width="81"
+                    height="81"
+                    viewBox="0 0 81 81"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="40.6079"
+                      cy="40.9648"
+                      r="40"
+                      fill="white"
+                    ></circle>
+                    <path
+                      d="M27.3363 24.2168C24.7666 24.2168 23.0864 25.9042 23.0864 28.1221C23.0864 30.291 24.7165 32.0265 27.2377 32.0265H27.2865C29.9065 32.0265 31.537 30.291 31.537 28.1221C31.488 25.9042 29.9065 24.2168 27.3363 24.2168V24.2168Z"
+                      fill="#d13b3b"
+                    ></path>
+                    <path
+                      d="M23.5298 35.1113H31.0422V57.7127H23.5298V35.1113Z"
+                      fill="#d13b3b"
+                    ></path>
+                    <path
+                      d="M49.4811 34.5811C45.4284 34.5811 42.7109 38.3892 42.7109 38.3892V35.1115H35.1982V57.7129H42.7104V45.0914C42.7104 44.4157 42.7594 43.7411 42.9579 43.2579C43.501 41.9087 44.7369 40.5109 46.8123 40.5109C49.5307 40.5109 50.6179 42.5835 50.6179 45.6219V57.7129H58.1297V44.7537C58.1297 37.8115 54.4233 34.5811 49.4811 34.5811V34.5811Z"
+                      fill="#d13b3b"
+                    ></path>
+                  </svg>
+                </a>
+                <a href="https://facebook.com" class="footer__social-icon">
+                  <svg
+                    width="81"
+                    height="81"
+                    viewBox="0 0 81 81"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="40.3384"
+                      cy="40.4648"
+                      r="40"
+                      fill="white"
+                    ></circle>
+                    <path
+                      d="M42.9428 59V41.6677H48.7582L49.6307 34.911H42.9428V30.5978C42.9428 28.6422 43.4836 27.3095 46.2911 27.3095L49.866 27.308V21.2645C49.2478 21.1842 47.1256 21 44.6556 21C39.4979 21 35.9668 24.1482 35.9668 29.9286V34.911H30.1338V41.6677H35.9668V59H42.9428Z"
+                      fill="#d13b3b"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+              <div class="footer__items">
+                <div class="footer__col">
+                  <div class="footer__item">
+                    <a href="#" class="footer__logo">
+                      <img
+                        src="../image/footer/maab-white-logo.png"
+                        alt="MAAB-LOGO"
+                      />
+                    </a>
+                    <span class="footer__create">
+                      © <span id="nowYear"></span>
+                      <span id="footer-create"> All Rights Reserved. </span>
+                    </span>
+                  </div>
+                  <div id="footer-address" class="footer__item">
+                    <h3 class="footer__item-title">Our office</h3>
+                    <a
+                      target="_blank"
+                      href="https://goo.gl/maps/4xbxfbsUbBbnHSf16"
+                      class="footer__item-link"
+                    >
+                      Tashkent, Mirabad district, Oybeka, 18/1 ATRIUM Business
+                      Center on the 5th floor-1.
+                    </a>
+                  </div>
                 </div>
+                <div class="footer__col">
+                  <div id="footer-phone" class="footer__item">
+                    <h3 class="footer__item-title">Phone number</h3>
+                    <a href="tel:+998977839045" class="footer__item-link"
+                      >+998 97 783 90 45</a
+                    >
+                  </div>
+                  <div id="footer-email" class="footer__item">
+                    <h3 class="footer__item-title">Email</h3>
+                    <a href="https://info@maab.uz" class="footer__item-link"
+                      >info@maab.uz</a
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</section>
-<!--* FOOTER SECTION END -->
+      </div>
+    </section>
+    <!--* FOOTER SECTION END -->
 
     <!--* JAVASCRIPT FILE START -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
@@ -705,6 +861,5 @@
     <script src="../js/translate-visualization.js"></script>
     <script src="../js/index.js"></script>
     <!--* JAVASCRIPT FILE END -->
-</body>
-
+  </body>
 </html>

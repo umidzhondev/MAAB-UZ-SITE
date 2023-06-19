@@ -18,7 +18,9 @@
   const engineeringItem6 = document.querySelector("#engineering-item-6");
   const engineeringItem7 = document.querySelector("#engineering-item-7");
   const engineeringItem8 = document.querySelector("#engineering-item-8");
-  const engineeringMainTitle = document.querySelector("#engineering-main-title");
+  const engineeringMainTitle = document.querySelector(
+    "#engineering-main-title"
+  );
 
   translateContent();
   selectBox.addEventListener("change", translateContent);
@@ -49,7 +51,7 @@
       footerAddress.children[1].textContent =
         'г.Ташкент, Мирабадский район, Ойбека, 18/1 Бизнес Центр "ATRIUM" 5м этажЕ-1.';
       footerPhone.children[0].textContent = "Номер телефона";
-      footerPhone.children[1].textContent = "+998 99 8957706";
+      footerPhone.children[1].textContent = "+998 97 783 90 45";
       footerEmail.children[0].textContent = "Электронная почта";
       footerEmail.children[1].textContent = "info@maab.uz";
       footerCreate.textContent = "Все права защищены.";
@@ -62,7 +64,8 @@
       engineeringHeader.children[1].textContent = `Инжиниринг данных включает в себя обработку огромных объемов необработанных данных, создание и поддержку конвейеров данных для объединения информации из различных источников и организации ее в одном месте для тщательного бизнес-анализа.`;
       engineeringHeader.children[2].textContent = `Преобразовывая данные в формат, пригодный для анализа специалистами по данным, инженеры данных предоставляют предприятиям точную аналитику, которая позволяет принимать решения на основе фактов. Точная обработка данных позволяет компаниям решать сложные бизнес-задачи и ускорять разработку новых продуктов и услуг при минимальных затратах.`;
 
-      engineeringMainTitle.textContent = "Решения для обработки данных, которые мы поставляем"
+      engineeringMainTitle.textContent =
+        "Решения для обработки данных, которые мы поставляем";
 
       engineeringItem1.children[0].textContent = `Построение архитектуры данных`;
       engineeringItem1.children[1].textContent = `Наша компания предоставляет настраиваемые и легкодоступные решения для архитектуры данных. Наша структура объединяет информацию о том, как данные передаются внутри конкретной организации. Наши решения по архитектуре данных помогают компаниям достичь своих целей.`;
@@ -115,7 +118,7 @@
       footerAddress.children[1].textContent =
         "Toshkent shahri, Mirobod tumani, Oybek, 18/1 ATRIUM biznes markazi 5m qavat-1.";
       footerPhone.children[0].textContent = "Telefon raqami";
-      footerPhone.children[1].textContent = "+998 99 8957706";
+      footerPhone.children[1].textContent = "+998 97 783 90 45";
       footerEmail.children[0].textContent = "Elektron pochta";
       footerEmail.children[1].textContent = "info@maab.uz";
       footerCreate.textContent = "Barcha huquqlar himoyalangan.";
@@ -128,8 +131,7 @@
       engineeringHeader.children[1].textContent = `Ma'lumotlar muhandisligi katta hajmdagi qayta ishlanmagan ma'lumotlarni qayta ishlashni, turli manbalardan olingan ma'lumotlarni birlashtirish va biznesni to'liq tahlil qilish maqsadida ularni bir joyda to’plash uchun ma'lumotlar konveyerlarini yaratish va saqlashni o'z ichiga oladi.`;
       engineeringHeader.children[2].textContent = `Ma'lumotlarni tahlilchilar tahlil qilishi uchun mos formatga aylantirish orqali ma'lumotlar muhandislari korxonalarni faktlarga asoslangan qarorlar qabul qilish imkonini beruvchi aniq tahlillar bilan ta'minlaydilar. Ma'lumotlarni to'g'ri qayta ishlash kompaniyalarga murakkab biznes muammolarini hal qilish va minimal xarajatlar bilan yangi mahsulot va xizmatlarni ishlab chiqishni tezlashtirish imkonini beradi.`;
 
-      engineeringMainTitle.textContent = `Ma'lumotlarni qayta ishlash bo'yicha biz taqdim etadigan yechimlar`
-
+      engineeringMainTitle.textContent = `Ma'lumotlarni qayta ishlash bo'yicha biz taqdim etadigan yechimlar`;
 
       engineeringItem1.children[0].textContent = `Ma'lumotlar arxitekturasini qurish`;
       engineeringItem1.children[1].textContent = `Kompaniyamiz sozlanishi va foydalanilishi oson bo'lgan ma'lumotlar arxitekturasi yechimlarini taqdim etadi. Bizning tizimimiz ma'lum bir tashkilot ichida ma'lumotlar qanday uzatilishi haqidagi ma'lumotlarni birlashtiradi. Bizning ma'lumotlar arxitekturasi yechimlarimiz kompaniyalarga maqsadlariga erishishda yordam beradi.`;
@@ -180,20 +182,20 @@
       footerAddress.children[1].textContent =
         "Tashkent, Mirabad district, Oybeka, 18/1 ATRIUM Business Center on the 5th floor-1.";
       footerPhone.children[0].textContent = "Phone number";
-      footerPhone.children[1].textContent = "+998 99 8957706";
+      footerPhone.children[1].textContent = "+998 97 783 90 45";
       footerEmail.children[0].textContent = "Email";
       footerEmail.children[1].textContent = "info@maab.uz";
       footerCreate.textContent = "All rights reserved.";
       footerTopText.textContent =
         "Let's work together to develop business intelligence solutions for your company!";
       footerTopButton.textContent = "Contact us";
-      
+
       // * Engineering
       engineeringHeader.children[0].textContent = `What is data engineering?`;
       engineeringHeader.children[1].textContent = `Data engineering involves handling vast amounts of unprocessed data, constructing and sustaining data pipelines to merge information from diverse sources, and organizing it into a single location for thorough business analysis.`;
       engineeringHeader.children[2].textContent = `By transforming data into a usable format for data scientists to analyze, data engineers provide businesses with precise analytics that allow for fact-based decision-making. Accurate data processing enables companies to tackle intricate business problems and enhance the development of new products and services while minimizing costs.`;
 
-      engineeringMainTitle.textContent = `Data engineering solutions we deliver`
+      engineeringMainTitle.textContent = `Data engineering solutions we deliver`;
 
       engineeringItem1.children[0].textContent = `Building Data Architecture`;
       engineeringItem1.children[1].textContent = `Our company provides customizable and easily accessible data architecture solutions. Our framework combines information about how data flows within a specific organization. Our data architecture solutions guide businesses towards achieving their goals.`;
