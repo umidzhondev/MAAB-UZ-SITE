@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MAAD UZ</title>
+    <title>MAAB UZ</title>
     <!--* CSS FILE START -->
     <link rel="stylesheet" href="./css/main.css" />
     <!--* CSS FILE END -->
@@ -175,49 +175,192 @@
                     <li>
                       Languages
                       <ul>
-                        <li>SQL - beginner</li>
-                        <li>SQL - middle</li>
-                        <li>SQL - advanced</li>
-                        <li>Python - beginner</li>
-                        <li>Python - middle</li>
-                        <li>Python - advanced</li>
+                        <li>
+                          <label>
+                            <input
+                              type="checkbox"
+                              name="ittools"
+                              value="SQL - beginner"
+                            />SQL - beginner
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input
+                              type="checkbox"
+                              name="ittools"
+                              value="SQL - middle"
+                            />SQL - middle
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input
+                              type="checkbox"
+                              name="ittools"
+                              value="SQL - advanced"
+                            />SQL - advanced
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input
+                              type="checkbox"
+                              name="ittools"
+                              value="Python - beginner"
+                            />Python - beginner
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input
+                              type="checkbox"
+                              name="ittools"
+                              value="Python - middle"
+                            />Python - middle</label
+                          >
+                        </li>
+                        <li>
+                          <label>
+                            <input
+                              type="checkbox"
+                              name="ittools"
+                              value="Python - advanced"
+                            />Python - advanced
+                          </label>
+                        </li>
                       </ul>
                     </li>
                     <li>
                       Data Platform / RDBMS
                       <ul>
-                        <li>Snowflake</li>
-                        <li>Azure Databricks</li>
-                        <li>Azure DataLake Analytics</li>
-                        <li>Azure Synapse Analytics</li>
-                        <li>Apache Spark</li>
-                        <li>GCP BigQuery</li>
-                        <li>Amazon Redshift</li>
+                        <li>
+                          <label>
+                            <input
+                              type="checkbox"
+                              name="ittools"
+                              value="Snowflake"
+                            />Snowflake</label
+                          >
+                        </li>
+                        <li>
+                          <label>
+                            <input
+                              type="checkbox"
+                              name="ittools"
+                              value="Azure Databricks"
+                            />Azure Databricks
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input
+                              type="checkbox"
+                              name="ittools"
+                              value="Azure DataLake Analytics"
+                            />Azure DataLake Analytics
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input
+                              type="checkbox"
+                              name="ittools"
+                              value="Azure Synapse Analytics"
+                            />Azure Synapse Analytics</label
+                          >
+                        </li>
+                        <li>
+                          <label>
+                            <input
+                              type="checkbox"
+                              name="ittools"
+                              value="GCP BigQuery"
+                            />GCP BigQuery
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input
+                              type="checkbox"
+                              name="ittools"
+                              value="Amazon Redshift"
+                            />Amazon Redshift</label
+                          >
+                        </li>
                       </ul>
                     </li>
                     <li>
                       Integration / ETL / ELT Tools
                       <ul>
-                        <li>Apache Airflow</li>
-                        <li>Azure Data Factory</li>
-                        <li>AWS Glue</li>
+                        <li>
+                          <label
+                            ><input
+                              type="checkbox"
+                              name="ittools"
+                              value="Apache Airflow"
+                            />Apache Airflow</label
+                          >
+                        </li>
+                        <li>
+                          <label>
+                            <input
+                              type="checkbox"
+                              name="ittools"
+                              value="Azure Data Factory"
+                            />Azure Data Factory
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input
+                              type="checkbox"
+                              name="ittools"
+                              value="AWS Glue"
+                            />AWS Glue</label
+                          >
+                        </li>
                       </ul>
                     </li>
                     <li>
                       Visualization tools
                       <ul>
-                        <li>Microsoft Power BI</li>
-                        <li>Tableau</li>
-                        <li>Looker</li>
-                        <li>Qlik View / Sense</li>
-                      </ul>
-                    </li>
-                    <li>
-                      Cloud
-                      <ul>
-                        <li>Azure</li>
-                        <li>AWS</li>
-                        <li>GCP</li>
+                        <li>
+                          <label>
+                            <input
+                              type="checkbox"
+                              name="ittools"
+                              value="Microsoft Power BI"
+                            />Microsoft Power BI</label
+                          >
+                        </li>
+                        <li>
+                          <label
+                            ><input
+                              type="checkbox"
+                              name="ittools"
+                              value="Tableau"
+                            />Tableau</label
+                          >
+                        </li>
+                        <li>
+                          <label>
+                            <input
+                              type="checkbox"
+                              name="ittools"
+                              value="Looker"
+                            />Looker</label
+                          >
+                        </li>
+                        <li>
+                          <label>
+                            <input
+                              type="checkbox"
+                              name="ittools"
+                              value="Qlik View / Sense"
+                            />Qlik View / Sense</label
+                          >
+                        </li>
                       </ul>
                     </li>
                   </ul>
@@ -395,19 +538,16 @@
       input.addEventListener("blur", () => {
         setTimeout(() => {
           optionsDiv.style.display = "none";
-        }, 1000);
+        }, 3000);
       });
 
       document.addEventListener("DOMContentLoaded", () => {
         document
           .getElementById("optionsList")
-          .addEventListener("click", (e) => {
-            if (e.target.nodeName === "LI") {
+          .addEventListener("change", (e) => {
+            if (e.target.nodeName === "INPUT" && e.target.checked) {
               const input = document.getElementById("myInput");
-              input.value += ` ${input.value && "/"} ${e.target.innerText}`;
-              // Hide the options div
-              const optionsDiv = document.getElementById("optionsDiv");
-              optionsDiv.style.display = "none";
+              input.value += `${input.value ? " / " : ""}${e.target.value}`;
             }
           });
       });
@@ -416,6 +556,7 @@
       const helpButton = document.getElementById("helpButton");
       helpButton.addEventListener("click", () => {
         helpButton.classList.add("active");
+
         setTimeout(() => {
           helpButton.classList.remove("active");
         }, 2000);
