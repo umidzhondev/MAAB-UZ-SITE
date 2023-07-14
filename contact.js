@@ -1,4 +1,3 @@
-console.log("lorem");
 const selectBox = document.getElementById("change-language");
 const nav = document.getElementById("nav");
 const translate = document.querySelector("#translate");

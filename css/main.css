@@ -1050,6 +1050,25 @@ button {
   width: 81px;
   height: 81px;
   transition: all 0.4s ease;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.footer__social-icon:last-child svg {
+  width: 60px !important;
+  height: 60px !important;
+}
+@media screen and (max-width: 992px) {
+  .footer__social-icon:last-child svg {
+    width: 46px !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  .footer__social-icon:last-child svg {
+    width: 42px !important;
+  }
 }
 .footer__social-icon:hover {
   transform: scale(1.12);
@@ -1060,8 +1079,8 @@ button {
     height: 70px;
   }
   .footer__social-icon svg {
-    width: inherit;
-    height: inherit;
+    width: inherit !important;
+    height: inherit !important;
   }
 }
 @media screen and (max-width: 576px) {

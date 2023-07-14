@@ -120,6 +120,21 @@
     width: 81px;
     height: 81px;
     transition: all 0.4s ease;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    &:last-child svg{
+      width: 60px !important;
+      height: 60px !important;
+      @include responsive(md) {
+        width: 46px !important;
+      }
+      @include responsive(xxs) {
+        width: 42px !important;
+      }
+    }
     &:hover {
       transform: scale(1.12);
     }
@@ -127,8 +142,9 @@
       width: 70px;
       height: 70px;
       svg {
-        width: inherit;
-        height: inherit;
+        width: inherit !important;
+        height: inherit !important;
+      
       }
     }
     @include responsive(xs) {
