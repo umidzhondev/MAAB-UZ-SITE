@@ -2512,6 +2512,10 @@ button {
 .why__item-title {
   margin-bottom: 28px;
 }
+.why__item-description {
+  max-width: 90%;
+}
+
 .about {
   background-color: #f3f3f3;
   padding: 100px 0;
