@@ -38,6 +38,7 @@ let pagesPath = [
   "/index.html",
 ];
 
+
 const contactForm = document.getElementById("contactForm");
 const submitButton = document.querySelector(".form__button");
 

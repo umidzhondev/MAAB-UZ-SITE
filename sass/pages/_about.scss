@@ -42,6 +42,7 @@
     }
     &-description {
       @extend .card-description;
+      max-width: 90%;
     }
   }
 }
