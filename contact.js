@@ -1,4 +1,3 @@
-console.log("lorem");
 const selectBox = document.getElementById("change-language");
 const nav = document.getElementById("nav");
 const translate = document.querySelector("#translate");
@@ -17,6 +16,8 @@ const contactSupport3 = document.querySelector("#contact-support-3");
 const contactEmail = document.querySelector("#contact--email");
 const contactLocation = document.querySelector("#contact--location");
 const contactPhone = document.querySelector("#contact--phone");
+
+selectBox.value = localStorage.getItem("language");
 
 selectBox.addEventListener("change", translateContent);
 function translateContent() {

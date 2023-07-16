@@ -22,7 +22,11 @@
     "#engineering-main-title"
   );
 
-  translateContent();
+  selectBox.value = localStorage.getItem("language");
+
+  selectBox.addEventListener("change", (e) => {
+    localStorage.setItem("language", e.target.value);
+  });
   selectBox.addEventListener("change", translateContent);
 
   function translateContent() {
@@ -224,4 +228,5 @@
       `;
     }
   }
+  translateContent();
 })();

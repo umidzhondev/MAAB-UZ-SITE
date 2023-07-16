@@ -66,8 +66,13 @@
   const benefitsItem5 = document.querySelector("#benifts-item-5");
   const benefitsItem6 = document.querySelector("#benifts-item-6");
 
-  translateContent();
+  selectBox.value = localStorage.getItem("language");
+
   selectBox.addEventListener("change", translateContent);
+
+  selectBox.addEventListener("change", (e) => {
+    localStorage.setItem("language", e.target.value);
+  });
 
   function translateContent() {
     const languageValue = selectBox.options[selectBox.selectedIndex].value;
@@ -507,4 +512,5 @@
       benefitsItem6.children[2].textContent = `Data, visuals, and narrative can be combined to create a compelling story that helps key decision-makers focus on the most important factors.`;
     }
   }
+  translateContent();
 })();

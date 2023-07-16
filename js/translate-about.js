@@ -44,8 +44,13 @@
   const toolsItemsMainTitle = document.querySelector("#tools-items-main-title");
   const teamTitle = document.querySelector("#team--title");
 
-  translateContent();
+  selectBox.value = localStorage.getItem("language");
+
   selectBox.addEventListener("change", translateContent);
+
+  selectBox.addEventListener("change", (e) => {
+    localStorage.setItem("language", e.target.value);
+  });
 
   function translateContent() {
     const languageValue = selectBox.options[selectBox.selectedIndex].value;
@@ -292,4 +297,5 @@
       teamTitle.textContent = "You can hire our business intelligence experts";
     }
   }
+  translateContent();
 })();

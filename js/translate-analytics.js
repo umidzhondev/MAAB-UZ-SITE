@@ -20,8 +20,13 @@
   const businessItem8 = document.querySelector("#business-item-8");
   const businessItem9 = document.querySelector("#business-item-9");
 
-  translateContent();
+  selectBox.value = localStorage.getItem("language");
+
   selectBox.addEventListener("change", translateContent);
+
+  selectBox.addEventListener("change", (e) => {
+    localStorage.setItem("language", e.target.value);
+  });
 
   function translateContent() {
     const languageValue = selectBox.options[selectBox.selectedIndex].value;
@@ -222,4 +227,5 @@
       businessItem9.children[1].textContent = `Our consultancy and advisory services help companies properly use the information in their business activities since only a few organizations know how to apply the data received from DA in their business routine.`;
     }
   }
+  translateContent();
 })();

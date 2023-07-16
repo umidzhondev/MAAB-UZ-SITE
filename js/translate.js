@@ -58,7 +58,6 @@ const selectBox = document.getElementById("change-language");
   const footerTopButton = document.querySelector("#footer-top-button");
   const helpButton = document.querySelector("#helpButton");
 
-  translateContent();
   selectBox.addEventListener("change", translateContent);
 
   function translateContent() {

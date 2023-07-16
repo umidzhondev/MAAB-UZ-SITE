@@ -18,9 +18,13 @@
   const contactPhone = document.querySelector("#contact--phone");
 
   const mapHeader = document.querySelector("#map--header");
+  selectBox.value = localStorage.getItem("language");
 
-  translateContent();
   selectBox.addEventListener("change", translateContent);
+
+  selectBox.addEventListener("change", (e) => {
+    localStorage.setItem("language", e.target.value);
+  });
 
   function translateContent() {
     const languageValue = selectBox.options[selectBox.selectedIndex].value;
@@ -150,4 +154,5 @@
         "You can find our office at this address";
     }
   }
+  translateContent();
 })();

@@ -26,8 +26,6 @@ window.addEventListener("resize", () => {
 
 document.querySelector("#nowYear").textContent = new Date().getFullYear();
 
-localStorage.setItem("language", "en");
-
 select.value = localStorage.getItem("language");
 select.dispatchEvent(new Event("change"));
 
